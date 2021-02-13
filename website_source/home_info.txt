@@ -1,0 +1,25 @@
+</p>
+		<br><br>
+		<p class="card-text" ><i>send spectra to francoismathieu.teyssier [at] bbox.fr</i></p>
+
+
+	  </div>
+    </div>
+  </div>
+
+</div>
+<br>
+<a href="#" class="btn btn-secondary btn-lg btn-block active" role="button" aria-pressed="true">Publications using ARAS spectra</a>
+<br>
+<div class="card">
+  <div class="card-body">
+    <h5>Priority (HR/LR):</h5>
+	<b>0</b> Request of pros teams, outburst, special behavior&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<b>1</b> Long-term monitoring, high priority<br>
+	<b>2</b> Interesting target&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<b>3</b> Low cadence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<b>4</b> Very low interest
+  </div>
+</div>
+<br>
+<!-- <h3>Confirmed symbiotics</h3> -->

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ARAS Spectral Database</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ARAS Spectral Database</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conditions.html">Conditions of Use</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">ARAS Symbiotics Program</h1>
+        <br>
+		<div class="row">
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+ <p class="card-text">Details on stars:   <a href="http://astronomy.science.upjs.sk/symbiotics/">New Online Database of Symbiotic Variables</a></p>
+ <style>table {text-align: center;}table thead th {text-align: center;}</style
+<p class="card-text">Number of stars: 69
+</p><p class="card-text">Number of spectra: 5785
+</p><p class="card-text">Last update: 2021-02-07</p>
+<br><br>
+<a href="#" class="btn btn-secondary">Observers</a>
+        <a href="#" class="btn btn-secondary">Observatories</a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Stars of special interest</h5>
+<p class="card-text">Current campaigns: AG Dra, CH Cyg, SU Lyn, R Aqr, RS Oph, T CrB</p>
+<p class="card-text">Current surveys: CI Cyg, AG Peg, BF Cyg, AX Per</p>
+<p class="card-text" style="margin-bottom:0.88cm;">Outbursts: CM Aql, V1413 Aql</p>
+		<br><br>
+		<p class="card-text" ><i>send spectra to francoismathieu.teyssier [at] bbox.fr</i></p>
+
+
+	  </div>
+    </div>
+  </div>
+
+</div>
+<br>
+<a href="#" class="btn btn-secondary btn-lg btn-block active" role="button" aria-pressed="true">Publications using ARAS spectra</a>
+<br>
+<div class="card">
+  <div class="card-body">
+    <h5>Priority (HR/LR):</h5>
+	<b>0</b> Request of pros teams, outburst, special behavior&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<b>1</b> Long-term monitoring, high priority<br>
+	<b>2</b> Interesting target&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<b>3</b> Low cadence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<b>4</b> Very low interest
+  </div>
+</div>
+<br>
+<!-- <h3>Confirmed symbiotics</h3> -->
+<table border="0" class="dataframe display" id="table_id">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Name</th>
+      <th>RA (2000)</th>
+      <th>DEC (2000)</th>
+      <th>No. of spectra</th>
+      <th>First spectrum</th>
+      <th>Last spectrum</th>
+      <th>Days since last</th>
+      <th>Frequency</th>
+      <th>HR</th>
+      <th>LR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="agdra.html">AG Dra</a></td>
+      <td>16 01 41.01</td>
+      <td>+66 48 10.13</td>
+      <td>688</td>
+      <td>2013-04-03</td>
+      <td>2020-12-27</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-27 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="agpeg.html">AG Peg</a></td>
+      <td>21 51 01.97</td>
+      <td>+12 37 32.12</td>
+      <td>347</td>
+      <td>2009-12-06</td>
+      <td>2020-12-29</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-29 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>15</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="as210.html">AS 210</a></td>
+      <td>16 51 20.41</td>
+      <td>-26 00 26.70</td>
+      <td>4</td>
+      <td>2018-06-14</td>
+      <td>2019-07-06</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-06 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="as245.html">AS 245</a></td>
+      <td>17 51 00.92</td>
+      <td>-22 19 35.07</td>
+      <td>2</td>
+      <td>2018-07-15</td>
+      <td>2019-07-04</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-04 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="as270.html">AS 270</a></td>
+      <td>18 05 33.73</td>
+      <td>-20 20 38.08</td>
+      <td>7</td>
+      <td>2013-08-01</td>
+      <td>2019-07-13</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-13 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="as289.html">AS 289</a></td>
+      <td>18 12 22.14</td>
+      <td>-11 40 07.12</td>
+      <td>3</td>
+      <td>2012-06-26</td>
+      <td>2018-06-15</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2018-06-15 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="as323.html">AS 323</a></td>
+      <td>18 48 35.68</td>
+      <td>-06 41 10.45</td>
+      <td>2</td>
+      <td>2019-07-02</td>
+      <td>2019-07-13</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-13 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="axper.html">AX Per</a></td>
+      <td>01 36 22.70</td>
+      <td>+54 15 02.41</td>
+      <td>369</td>
+      <td>2011-10-04</td>
+      <td>2021-01-25</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-25 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="bdcam.html">BD Cam</a></td>
+      <td>03 42 09.33</td>
+      <td>+63 13 00.46</td>
+      <td>57</td>
+      <td>2011-11-08</td>
+      <td>2021-01-05</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-05 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>90</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="bfcyg.html">BF Cyg</a></td>
+      <td>19 23 53.50</td>
+      <td>+29 40 29.17</td>
+      <td>179</td>
+      <td>2011-05-01</td>
+      <td>2020-10-25</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-10-25 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="bxmon.html">BX Mon</a></td>
+      <td>07 25 22.76</td>
+      <td>-03 35 50.64</td>
+      <td>69</td>
+      <td>2011-04-04</td>
+      <td>2021-01-06</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-06 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="chcyg.html">CH Cyg</a></td>
+      <td>19 24 33.07</td>
+      <td>+50 14 29.06</td>
+      <td>820</td>
+      <td>2011-04-21</td>
+      <td>2020-12-02</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-02 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="cicyg.html">CI Cyg</a></td>
+      <td>19 50 11.83</td>
+      <td>+35 41 03.00</td>
+      <td>241</td>
+      <td>2010-08-25</td>
+      <td>2020-11-23</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-11-23 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>8</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="cmaql.html">CM Aql</a></td>
+      <td>19 03 35.14</td>
+      <td>-03 03 15.36</td>
+      <td>12</td>
+      <td>2020-06-24</td>
+      <td>2020-12-04</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-04 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="cncha.html">CN Cha</a></td>
+      <td>10 59 57.62</td>
+      <td>-79 57 01.06</td>
+      <td>11</td>
+      <td>2020-12-08</td>
+      <td>2021-01-16</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-16 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="cqdra.html">CQ Dra</a></td>
+      <td>12 30 06.67</td>
+      <td>+69 12 03.99</td>
+      <td>46</td>
+      <td>2015-06-11</td>
+      <td>2020-12-27</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-27 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>90</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="efaql.html">EF Aql</a></td>
+      <td>19 51 51.72</td>
+      <td>-05 48 16.71</td>
+      <td>1</td>
+      <td>2018-11-11</td>
+      <td>2018-11-11</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2018-11-11 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="egand.html">EG And</a></td>
+      <td>00 44 37.19</td>
+      <td>+40 40 45.70</td>
+      <td>167</td>
+      <td>2010-08-12</td>
+      <td>2020-12-16</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-16 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="fgser.html">FG Ser</a></td>
+      <td>18 15 07.10</td>
+      <td>-00 18 52.28</td>
+      <td>10</td>
+      <td>2012-06-27</td>
+      <td>2020-07-27</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-07-27 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="fnsgr.html">FN Sgr</a></td>
+      <td>18 53 54.77</td>
+      <td>-18 59 40.66</td>
+      <td>7</td>
+      <td>2014-06-26</td>
+      <td>2018-07-15</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2018-07-15 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="ghgem.html">GH Gem</a></td>
+      <td>07 04 12.77</td>
+      <td>+12 03 34.24</td>
+      <td>9</td>
+      <td>2016-03-10</td>
+      <td>2019-02-15</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-02-15 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="hen2-468.html">Hen 2-468</a></td>
+      <td>20 41 18.99</td>
+      <td>+34 44 52.33</td>
+      <td>2</td>
+      <td>2019-07-01</td>
+      <td>2019-07-11</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-11 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="hen3-1341.html">Hen 3-1341</a></td>
+      <td>17 08 36.57</td>
+      <td>-17 26 30.41</td>
+      <td>2</td>
+      <td>2019-07-04</td>
+      <td>2019-07-07</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-07 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="hen3-1342.html">Hen 3-1342</a></td>
+      <td>17 08 54.97</td>
+      <td>-23 23 36.50</td>
+      <td>1</td>
+      <td>2019-07-07</td>
+      <td>2019-07-07</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-07 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="hen3-1768.html">Hen 3-1768</a></td>
+      <td>19 59 48.42</td>
+      <td>-82 52 37.49</td>
+      <td>2</td>
+      <td>2018-05-16</td>
+      <td>2018-05-27</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2018-05-27 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="hmsge.html">HM Sge</a></td>
+      <td>19 41 57.08</td>
+      <td>+16 44 39.86</td>
+      <td>14</td>
+      <td>2013-07-20</td>
+      <td>2020-07-31</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-07-31 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="ivvir.html">IV Vir</a></td>
+      <td>14 16 34.29</td>
+      <td>-21 45 50.04</td>
+      <td>15</td>
+      <td>2015-05-09</td>
+      <td>2020-07-02</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-07-02 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="ltdel.html">LT Del</a></td>
+      <td>20 35 57.24</td>
+      <td>+20 11 27.50</td>
+      <td>22</td>
+      <td>2015-11-28</td>
+      <td>2020-08-13</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-08-13 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="mwc960.html">MWC 960</a></td>
+      <td>18 47 55.81</td>
+      <td>-20 05 50.98</td>
+      <td>2</td>
+      <td>2019-08-03</td>
+      <td>2019-08-10</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-08-10 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="nqgem.html">NQ Gem</a></td>
+      <td>07 31 54.52</td>
+      <td>+24 30 12.54</td>
+      <td>85</td>
+      <td>2013-04-01</td>
+      <td>2020-12-18</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-18 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="omicet.html">omi Cet</a></td>
+      <td>02 19 20.79</td>
+      <td>-02 58 39.50</td>
+      <td>42</td>
+      <td>2015-11-28</td>
+      <td>2021-01-05</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-05 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>15</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="puvul.html">PU Vul</a></td>
+      <td>20 21 13.31</td>
+      <td>+21 34 18.69</td>
+      <td>26</td>
+      <td>2013-07-21</td>
+      <td>2020-07-12</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-07-12 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="qwsge.html">QW Sge</a></td>
+      <td>19 45 49.55</td>
+      <td>+18 36 47.66</td>
+      <td>7</td>
+      <td>2016-07-21</td>
+      <td>2019-07-05</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-05 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="raqr.html">R Aqr</a></td>
+      <td>23 43 49.46</td>
+      <td>-15 17 04.18</td>
+      <td>255</td>
+      <td>2010-09-25</td>
+      <td>2020-12-19</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-19 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="rrtel.html">RR Tel</a></td>
+      <td>20 04 18.54</td>
+      <td>-55 43 33.15</td>
+      <td>8</td>
+      <td>2017-09-08</td>
+      <td>2020-11-19</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-11-19 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="rsoph.html">RS Oph</a></td>
+      <td>17 50 13.16</td>
+      <td>-06 42 28.48</td>
+      <td>130</td>
+      <td>2011-03-23</td>
+      <td>2020-10-01</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-10-01 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="rtcru.html">RT Cru</a></td>
+      <td>12 34 53.74</td>
+      <td>-64 33 56.10</td>
+      <td>4</td>
+      <td>2019-07-28</td>
+      <td>2020-09-23</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-09-23 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="rtser.html">RT Ser</a></td>
+      <td>17 39 51.98</td>
+      <td>-11 56 38.82</td>
+      <td>3</td>
+      <td>2012-06-26</td>
+      <td>2019-07-03</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-03 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="rwhya.html">RW Hya</a></td>
+      <td>13 34 18.13</td>
+      <td>-25 22 48.89</td>
+      <td>22</td>
+      <td>2017-06-28</td>
+      <td>2020-05-22</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-05-22 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="sslep.html">SS Lep</a></td>
+      <td>06 04 59.13</td>
+      <td>-16 29 03.97</td>
+      <td>18</td>
+      <td>2018-02-17</td>
+      <td>2021-01-25</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-25 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>60</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="stha149.html">StHA 149</a></td>
+      <td>18 18 55.87</td>
+      <td>+27 26 27.73</td>
+      <td>7</td>
+      <td>2013-08-05</td>
+      <td>2019-08-31</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-08-31 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="stha169.html">StHA 169</a></td>
+      <td>19 49 57.59</td>
+      <td>+46 15 20.54</td>
+      <td>8</td>
+      <td>2016-05-12</td>
+      <td>2020-07-01</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-07-01 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="stha180.html">StHA 180</a></td>
+      <td>20 39 20.61</td>
+      <td>-05 17 16.33</td>
+      <td>2</td>
+      <td>2019-07-03</td>
+      <td>2019-07-06</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-06 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="stha190.html">StHA 190</a></td>
+      <td>21 41 44.89</td>
+      <td>+02 43 54.41</td>
+      <td>30</td>
+      <td>2011-08-31</td>
+      <td>2020-11-21</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-11-21 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="stha32.html">StHA 32</a></td>
+      <td>04 37 45.63</td>
+      <td>-01 19 11.90</td>
+      <td>8</td>
+      <td>2018-03-02</td>
+      <td>2019-11-03</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-11-03 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>8</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="stha55.html">StHA 55</a></td>
+      <td>05 46 42.08</td>
+      <td>+06 43 47.08</td>
+      <td>13</td>
+      <td>2016-01-17</td>
+      <td>2020-12-05</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-05 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="sulyn.html">SU Lyn</a></td>
+      <td>06 42 55.14</td>
+      <td>+55 28 27.23</td>
+      <td>203</td>
+      <td>2016-05-02</td>
+      <td>2021-01-27</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-27 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>15</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="symus.html">SY Mus</a></td>
+      <td>11 32 10.00</td>
+      <td>-65 25 11.46</td>
+      <td>1</td>
+      <td>2020-05-14</td>
+      <td>2020-05-14</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-05-14 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="tcrb.html">T CrB</a></td>
+      <td>15 59 30.16</td>
+      <td>+25 55 12.61</td>
+      <td>436</td>
+      <td>2012-04-01</td>
+      <td>2020-10-05</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-10-05 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="txcvn.html">TX CVn</a></td>
+      <td>12 44 42.06</td>
+      <td>+36 45 50.62</td>
+      <td>71</td>
+      <td>2011-04-10</td>
+      <td>2020-12-02</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-02 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="uvaur.html">UV Aur</a></td>
+      <td>05 21 48.91</td>
+      <td>+32 30 40.18</td>
+      <td>89</td>
+      <td>2011-02-24</td>
+      <td>2021-01-28</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-28 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="v1016cyg.html">V1016 Cyg</a></td>
+      <td>19 57 05.02</td>
+      <td>+39 49 36.09</td>
+      <td>27</td>
+      <td>2015-04-15</td>
+      <td>2020-10-27</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-10-27 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="v1261ori.html">V1261 Ori</a></td>
+      <td>05 22 18.65</td>
+      <td>-08 39 58.05</td>
+      <td>24</td>
+      <td>2011-10-22</td>
+      <td>2020-12-17</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-17 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="v1329cyg.html">V1329 Cyg</a></td>
+      <td>20 51 01.23</td>
+      <td>+35 34 54.11</td>
+      <td>32</td>
+      <td>2015-08-09</td>
+      <td>2020-11-03</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-11-03 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="v1413aql.html">V1413 Aql</a></td>
+      <td>19 03 46.84</td>
+      <td>+16 26 16.97</td>
+      <td>58</td>
+      <td>2013-08-10</td>
+      <td>2020-12-12</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-12-12 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="v335vul.html">V335 Vul</a></td>
+      <td>19 23 14.15</td>
+      <td>+24 27 39.66</td>
+      <td>12</td>
+      <td>2016-08-14</td>
+      <td>2019-07-25</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-25 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="v407cyg.html">V407 Cyg</a></td>
+      <td>21 02 09.82</td>
+      <td>+45 46 32.74</td>
+      <td>12</td>
+      <td>2010-03-14</td>
+      <td>2010-04-18</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2010-04-18 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="v426sge.html">V426 Sge</a></td>
+      <td>19 54 42.95</td>
+      <td>+17 22 12.58</td>
+      <td>31</td>
+      <td>2018-08-12</td>
+      <td>2020-10-26</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-10-26 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="v443her.html">V443 Her</a></td>
+      <td>18 22 07.85</td>
+      <td>+23 27 19.93</td>
+      <td>82</td>
+      <td>2011-05-18</td>
+      <td>2020-09-19</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-09-19 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="v471per.html">V471 Per</a></td>
+      <td>01 58 49.66</td>
+      <td>+52 53 48.46</td>
+      <td>43</td>
+      <td>2013-08-06</td>
+      <td>2021-01-23</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-23 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="v503her.html">V503 Her</a></td>
+      <td>17 36 40.46</td>
+      <td>+23 18 11.67</td>
+      <td>10</td>
+      <td>2013-06-05</td>
+      <td>2019-07-06</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-06 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="v627cas.html">V627 Cas</a></td>
+      <td>22 57 40.97</td>
+      <td>+58 49 12.56</td>
+      <td>40</td>
+      <td>2013-08-06</td>
+      <td>2019-11-18</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-11-18 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="v694mon.html">V694 Mon</a></td>
+      <td>07 25 51.28</td>
+      <td>-07 44 08.08</td>
+      <td>428</td>
+      <td>2011-03-03</td>
+      <td>2021-01-18</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-18 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="v919sgr.html">V919 Sgr</a></td>
+      <td>19 03 45.12</td>
+      <td>-16 59 55.38</td>
+      <td>8</td>
+      <td>2015-08-28</td>
+      <td>2019-07-11</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2019-07-11 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="v934her.html">V934 Her</a></td>
+      <td>17 06 34.51</td>
+      <td>+23 58 18.65</td>
+      <td>24</td>
+      <td>2014-06-29</td>
+      <td>2020-06-01</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-06-01 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>90</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="yyher.html">YY Her</a></td>
+      <td>18 14 34.19</td>
+      <td>+20 59 21.19</td>
+      <td>37</td>
+      <td>2011-05-25</td>
+      <td>2020-09-22</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-09-22 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="zand.html">Z And</a></td>
+      <td>23 33 39.96</td>
+      <td>+48 49 05.97</td>
+      <td>255</td>
+      <td>2010-10-30</td>
+      <td>2021-01-25</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-25 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>15</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="zzcmi.html">ZZ Cmi</a></td>
+      <td>07 24 14.00</td>
+      <td>+08 53 51.80</td>
+      <td>67</td>
+      <td>2011-09-29</td>
+      <td>2021-01-23</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2021-01-23 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="erdel.html">ER Del</a></td>
+      <td>20 42 46.50</td>
+      <td>+08 41 13.54</td>
+      <td>16</td>
+      <td>2011-09-02</td>
+      <td>2020-09-09</td>
+      <td><script>var date1, date2;date1 = new Date();date2 = new Date( "2020-09-09 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script></td>
+      <td>30</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table><!-- <h3>Symbiotic candidates</h3> -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <br><br><br>
+  <footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<script>
+$(document).ready( function () {
+    $('#table_id').DataTable({
+    paging: false,
+    "order": [[1,'asc']],
+	"columnDefs": [    { "type": "num", "targets": 6 },{
+     "targets": [ 6 ],
+     "orderable": false
+  }  ]
+});
+} );
+</script>
+
+</body>
+
+</html>

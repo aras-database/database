@@ -1,0 +1,20 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Symbiotics Program</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">MWC 960 (V694 Monocerotis)</h5>
+      <p class="card-text">RA (2000): 07 25 51.284</p>
+  <p class="card-text">DEC (2000): -07 44 08.078</p>
+  <p class="card-text">V (mag): 11.7 - 12.5</p>
+  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/v694-mon/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=MWC+960&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+
+  </div>
+  </div>
+</div>

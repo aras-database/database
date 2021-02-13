@@ -1,0 +1,38 @@
+<!-- <h3>Symbiotic candidates</h3> -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <br><br><br>
+  <footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<script>
+$(document).ready( function () {
+    $('#table_id').DataTable({
+    paging: false,
+    "order": [[1,'asc']],
+	"columnDefs": [    { "type": "num", "targets": 6 },{
+     "targets": [ 6 ],
+     "orderable": false
+  }  ]
+});
+} );
+</script>
+
+</body>
+
+</html>
