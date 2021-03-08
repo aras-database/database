@@ -15,6 +15,10 @@ from zipfile import ZipFile
 from os.path import basename
 from difflib import SequenceMatcher
 
+list_of_observers = ascii.read("../data/observers.csv", header_start=0, data_start=1, delimiter=';',format='csv')
+list_of_objects = ascii.read("../data/objects.csv", header_start=0, data_start=1, delimiter=';',format='csv')
+list_of_sites = ascii.read("../data/sites.csv", header_start=0, data_start=1, delimiter=';',format='csv')
+
 list_of_new_observers_temp = []
 list_of_new_objects_temp = []
 list_of_new_sites_temp = []
