@@ -1,6 +1,6 @@
 </p>
 		<br><br>
-		<p class="card-text" ><i>send spectra to francoismathieu.teyssier [at] bbox.fr</i></p>
+		<p class="card-text" ><i>send spectra to francoismathieu.teyssier [at] gmail.com & arasdatabase [at] gmail.com</i></p>
 
 
 	  </div>
