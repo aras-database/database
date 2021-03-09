@@ -72,7 +72,7 @@ for fi in (files):
             preview = fi[len(dir):-4]+'.png'
             comment = " "
             last_update = Time.now().unix
-            all_spectra.add_row([star_name_string, date, time, jd, observer, site, resolution, lambda_min, lambda_max, file, preview, last_update, comment])
+            all_spectra.add_row([0,star_name_string, date, time, jd, observer, site, resolution, lambda_min, lambda_max, file, preview, last_update, comment])
         move(fi, '../spectra/'+fi[len(dir):])
     except:
         print("Uknown problem with file: "+fi[len(dir):])

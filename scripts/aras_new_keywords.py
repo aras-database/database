@@ -65,17 +65,17 @@ try:
             while err_anw == 1:
                 confirmation = input(str('Could '+i +" possibly be "+current_guess+"?  (Y/N)"))
                 if confirmation == "Y" or confirmation == "y":
-                    list_of_objects.add_row([i, current_guess])
+                    list_of_objects.add_row([0, i, current_guess])
                     err_anw=0
                 elif confirmation == "N" or confirmation == "n":
                     new_object_name = input(str("What is the name of "+i+"?"))
-                    list_of_objects.add_row([i, new_object_name])
+                    list_of_objects.add_row([0, i, new_object_name])
                     err_anw=0
                 else:
                     print("Answer with Y or N.")
         else:
             new_object_name = input(str("What is the name of "+i+"?"))
-            list_of_objects.add_row([i, new_object_name])
+            list_of_objects.add_row([0, i, new_object_name])
 except:
     pass
 
@@ -93,17 +93,17 @@ try:
             while err_anw == 1:
                 confirmation = input(str('Could '+i +" possibly be "+current_guess+"?  (Y/N)"))
                 if confirmation == "Y" or confirmation == "y":
-                    list_of_observers.add_row([i, current_guess])
+                    list_of_observers.add_row([0, i, current_guess])
                     err_anw=0
                 elif confirmation == "N" or confirmation == "n":
                     new_observer_name = input(str("What is the name of "+i+"?"))
-                    list_of_observers.add_row([i, new_observer_name])
+                    list_of_observers.add_row([0, i, new_observer_name])
                     err_anw=0
                 else:
                     print("Answer with Y or N.")
         else:
             new_observer_name = input(str("What is the name of "+i+"?"))
-            list_of_observers.add_row([i, new_observer_name])
+            list_of_observers.add_row([0, i, new_observer_name])
 except:
     pass
 
@@ -121,17 +121,17 @@ try:
             while err_anw == 1:
                 confirmation = input(str('Could '+i +" possibly be "+current_guess+"?  (Y/N)"))
                 if confirmation == "Y" or confirmation == "y":
-                    list_of_sites.add_row([i, current_guess])
+                    list_of_sites.add_row([0, i, current_guess,"un", "un", "un", 0, 0])
                     err_anw=0
                 elif confirmation == "N" or confirmation == "n":
                     new_site_name = input(str("What place is "+i+"?"))
-                    list_of_sites.add_row([i, new_site_name])
+                    list_of_sites.add_row([0, i, new_site_name,"un", "un", "un", 0, 0])
                     err_anw=0
                 else:
                     print("Answer with Y or N.")
         else:
             new_site_name = input(str("What place is "+i+"?"))
-            list_of_sites.add_row([i, new_site_name,"un", "un", "un", 0, 0])
+            list_of_sites.add_row([0, i, new_site_name,"un", "un", "un", 0, 0])
 
 except:
     pass
