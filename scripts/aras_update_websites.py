@@ -16,6 +16,9 @@ from os.path import basename
 from difflib import SequenceMatcher
 
 pd.options.mode.chained_assignment = None
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+pd.set_option('display.max_colwidth', None)
 
 all_spectra = ascii.read("../data/all_spectra.csv", header_start=0, data_start=1, delimiter=';',format='csv')
 try:
