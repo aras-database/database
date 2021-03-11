@@ -43,7 +43,7 @@ while missing_files > 0:
 
     dir = '../temporary/updated/'
     files = glob(dir + '*.fit')
-    import aras_check_keywords
+    import aras_check_keywords_updated
 
     missing_files = len(glob('../temporary/missing/observer/' + '*.fit'))+len(glob('../temporary/missing/site/' + '*.fit'))+len(glob('../temporary/missing/object/' + '*.fit'))
 
