@@ -74,7 +74,12 @@ for symbiotic in symbiotic_stars["star_name_string"]:
 
         except:
             campaign_string=''
-        campaign_string = campaign_string + '<a href="archives/'+symbiotic+'.zip" class="btn btn-secondary">Download all spectra as *.zip file (' + str(round(os.stat('../archives/'+symbiotic+'.zip').st_size/(1048576),1))+' MB)</a>'
+        if symbiotic !="chcyg":
+            campaign_string = campaign_string + '<a href="archives/'+symbiotic+'.zip" class="btn btn-secondary">Download all spectra as *.zip file (' + str(round(os.stat('../archives/'+symbiotic+'.zip').st_size/(1048576),1))+' MB)</a>'
+        else:
+            current_year_string = str(np.max(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:4])
+            campaign_string = campaign_string + '<a href="archives/'+symbiotic+'1.zip" class="btn btn-secondary">Download 2011-2018 spectra as *.zip file (' + str(round(os.stat('../archives/'+symbiotic+'1.zip').st_size/(1048576),1))+' MB)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+'<a href="archives/'+symbiotic+'2.zip" class="btn btn-secondary">Download 2019-'+current_year_string +' spectra as *.zip file (' + str(round(os.stat('../archives/'+symbiotic+'2.zip').st_size/(1048576),1))+' MB)</a>'
+
         file_string = []
         image_string = []
         resolution_string = []

@@ -39,7 +39,10 @@ last_update_archive = np.float(open("../data/last_update_archive.txt", "r").read
 
 for symbiotic in symbiotic_stars["star_name_string"]:
     if np.max(all_spectra[all_spectra["star_name_string"]==symbiotic]["last_update"]) > last_update_archive:
-        zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
+        if symbiotic != "chcyg":
+            zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
+        else:
+            zipFilesInDir('../spectra/', '../archives/'+symbiotic+'2.zip', lambda name : ("chcyg_2019"  in name) or ("chcyg_202"  in name) )
 last_update = open("../data/last_update_archive.txt", "w")
 last_update.write(str(Time.now().unix))
 last_update.close()
