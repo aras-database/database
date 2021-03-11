@@ -33,7 +33,7 @@ while comments_anw == 2:
         comments_anw=0
         print("Updating websites.")
         import aras_update_websites
-        print("All done. You can commit to GitHub.")
+        print("All done. You can commit to GitHub now.")
     else:
         print("Answer with Y or N.")
 
