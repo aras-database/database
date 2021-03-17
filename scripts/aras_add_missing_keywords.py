@@ -15,10 +15,10 @@ from zipfile import ZipFile
 from os.path import basename
 from difflib import SequenceMatcher
 
-missing_files = len(glob('../temporary/missing/observer/' + '*.fit'))+len(glob('../temporary/missing/site/' + '*.fit'))+len(glob('../temporary/missing/object/' + '*.fit'))
+missing_files = len(glob('../temporary/missing/observer/' + '*.fit'))+len(glob('../temporary/missing/site/' + '*.fit'))+len(glob('../temporary/missing/object/' + '*.fit'))+len(glob('../temporary/missing/observer/' + '*.fits'))+len(glob('../temporary/missing/site/' + '*.fits'))+len(glob('../temporary/missing/object/' + '*.fits'))
 while missing_files > 0:
     dir = '../temporary/missing/observer/'
-    files = glob(dir + '*.fit')
+    files = glob(dir + '*.fit')+glob(dir + '*.fits')
     for fi in (files):
         print("File:", fi[len(dir):])
         obs_input = input('Observer:   ')
@@ -26,7 +26,7 @@ while missing_files > 0:
         move(fi, '../temporary/updated/'+fi[len(dir):])
 
     dir = '../temporary/missing/object/'
-    files = glob(dir + '*.fit')
+    files = glob(dir + '*.fit')+glob(dir + '*.fits')
     for fi in (files):
         print("File:", fi[len(dir):])
         obs_input = input('Object:   ')
@@ -34,7 +34,7 @@ while missing_files > 0:
         move(fi, '../temporary/updated/'+fi[len(dir):])
 
     dir = '../temporary/missing/site/'
-    files = glob(dir + '*.fit')
+    files = glob(dir + '*.fit')+glob(dir + '*.fits')
     for fi in (files):
         print("File:", fi[len(dir):])
         obs_input = input('Observing site:   ')
@@ -42,12 +42,12 @@ while missing_files > 0:
         move(fi, '../temporary/updated/'+fi[len(dir):])
 
     dir = '../temporary/updated/'
-    files = glob(dir + '*.fit')
+    files = glob(dir + '*.fit')+glob(dir + '*.fits')
     import aras_check_keywords_updated
 
-    missing_files = len(glob('../temporary/missing/observer/' + '*.fit'))+len(glob('../temporary/missing/site/' + '*.fit'))+len(glob('../temporary/missing/object/' + '*.fit'))
+    missing_files = len(glob('../temporary/missing/observer/' + '*.fit'))+len(glob('../temporary/missing/site/' + '*.fit'))+len(glob('../temporary/missing/object/' + '*.fit'))+len(glob('../temporary/missing/observer/' + '*.fits'))+len(glob('../temporary/missing/site/' + '*.fits'))+len(glob('../temporary/missing/object/' + '*.fits'))
 
 dir = '../temporary/updated/'
-files = glob(dir + '*.fit')
+files = glob(dir + '*.fit')+glob(dir + '*.fits')
 for fi in (files):
     move(fi, '../new_spectra/'+fi[len(dir):])

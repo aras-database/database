@@ -3,7 +3,7 @@ automatic = 1
 print("Checking keywords.")
 import aras_check_keywords_automatic
 
-if (len(glob('../temporary/missing/observer/' + '*.fit'))+len(glob('../temporary/missing/site/' + '*.fit'))+len(glob('../temporary/missing/object/' + '*.fit')))>0:
+if (len(glob('../temporary/missing/observer/' + '*.fit'))+len(glob('../temporary/missing/site/' + '*.fit'))+len(glob('../temporary/missing/object/' + '*.fit'))+len(glob('../temporary/missing/observer/' + '*.fits'))+len(glob('../temporary/missing/site/' + '*.fits'))+len(glob('../temporary/missing/object/' + '*.fits')))>0:
     print("Problems with keywords detected. Input needed.")
     import aras_add_missing_keywords
 

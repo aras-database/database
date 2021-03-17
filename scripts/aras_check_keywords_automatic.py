@@ -19,7 +19,7 @@ automatic = 1
 
 dir = '../new_spectra/'
 
-files = glob(dir + '*.fit')
+files = glob(dir + '*.fit')+glob(dir + '*.fits')
 
 if automatic == 0:
     print('Number of spectra:        ', len(files))

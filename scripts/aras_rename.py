@@ -34,7 +34,7 @@ except:
 
 dir = '../new_spectra/'
 
-files = glob(dir + '*.fit')
+files = glob(dir + '*.fit')+glob(dir + '*.fits')
 
 for fi in (files):
     with fits.open(fi) as hdu:
