@@ -65,6 +65,8 @@ for symbiotic in symbiotic_stars["star_name_string"]:
                 campaign_type = "bg-warning"
             elif campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(symbiotic)] == "Current outburst":
                 campaign_type = "bg-danger"
+            elif campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(symbiotic)] == "Symbiotic nova outburst":
+                campaign_type = "bg-danger"
             else:
                 campaign_type = "bg-dark"
             try:
@@ -150,6 +152,12 @@ for stars in campaigns["star_name_string"]:
             outb_string = outb_string + ", " + symbiotic_stars["name"][symbiotic_stars["star_name_string"]==stars][0]
         except:
             outb_string = symbiotic_stars["name"][symbiotic_stars["star_name_string"]==stars][0]
+    if campaigns["campaign_type"][campaigns["star_name_string"]==stars] == "Symbiotic nova outburst":
+        try:
+            outb_string = outb_string + ", " + symbiotic_stars["name"][symbiotic_stars["star_name_string"]==stars][0] + " (SyN)"
+        except:
+            outb_string = symbiotic_stars["name"][symbiotic_stars["star_name_string"]==stars][0]
+
 if not camp_string:
     camp_string = ""
 if not surv_string:
