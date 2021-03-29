@@ -32,6 +32,12 @@ try:
 except:
     pass
 
+symbiotic_stars_merc = ascii.read("../data/symbiotic_stars_Merc.csv", header_start=0, data_start=1, delimiter=';',format='csv')
+try:
+    symbiotic_stars_merc.rename_column('ď»żstar_name_string', 'star_name_string')
+except:
+    pass
+
 campaigns = ascii.read("../data/campaigns.csv", header_start=0, data_start=1, delimiter=';',format='csv')
 
 df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
@@ -172,6 +178,114 @@ home_info = open("../website_source/home_info.txt", "r").read()
 home_website = open("../symbiotics.html", "w")
 home_website.write(home_top+sym_info+home_info+home_table+home_footer)
 home_website.close()
+
+merc_syst = pd.read_csv('../data/symbiotic_stars_Merc.csv', delimiter=";")
+mask = df.star_name_string.apply(lambda x: any(item for item in merc_syst.star_name_string.tolist() if item in x))
+df_merc = df[mask]
+
+file_string = []
+image_string = []
+resolution_string = []
+wavelength_string = []
+object_name_string = []
+for i in range(len(df_merc)):
+    object_name_string.append(merc_syst.name[merc_syst.star_name_string == df_merc.iloc[i]["star_name_string"]].values[0])
+    file_string.append('<a href="spectra/'+df_merc.iloc[i]["file"]+'" download target="_blank"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M.5 8a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.5A.5.5 0 0 1 .5 8z"/><path fill-rule="evenodd" d="M5 7.5a.5.5 0 0 1 .707 0L8 9.793 10.293 7.5a.5.5 0 1 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5 8.207A.5.5 0 0 1 5 7.5z"/><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8A.5.5 0 0 1 8 1z"/></svg></a>')
+    image_string.append('<a href="figures/'+df_merc.iloc[i]["image"]+'" target="_blank"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/><path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg></a>')
+    if df_merc.iloc[i]["Resolution"] < 500:
+        resolution_string.append('')
+    elif df_merc.iloc[i]["Resolution"] < 900:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    elif df_merc.iloc[i]["Resolution"] < 1800:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    elif df_merc.iloc[i]["Resolution"] < 4500:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    elif df_merc.iloc[i]["Resolution"] < 9000:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    else:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    wavelength_string_temp = ''
+    if df_merc.iloc[i]["&lambda;<sub>min</sub>"] < 3600:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#A74AC7" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_merc.iloc[i]["&lambda;<sub>min</sub>"] < 4100 and df_merc.iloc[i]["&lambda;<sub>max</sub>"] > 4120:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#151B8D" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_merc.iloc[i]["&lambda;<sub>min</sub>"] < 4670 and df_merc.iloc[i]["&lambda;<sub>max</sub>"] >4680:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#4AA02C" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_merc.iloc[i]["&lambda;<sub>min</sub>"] < 5870 and df_merc.iloc[i]["&lambda;<sub>max</sub>"] > 5880:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#EAC117" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_merc.iloc[i]["&lambda;<sub>min</sub>"] < 6550 and df_merc.iloc[i]["&lambda;<sub>max</sub>"] > 6570:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#E42217" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_merc.iloc[i]["&lambda;<sub>max</sub>"] >7500:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#8C001A" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    wavelength_string.append(wavelength_string_temp)
+
+df_merc["File"] = file_string
+df_merc["Preview"] = image_string
+df_merc['<div style="display:none;">Resolution</div>'] = resolution_string
+df_merc['<div style="display:none;"Wavelength</div>'] = wavelength_string
+df_merc["Object"] = object_name_string
+
+table = df_merc.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Object","Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
+
+footer = open("../website_source/special_footer.txt", "r").read()
+merc_info = open("../website_source/merc.txt", "r").read()
+merc_website = open("../symbiotics-merc.html", "w")
+merc_website.write(merc_info+table+footer)
+merc_website.close()
+
+lucy_syst = pd.read_csv('../data/symbiotic_stars_Lucy.csv', delimiter=";")
+mask = df.star_name_string.apply(lambda x: any(item for item in lucy_syst.star_name_string.tolist() if item in x))
+df_lucy = df[mask]
+
+file_string = []
+image_string = []
+resolution_string = []
+wavelength_string = []
+object_name_string = []
+for i in range(len(df_lucy)):
+    object_name_string.append(lucy_syst.name[lucy_syst.star_name_string == df_lucy.iloc[i]["star_name_string"]].values[0])
+    file_string.append('<a href="spectra/'+df_lucy.iloc[i]["file"]+'" download target="_blank"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M.5 8a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.5A.5.5 0 0 1 .5 8z"/><path fill-rule="evenodd" d="M5 7.5a.5.5 0 0 1 .707 0L8 9.793 10.293 7.5a.5.5 0 1 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5 8.207A.5.5 0 0 1 5 7.5z"/><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8A.5.5 0 0 1 8 1z"/></svg></a>')
+    image_string.append('<a href="figures/'+df_lucy.iloc[i]["image"]+'" target="_blank"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/><path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg></a>')
+    if df_lucy.iloc[i]["Resolution"] < 500:
+        resolution_string.append('')
+    elif df_lucy.iloc[i]["Resolution"] < 900:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    elif df_lucy.iloc[i]["Resolution"] < 1800:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    elif df_lucy.iloc[i]["Resolution"] < 4500:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    elif df_lucy.iloc[i]["Resolution"] < 9000:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    else:
+        resolution_string.append('<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#007bff" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>')
+    wavelength_string_temp = ''
+    if df_lucy.iloc[i]["&lambda;<sub>min</sub>"] < 3600:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#A74AC7" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_lucy.iloc[i]["&lambda;<sub>min</sub>"] < 4100 and df_lucy.iloc[i]["&lambda;<sub>max</sub>"] > 4120:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#151B8D" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_lucy.iloc[i]["&lambda;<sub>min</sub>"] < 4670 and df_lucy.iloc[i]["&lambda;<sub>max</sub>"] >4680:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#4AA02C" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_lucy.iloc[i]["&lambda;<sub>min</sub>"] < 5870 and df_lucy.iloc[i]["&lambda;<sub>max</sub>"] > 5880:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#EAC117" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_lucy.iloc[i]["&lambda;<sub>min</sub>"] < 6550 and df_lucy.iloc[i]["&lambda;<sub>max</sub>"] > 6570:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#E42217" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    if df_lucy.iloc[i]["&lambda;<sub>max</sub>"] >7500:
+        wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#8C001A" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
+    wavelength_string.append(wavelength_string_temp)
+
+df_lucy["File"] = file_string
+df_lucy["Preview"] = image_string
+df_lucy['<div style="display:none;">Resolution</div>'] = resolution_string
+df_lucy['<div style="display:none;"Wavelength</div>'] = wavelength_string
+df_lucy["Object"] = object_name_string
+
+table = df_lucy.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Object","Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
+
+footer = open("../website_source/special_footer.txt", "r").read()
+lucy_info = open("../website_source/lucy.txt", "r").read()
+lucy_website = open("../symbiotics-lucy.html", "w")
+lucy_website.write(lucy_info+table+footer)
+lucy_website.close()
 
 last_update = open("../data/last_update.txt", "w")
 last_update.write(str(Time.now().unix))
