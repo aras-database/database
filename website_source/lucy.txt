@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ARAS Spectral Database: Symbiotics</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+<link rel="icon" href="website_source/ico.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NR5908WT2C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NR5908WT2C');
+</script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ARAS Spectral Database</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conditions.html">Conditions of Use</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Symbiotics Program</h1>
+<br>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Classification of suspected symbiotic stars</h5>
+  <p class="card-text">PI of the project: Adrian Lucy, Jenifer Sokoloski (Columbia University)</p>
+<p class="card-text"><a href="http://spectro-aras.com/forum/viewtopic.php?f=37&t=2124">ARAS Forum</a></p>
+<p class="card-text"><a href="https://www.aavso.org/aavso-alert-notice-650">AAVSO Alert</a></p>
+  </div>
+</div>
+
+<br>
+<style>table {text-align: center;}table thead th {text-align: center;}</style>
+
+<div class="card text-white bg-danger mb-3"><div class="card-body"><p class="card-text">These spectra cannot be used in publications without the prior approval of the PI of the project.</p>
+</div></div>
