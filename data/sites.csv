@@ -94,7 +94,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;ORS-FR;ORS-FR;Observatoire Rouen Sud;Rouen;FR;1.08;49.42
 0;Observatoire St  Maurice;OSM-FR;Observatoire St Maurice;;FR;0.49;46.37
 0;Observatoire St Maurice;OSM-FR;Observatoire St Maurice;;FR;0.49;46.37
-0;Observatoire St  Maurice;OSM-FR;Observatoire St  Maurice;;FR;0.49;46.37
+0;Observatoire Stï¿½ï¿½Maurice;OSM-FR;Observatoire Stï¿½ï¿½Maurice;;FR;0.49;46.37
 0;Observatoire de la Tourbiere;OTO-FR;Observatoire la Tourbiere;Chabons;FR;5.43;45.42
 0;Observatoire la Tourbiere;OTO-FR;Observatoire la Tourbiere;Chabons;FR;5.43;45.42
 0;O.V.A. (Observatoire du Val de l'Arc);OVA-FR;;;FR;;
@@ -103,7 +103,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Pibrac Backyard Observatory;PBO-FR;;Pibrac;FR;1.28;43.62
 0;PDM;PDM-FR;Observatoire Pic du Midi;;FR;0.14;4.94
 0;Pic du Midi UAI 586;PDM-FR;;;FR;0.14;42.94
-0;Pieks?m?ki, Finland;PIE-FI;;Pieksämäki;FI;6.26;27.11
+0;Pieks?m?ki, Finland;PIE-FI;;Pieksï¿½mï¿½ki;FI;6.26;27.11
 0;PIERA;PIE-SP;;Pierra;SP;1.74;41.52
 0;Newcastle;PON-UK;;Newcastle;UK;-1.74;55.05
 0;PON_UK;PON-UK;;Ponteland;UK;-1.74;55.05
@@ -126,8 +126,8 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Shenton Park;SPO-AU;;Shenton;AU;115.82;-31.96
 0;SSO-AU;SSO-AU;un;un;un;0;0
 0;St Sordelin;SSO-FR;;Vaux sur Mer;FR;-1.03;45.65
-0;iTelescope - SSO site;SSO-FR;un;Vaux sur Mer;FR;-1.03;45.65
-0;Siding Springs Observatory iTelescope Facility;SSO-FR;un;Vaux sur Mer;FR;-1.03;45.65
+0;iTelescope - SSO site;SSO-AU;un;un;un;0;0
+0;Siding Springs Observatory iTelescope Facility;SSO-AU;un;un;un;0;0
 0;Staffelfelden;STA-FR;;STA-FR;FR;47.83;7.28
 0;Stock,Essex,UK;STO-UK;;Stock;UK;0.45;51.66
 0;Tata;TAT-HU;;Tata;HU;18.32;47.65
