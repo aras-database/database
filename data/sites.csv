@@ -16,13 +16,13 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;CALC;CAL-FR;Observatoire CALA;Lyon;FR;4.82;45.76
 0;Obs CALA (LYON);CAL-FR;Observatoire CALA;Lyon;FR;4.82;45.76
 0;Observatoire du CALA;CAL-FR;Observatoire du CALA;;FR;4.82;45.76
-0;CAR-US;CAR-US;un;Carrollton TX;US;-96.92;33.0
-0;Carrollton TX;CAR-US;un;Carrollton TX;US;-96.92;33.0
+0;CAR-US;CAR-US;un;Carrollton TX;US;-96.92;33
+0;Carrollton TX;CAR-US;un;Carrollton TX;US;-96.92;33
 0;Castanet;CAS-FR;;Toulouse;FR;1.51;43.52
 0;Castanet-Tolosan;CAS-FR;;Toulouse;FR;1.51;43.52
 0;Toulouse (FR);CAS-FR;;Toulouse;FR;1.51;43.52
 0;CAS-FR;CAS-FR;un;Toulouse;FR;1.51;43.52
-0;CERGA;CER;un;un;un;0.0;0.0
+0;CERGA;CER;un;un;un;0;0
 0;Claix;CLX-FR;;Claix;FR;5.68;45.13
 0;Desert Celestial Observatory;DCO-US;Desert Celestial Observatory;;US;-111.8;33.37
 0;DESERT CELESTIAL OBSERVATORY;DCO-US;Desert Celestial Observatory;;US;-111.8;33.37
@@ -59,7 +59,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;MDRDVENTILLA;MAD-SP;;Madrid;SP;-2.14;37.72
 0;Manhattan, IL;MAN-US;;Manhattan (IL);US;-87.93;41.46
 0;Mardella;MAR-AU;;Mardella;AU;;
-0;Maubeuge;MAU-FR;;Maubeuge;FR;0.15;43.0
+0;Maubeuge;MAU-FR;;Maubeuge;FR;0.15;43
 0;Arnprior_ON_CA;MRO-CA;;Arnprior (ON);CA;-76.44;45.4
 0;Mill Ridge_ON_CA;MRO-CA;;Arnprior (ON);CA;-76.44;45.4
 0;MRO-CA;MRO-CA;;Arnprior (ON);CA;-76.44;45.4
@@ -124,10 +124,10 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;SMU;SMU-FR;;Saint Martin d'Uriage;FR;5.83;45.15
 0;San Polo a Mosciano AAF;SPL-??;;;;;
 0;Shenton Park;SPO-AU;;Shenton;AU;115.82;-31.96
-0;SSO-AU;SSO-AU;un;un;un;0.0;0.0
+0;SSO-AU;SSO-AU;un;un;un;0;0
 0;St Sordelin;SSO-FR;;Vaux sur Mer;FR;-1.03;45.65
-0;iTelescope - SSO site;SSO-AU;un;un;un;0.0;0.0
-0;Siding Springs Observatory iTelescope Facility;SSO-AU;un;un;un;0.0;0.0
+0;iTelescope - SSO site;SSO-AU;un;un;un;0;0
+0;Siding Springs Observatory iTelescope Facility;SSO-AU;un;un;un;0;0
 0;Staffelfelden;STA-FR;;STA-FR;FR;47.83;7.28
 0;Stock,Essex,UK;STO-UK;;Stock;UK;0.45;51.66
 0;Tata;TAT-HU;;Tata;HU;18.32;47.65
@@ -147,7 +147,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Barnards Yatton;YAT-UK;;;UK;-2.82;51.38
 0;Barnards_Yatton;YAT-UK;;;UK;-2.82;51.38
 0;La Blaque Varages;LBA-FR;;La Blaque Varages;FR;;
-0;Desert Wing;DWO-US;un;un;un;0.0;0.0
+0;Desert Wing;DWO-US;un;un;un;0;0
 0;East Essex,UK;EES-UK;;East Essex;UK;0.85;50.68
-0;iTelescope, SSO;XXX-AU;un;un;un;0.0;0.0
-0;SSO;SSO-AU;un;un;un;0.0;0.0
+0;iTelescope, SSO;SSO-AU;un;un;un;0;0
+0;SSO;SSO-AU;un;un;un;0;0
