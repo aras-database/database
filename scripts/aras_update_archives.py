@@ -35,6 +35,12 @@ try:
 except:
     pass
 
+novae = ascii.read("../data/novae.csv", header_start=0, data_start=1, delimiter=';',format='csv')
+try:
+    novae.rename_column('ď»żstar_name_string', 'star_name_string')
+except:
+    pass
+
 last_update_archive = np.float(open("../data/last_update_archive.txt", "r").read())
 
 for symbiotic in symbiotic_stars["star_name_string"]:
@@ -43,6 +49,13 @@ for symbiotic in symbiotic_stars["star_name_string"]:
             zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
         else:
             zipFilesInDir('../spectra/', '../archives/'+symbiotic+'2.zip', lambda name : ("chcyg_2019"  in name) or ("chcyg_202"  in name) )
+for nova in novae["star_name_string"]:
+    try:
+        if np.max(all_spectra[all_spectra["star_name_string"]==nova]["last_update"]) > last_update_archive:
+            zipFilesInDir('../spectra/', '../archives/'+nova+'.zip', lambda name : nova in name)
+    except:
+        pass
+
 last_update = open("../data/last_update_archive.txt", "w")
 last_update.write(str(Time.now().unix))
 last_update.close()
