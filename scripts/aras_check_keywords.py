@@ -63,6 +63,16 @@ for fi in (files):
                 hdr = hdu[0].header
                 if ('CRVAL1' in hdr) & ('CDELT1' in hdr) & ('NAXIS1' in hdr) & (hdr['CRVAL1'] > 2000):
                     CRVAL1=CRVAL1+1
+                elif ('CRVAL1' in hdr) & ('CDELT1' in hdr) & ('NAXIS1' in hdr) & (hdr['CRVAL1'] < 2000) & (hdr['CUNIT1'] == "nm"):
+                    fits.setval(fi, 'CDELT1', value=hdr['CDELT1']*10)
+                    fits.setval(fi, 'CRVAL1', value=hdr['CRVAL1']*10)
+                    fits.setval(fi, 'CUNIT1', value="Angstrom")
+                    CRVAL1=CRVAL1+1
+                elif ('CRVAL1' in hdr) & ('CDELT1' in hdr) & ('NAXIS1' in hdr) & (hdr['CRVAL1'] < 2000) & (hdr['CUNIT1'] == "Angstrom"):
+                    fits.setval(fi, 'CDELT1', value=hdr['CDELT1']*10)
+                    fits.setval(fi, 'CRVAL1', value=hdr['CRVAL1']*10)
+                    fits.setval(fi, 'CUNIT1', value="Angstrom")
+                    CRVAL1=CRVAL1+1
                 else:
                     print("Wavelenght missing:       ", fi[len(dir):])
                     crit = 1

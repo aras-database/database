@@ -41,7 +41,7 @@ $(document).ready( function () {
     "order": [[1,'asc']],
 	"columnDefs": [    { "type": "num", "targets": 6 },{
      "targets": [ 6 ],
-     "orderable": false
+     "orderable": true
   }  ]
 });
 } );
