@@ -408,11 +408,17 @@ camp_string = []
 surv_string = []
 outb_string = []
 for stars in campaigns["star_name_string"]:
-    if campaigns["campaign_type"][campaigns["star_name_string"]==stars] == "Novae in outburst":
+    if campaigns["campaign_type"][campaigns["star_name_string"]==stars] == "Nova in outburst":
         try:
             outb_string = outb_string + ", " + novae["name"][novae["star_name_string"]==stars][0]
         except:
             outb_string = novae["name"][novae["star_name_string"]==stars][0]
+            
+    if campaigns["campaign_type"][campaigns["star_name_string"]==stars] == "Symbiotic nova outburst":
+        try:
+            outb_string = outb_string + ", " + novae["name"][novae["star_name_string"]==stars][0] + " (SyN)"
+        except:
+            outb_string = novae["name"][novae["star_name_string"]==stars][0] + " (SyN)"
 
 if not camp_string:
     camp_string = ""
@@ -421,7 +427,7 @@ if not surv_string:
 if not outb_string:
     outb_string = ""
 home_table = home.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Name","RA (2000)", "DEC (2000)", "GCVS", "Discovery Name", "No. of spectra", "First spectrum", "Last spectrum", "Days since last"])
-sym_info = '<p class="card-text">Number of stars: '+str(len(home))+'\n</p><p class="card-text">Number of spectra: '+str(home.astype({'No. of spectra': 'int32'})["No. of spectra"].sum(axis=0))+'\n</p><p class="card-text">Last update: '+str(Time.now().isot)[0:10]+', '+str(Time.now().isot)[11:16]+'</p>\n<br><br>\n<a href="observers.html" class="btn btn-secondary">Observers</a>\n        <a href="observatories.html" class="btn btn-secondary">Observatories</a>\n\n      </div>\n    </div>\n  </div>\n\n  <div class="col-sm-6">\n    <div class="card">\n      <div class="card-body">\n        <h5 class="card-title">Stars of special interest</h5>\n<p class="card-text" style="margin-bottom:2.358cm;">Novae outbursts: '+outb_string
+sym_info = '<p class="card-text">Number of stars: '+str(len(home))+'\n</p><p class="card-text">Number of spectra: '+str(home.astype({'No. of spectra': 'int32'})["No. of spectra"].sum(axis=0))+'\n</p><p class="card-text">Last update: '+str(Time.now().isot)[0:10]+', '+str(Time.now().isot)[11:16]+'</p>\n<br><br>\n<a href="observers.html" class="btn btn-secondary">Observers</a>\n        <a href="observatories.html" class="btn btn-secondary">Observatories</a>\n\n      </div>\n    </div>\n  </div>\n\n  <div class="col-sm-6">\n    <div class="card">\n      <div class="card-body">\n        <h5 class="card-title">Stars of special interest</h5>\n<p class="card-text" style="margin-bottom:2.358cm;">Novae in outburst: '+outb_string
 home_top = open("../website_source/home_top_novae.txt", "r").read()
 home_footer = open("../website_source/home_footer_novae.txt", "r").read()
 home_info = open("../website_source/home_info_novae.txt", "r").read()
