@@ -3,7 +3,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;AMP-FR;AMP-FR;un;Lyon;FR;4.82;45.76
 0;Antibes;ANT-FR;;Antibes;FR;7.12;43.58
 0;LAquila;AQL-IT;;L'Aquila;IT;13.41;42.33
-0;Arizona;ARI-US;;???;US;0;0
+0;Arizona;ARI-US;;???;US;0.0;0.0
 0;Mirranook Armidale;ARM-AU;;Mirranook Armidale;AU;151.57;-30.46
 0;Antibes Saint-Jean;ANT-FR;;Antibes;FR;7.12;43.58
 0;Aspremont;ASP-FR;;Aspremont;FR;7.24;43.78
@@ -16,13 +16,13 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;CALC;CAL-FR;Observatoire CALA;Lyon;FR;4.82;45.76
 0;Obs CALA (LYON);CAL-FR;Observatoire CALA;Lyon;FR;4.82;45.76
 0;Observatoire du CALA;CAL-FR;Observatoire du CALA;;FR;4.82;45.76
-0;CAR-US;CAR-US;un;Carrollton TX;US;-96.92;33
-0;Carrollton TX;CAR-US;un;Carrollton TX;US;-96.92;33
+0;CAR-US;CAR-US;un;Carrollton TX;US;-96.92;33.0
+0;Carrollton TX;CAR-US;un;Carrollton TX;US;-96.92;33.0
 0;Castanet;CAS-FR;;Toulouse;FR;1.51;43.52
 0;Castanet-Tolosan;CAS-FR;;Toulouse;FR;1.51;43.52
 0;Toulouse (FR);CAS-FR;;Toulouse;FR;1.51;43.52
 0;CAS-FR;CAS-FR;un;Toulouse;FR;1.51;43.52
-0;CERGA;CER;un;un;un;0;0
+0;CERGA;CER;un;un;un;0.0;0.0
 0;Claix;CLX-FR;;Claix;FR;5.68;45.13
 0;Desert Celestial Observatory;DCO-US;Desert Celestial Observatory;;US;-111.8;33.37
 0;DESERT CELESTIAL OBSERVATORY;DCO-US;Desert Celestial Observatory;;US;-111.8;33.37
@@ -36,9 +36,9 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;East Essex;EES-UK;;East Essex;UK;0.85;50.68
 0;Le Havre;HVR-FR;;Le Havre;FR;0.18;49.5
 0;Chelles;CHE-FR;;Chelles;FR;2.5929;48.88
-0;IGeoE - Portugal;IGE-PT;;;PT;0;0
+0;IGeoE - Portugal;IGE-PT;;;PT;0.0;0.0
 0;Jade Tianjin;JAD-CH;;Jade;CH;117.25;39.16
-0;Juvignac;JUV-FR;;;;0;0
+0;Juvignac;JUV-FR;;;;0.0;0.0
 0;K10-FR_Reilhanette;K10-FR;un;Reilhanette;FR;5.42;44.17
 0;K21 St Saturnin Les Avignon;K21-FR;;St Saturnin Les Avignon;FR;4.93;43.96
 0;K21-FR;K21-FR;;St Saturnin Les Avignon;FR;4.93;43.96
@@ -50,7 +50,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;LEC-IT;LEC-IT;;;IT;18.06;40.2
 0;miror;LEC-IT;;;IT;18.06;40.2
 0;Livermore CA USA;LIV-US;;Livermore (CA);US;-121.76;67.69
-0;LSO;LSO-??;;;;0;0
+0;LSO;LSO-??;;;;0.0;0.0
 0;Labastide Saint Sernin;LSS-FR;;Labastide Saint Sernin;FR;1.47;43.74
 0;Labastide St Sernin;LSS-FR;;Labastide Saint Sernin;FR;1.47;43.74
 0;Lakeview Palms, Qld;LVP-AU;;Lake View Palms;AU;153.41;-28.08
@@ -58,20 +58,20 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Madrid-Ventilla;MAD-SP;;Madrid;SP;-2.14;37.72
 0;MDRDVENTILLA;MAD-SP;;Madrid;SP;-2.14;37.72
 0;Manhattan, IL;MAN-US;;Manhattan (IL);US;-87.93;41.46
-0;Mardella;MAR-AU;;Mardella;AU;0;0
-0;Maubeuge;MAU-FR;;Maubeuge;FR;0.15;43
+0;Mardella;MAR-AU;;Mardella;AU;0.0;0.0
+0;Maubeuge;MAU-FR;;Maubeuge;FR;0.15;43.0
 0;Arnprior_ON_CA;MRO-CA;;Arnprior (ON);CA;-76.44;45.4
 0;Mill Ridge_ON_CA;MRO-CA;;Arnprior (ON);CA;-76.44;45.4
 0;MRO-CA;MRO-CA;;Arnprior (ON);CA;-76.44;45.4
 0;Mt. Pinos, Nordic Base, CA;MTP-US;;Mt. Pinos, Nordic Base, CA;UK;-119.13;34.81
-0;Nieborowice, PL;NIE-PL;;Nieborowice;PL;0;0
+0;Nieborowice, PL;NIE-PL;;Nieborowice;PL;0.0;0.0
 0;OAF;OAF-FR;;;FR;7.21;47.99
 0;OAF-FR;OAF-FR;;;FR;7.21;47.99
 0;Oakhill, Somerset UK;OAK-UK;;Oakhill;UK;-2.52;51.22
 0;OAO;OAO-FR;Observatoire Astronomique d'Osenbach;Osenbach;FR;7.22;47.99
 0;Osenbach;OAO-FR;Observatoire Astronomique d'Osenbach;Osenvach;FR;7.21;47.99
 0;Astroqueyras;OAQ-FR;Observatoire Astroqueyras;;FR;6.91;44.7
-0;OAV;OAV-FR;;;FR;0;0
+0;OAV;OAV-FR;;;FR;0.0;0.0
 0;38420 Revel;OBE-FR;Observatoire de la Belle Etoile;Revel;FR;2.01;43.46
 0;OBE-FR;OBE-FR;Observatoire de la Belle Etoile;Revel;FR;2.01;43.46
 0;OCA;OCA-FR;Observatoire Calern;Calern;FR;6.93;43.75
@@ -85,7 +85,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Okie-Tex Star Party 2015;OKI-US;;???;US;-102.95;36.9
 0;Observatoire de Mars;OMA-FR;Observatoire de Mars;;FR;4.34;45.01
 0;Osservatorio Monte Baldo;OMB-IT;Osservatorio Monte Baldo;;IT;45.42;10.51
-0;Observatoire du Pilat;OPI-FR;Observatoire du Pilat;;FR;0;0
+0;Observatoire du Pilat;OPI-FR;Observatoire du Pilat;;FR;0.0;0.0
 0;Orlienas;ORL-FR;;Orlienas;FR;4.73;45.66
 0;Rouen;ORS-FR;Observatoire Rouen Sud;Rouen;FR;1.08;49.42
 0;Rouen (France);ORS-FR;Observatoire Rouen Sud;Rouen;FR;1.08;49.42
@@ -97,7 +97,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Observatoire St��Maurice;OSM-FR;Observatoire St��Maurice;;FR;0.49;46.37
 0;Observatoire de la Tourbiere;OTO-FR;Observatoire la Tourbiere;Chabons;FR;5.43;45.42
 0;Observatoire la Tourbiere;OTO-FR;Observatoire la Tourbiere;Chabons;FR;5.43;45.42
-0;O.V.A. (Observatoire du Val de l'Arc);OVA-FR;;;FR;0;0
+0;O.V.A. (Observatoire du Val de l'Arc);OVA-FR;;;FR;0.0;0.0
 0;PAG-SP;PAG-SP;;Puig Agulles;SP;1.93;41.39
 0;Puig Agulles;PAG-SP;;Puig Agulles;SP;1.93;41.39
 0;Pibrac Backyard Observatory;PBO-FR;;Pibrac;FR;1.28;43.62
@@ -122,108 +122,110 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Sta. Maria de Montmagastrell;SMM-SP;;Sta. Maria De Montmagrastell;SP;1.11;41.72
 0;Sta. Maria M.;SMM-SP;;Sta. Maria De Montmagrastell;SP;1.11;41.72
 0;SMU;SMU-FR;;Saint Martin d'Uriage;FR;5.83;45.15
-0;San Polo a Mosciano AAF;SPL-??;;;;0;0
+0;San Polo a Mosciano AAF;SPL-??;;;;0.0;0.0
 0;Shenton Park;SPO-AU;;Shenton;AU;115.82;-31.96
-0;SSO-AU;SSO-AU;un;un;un;0;0
+0;SSO-AU;SSO-AU;un;un;un;0.0;0.0
 0;St Sordelin;SSO-FR;;Vaux sur Mer;FR;-1.03;45.65
-0;iTelescope - SSO site;SSO-AU;un;un;un;0;0
-0;Siding Springs Observatory iTelescope Facility;SSO-AU;un;un;un;0;0
+0;iTelescope - SSO site;SSO-AU;un;un;un;0.0;0.0
+0;Siding Springs Observatory iTelescope Facility;SSO-AU;un;un;un;0.0;0.0
 0;Staffelfelden;STA-FR;;STA-FR;FR;47.83;7.28
 0;Stock,Essex,UK;STO-UK;;Stock;UK;0.45;51.66
 0;Tata;TAT-HU;;Tata;HU;18.32;47.65
 0;TAT-HU;TAT-HU;;Tata;HU;18.32;47.65
-0;Three Hills Observatory;THO-UK;Three Hills Observatory;;UK;0;0
+0;Three Hills Observatory;THO-UK;Three Hills Observatory;;UK;0.0;0.0
 0;Tours;TRS-FR;;Tours;FR;0.68;47.38
 0;University of Adelaide;UAD-AU;;Adelaide;AU;138.6;-34.92
 0;CDK17 LhiresIII ATIK460EX;UHO-US;;Los Angeles (CA);US;-118.18;34.06
 0;University Hills, Los Angeles, CA;UHO-US;;Los Angeles (CA);US;-118.18;34.06
 0;University Hils, Los Angeles, CA;UHO-US;;Los Angeles (CA);US;-118.18;34.06
 0;UniversityHills-LosAngeles, CA;UHO-US;;Los Angeles (CA);US;-118.18;34.06
-0;unknown;???-??;un;un;un;0;0
+0;unknown;???-??;un;un;un;0.0;0.0
 0;West Challow Observatory;WCO-UK;West Challow Observatory;;UK;-1.47;51.59
 0;West Challow UK;WCO-UK;West Challow Observatory;;UK;-1.47;51.59
 0;West_Challow_UK;WCO-UK;West Challow Observatory;;UK;-1.47;51.59
 0;Yank Gulch;YGU-US;un;un;US;-122.8;42.22
 0;Barnards Yatton;YAT-UK;;;UK;-2.82;51.38
 0;Barnards_Yatton;YAT-UK;;;UK;-2.82;51.38
-0;La Blaque Varages;LBA-FR;;La Blaque Varages;FR;0;0
-0;Desert Wing;DWO-US;un;un;un;0;0
+0;La Blaque Varages;LBA-FR;;La Blaque Varages;FR;0.0;0.0
+0;Desert Wing;DWO-US;un;un;un;0.0;0.0
 0;East Essex,UK;EES-UK;;East Essex;UK;0.85;50.68
-0;iTelescope, SSO;SSO-AU;un;un;un;0;0
-0;SSO;SSO-AU;un;un;un;0;0
-0;DSC Chile;DSC-CL;un;un;un;0;0
-0;AMPERE;AMP-FR;un;un;un;0;0
-0;AMPERE LYON(FR);AMP-FR;un;un;un;0;0
-0;AMPERE_LYON;AMP-FR;un;un;un;0;0
-0;AMPERE_LYON(FR);AMP-FR;un;un;un;0;0
-0;Antibes Saint_Jean;ANT-FR;un;un;un;0;0
-0;Aspremont (06);ASP-FR;un;un;un;0;0
-0;Aspremont (06) Fr;ASP-FR;un;un;un;0;0
-0;AstroLAB IRIS;ALI-BE;un;un;un;0;0
-0;Baltimore, MD, USA;BAL-US;un;un;un;0;0
-0;Boos;BOO-FR;un;un;un;0;0
-0;BRIXIIS;BRI-BE;un;un;un;0;0
-0;Bucharest;BUC-RO;un;un;un;0;0
-0;Campinas-SP-BR;CAM-BR;un;un;un;0;0
-0;Canberra 35 13 17 141 01 49 E;CAN-AU;un;un;un;0;0
-0;Canberra 35 13 17 S 141 01 49 E;CAN-AU;un;un;un;0;0
-0;dijon;DIJ-FR;un;un;un;0;0
-0;Durham UK;DUR-UK;un;un;un;0;0
-0;EB2 TSC225 LHiReS3#30 1200;OGV-FR;un;un;un;0;0
-0;Falera;FAL-??;un;un;un;0;0
-0;Fayssac;FAY-FR;un;un;un;0;0
-0;Fontcaude;FON-FR;un;un;un;0;0
-0;Giesen (Germany);GIE-DE;un;un;un;0;0
-0;Houten, Netherlands;HOU-NL;un;un;un;0;0
-0;Houten, NL;HOU-NL;un;un;un;0;0
-0;Houten, The Netherlands;HOU-NL;un;un;un;0;0
-0;IAC80_Teide;IAC80-SP;un;un;un;0;0
-0;Idaho falls;DHO-US;un;un;un;0;0
-0;Idaho Falls 2013;DHO-US;un;un;un;0;0
-0;Kermerrien Observatory;KER-FR;un;un;un;0;0
-0;KG Home;KGH-UK;un;un;un;0;0
-0;Latham;LAT-AU;un;un;un;0;0
-0;LOR-FR;LOR-FR;un;un;un;0;0
-0;Maienfeld;MAI-??;un;un;un;0;0
-0;Melbourne, Australia;MEL-AU;un;un;un;0;0
-0;MEZE;MEZ-FR;un;un;un;0;0
-0;Miami;MIA-US;un;un;un;0;0
-0;Mielec, PL;MIE-PL;un;un;un;0;0
-0;O.V.A.;OVA-FR;un;un;un;0;0
-0;OAMH Osservatorio Hack Firenze;???-??;un;un;un;0;0
-0;Obs Pollmann Leverkusen;OPL-DE;un;un;un;0;0
-0;Observatoire de la grande vallee;OGV-FR;un;un;un;0;0
-0;Observatoire de St Veran;???-??;un;un;un;0;0
-0;Observatoire Haute Provence;OHP-FR;un;un;un;0;0
-0;Okie-Tex Star Party 2013;TEX-US;un;un;un;0;0
-0;OTSP;OKL-US;un;un;un;0;0
-0;OTSP 2017 Oklahoma;OKL-US;un;un;un;0;0
-0;OTSP2014;TEX-US;un;un;un;0;0
-0;Raheny, Dublin, J41;DUB-IE;un;un;un;0;0
-0;Revel38420;REV-FR;un;un;un;0;0
-0;Roncevaux;RON-FR;un;un;un;0;0
-0;RON-FR;RON-FR;un;un;un;0;0
-0;rwschram;???-??;un;un;un;0;0
-0;Saltwater;SAL-AU;un;un;un;0;0
-0;sauk centre, mn usa;SAU-US;un;un;un;0;0
-0;sauk centre, mn, usa;SAU-US;un;un;un;0;0
-0;Schwerzenbach;SCH-CH;un;un;un;0;0
-0;Sirene;SIR-FR;un;un;un;0;0
-0;STA MARIA DE MONTMAGASTRELL;SMM-SP;un;un;un;0;0
-0;T60 Pic du Midi;PDM-FR;un;un;un;0;0
-0;THO   robin@threehillsobservatory.co.uk;THO-UK;un;un;un;0;0
-0;THREE HILLS OBSERVATORY;THO-UK;un;un;un;0;0
-0;TOURS;TRS-FR;un;un;un;0;0
-0;TSP;TEX-US;un;un;un;0;0
-0;TSP 2013;TEX-US;un;un;un;0;0
-0;TSP 2018;TEX-US;un;un;un;0;0
-0;TSP2018;TEX-US;un;un;un;0;0
-0;UnderOak Observatory;UOO-US;un;un;un;0;0
-0;UnderOak USA;UOO-US;un;un;un;0;0
-0;Varsity Lakes;VAL-AU;un;un;un;0;0
-0;West_Challow_Observatory;WCO-UK;un;un;un;0;0
-0;West_Challow_Observatory_UK;WCO-UK;un;un;un;0;0
-0;Kermerrien observatory;KER-FR;un;un;un;0;0
-0;Meze;MEZ-FR;un;un;un;0;0
-0;RWSchram;???-??;un;un;un;0;0
-0;SSO-FR;SSO-FR;un;un;un;0;0
+0;iTelescope, SSO;SSO-AU;un;un;un;0.0;0.0
+0;SSO;SSO-AU;un;un;un;0.0;0.0
+0;DSC Chile;DSC-CL;un;un;un;0.0;0.0
+0;AMPERE;AMP-FR;un;un;un;0.0;0.0
+0;AMPERE LYON(FR);AMP-FR;un;un;un;0.0;0.0
+0;AMPERE_LYON;AMP-FR;un;un;un;0.0;0.0
+0;AMPERE_LYON(FR);AMP-FR;un;un;un;0.0;0.0
+0;Antibes Saint_Jean;ANT-FR;un;un;un;0.0;0.0
+0;Aspremont (06);ASP-FR;un;un;un;0.0;0.0
+0;Aspremont (06) Fr;ASP-FR;un;un;un;0.0;0.0
+0;AstroLAB IRIS;ALI-BE;un;un;un;0.0;0.0
+0;Baltimore, MD, USA;BAL-US;un;un;un;0.0;0.0
+0;Boos;BOO-FR;un;un;un;0.0;0.0
+0;BRIXIIS;BRI-BE;un;un;un;0.0;0.0
+0;Bucharest;BUC-RO;un;un;un;0.0;0.0
+0;Campinas-SP-BR;CAM-BR;un;un;un;0.0;0.0
+0;Canberra 35 13 17 141 01 49 E;CAN-AU;un;un;un;0.0;0.0
+0;Canberra 35 13 17 S 141 01 49 E;CAN-AU;un;un;un;0.0;0.0
+0;dijon;DIJ-FR;un;un;un;0.0;0.0
+0;Durham UK;DUR-UK;un;un;un;0.0;0.0
+0;EB2 TSC225 LHiReS3#30 1200;OGV-FR;un;un;un;0.0;0.0
+0;Falera;FAL-??;un;un;un;0.0;0.0
+0;Fayssac;FAY-FR;un;un;un;0.0;0.0
+0;Fontcaude;FON-FR;un;un;un;0.0;0.0
+0;Giesen (Germany);GIE-DE;un;un;un;0.0;0.0
+0;Houten, Netherlands;HOU-NL;un;un;un;0.0;0.0
+0;Houten, NL;HOU-NL;un;un;un;0.0;0.0
+0;Houten, The Netherlands;HOU-NL;un;un;un;0.0;0.0
+0;IAC80_Teide;IAC80-SP;un;un;un;0.0;0.0
+0;Idaho falls;DHO-US;un;un;un;0.0;0.0
+0;Idaho Falls 2013;DHO-US;un;un;un;0.0;0.0
+0;Kermerrien Observatory;KER-FR;un;un;un;0.0;0.0
+0;KG Home;KGH-UK;un;un;un;0.0;0.0
+0;Latham;LAT-AU;un;un;un;0.0;0.0
+0;LOR-FR;LOR-FR;un;un;un;0.0;0.0
+0;Maienfeld;MAI-??;un;un;un;0.0;0.0
+0;Melbourne, Australia;MEL-AU;un;un;un;0.0;0.0
+0;MEZE;MEZ-FR;un;un;un;0.0;0.0
+0;Miami;MIA-US;un;un;un;0.0;0.0
+0;Mielec, PL;MIE-PL;un;un;un;0.0;0.0
+0;O.V.A.;OVA-FR;un;un;un;0.0;0.0
+0;OAMH Osservatorio Hack Firenze;???-??;un;un;un;0.0;0.0
+0;Obs Pollmann Leverkusen;OPL-DE;un;un;un;0.0;0.0
+0;Observatoire de la grande vallee;OGV-FR;un;un;un;0.0;0.0
+0;Observatoire de St Veran;???-??;un;un;un;0.0;0.0
+0;Observatoire Haute Provence;OHP-FR;un;un;un;0.0;0.0
+0;Okie-Tex Star Party 2013;TEX-US;un;un;un;0.0;0.0
+0;OTSP;OKL-US;un;un;un;0.0;0.0
+0;OTSP 2017 Oklahoma;OKL-US;un;un;un;0.0;0.0
+0;OTSP2014;TEX-US;un;un;un;0.0;0.0
+0;Raheny, Dublin, J41;DUB-IE;un;un;un;0.0;0.0
+0;Revel38420;REV-FR;un;un;un;0.0;0.0
+0;Roncevaux;RON-FR;un;un;un;0.0;0.0
+0;RON-FR;RON-FR;un;un;un;0.0;0.0
+0;rwschram;???-??;un;un;un;0.0;0.0
+0;Saltwater;SAL-AU;un;un;un;0.0;0.0
+0;sauk centre, mn usa;SAU-US;un;un;un;0.0;0.0
+0;sauk centre, mn, usa;SAU-US;un;un;un;0.0;0.0
+0;Schwerzenbach;SCH-CH;un;un;un;0.0;0.0
+0;Sirene;SIR-FR;un;un;un;0.0;0.0
+0;STA MARIA DE MONTMAGASTRELL;SMM-SP;un;un;un;0.0;0.0
+0;T60 Pic du Midi;PDM-FR;un;un;un;0.0;0.0
+0;THO   robin@threehillsobservatory.co.uk;THO-UK;un;un;un;0.0;0.0
+0;THREE HILLS OBSERVATORY;THO-UK;un;un;un;0.0;0.0
+0;TOURS;TRS-FR;un;un;un;0.0;0.0
+0;TSP;TEX-US;un;un;un;0.0;0.0
+0;TSP 2013;TEX-US;un;un;un;0.0;0.0
+0;TSP 2018;TEX-US;un;un;un;0.0;0.0
+0;TSP2018;TEX-US;un;un;un;0.0;0.0
+0;UnderOak Observatory;UOO-US;un;un;un;0.0;0.0
+0;UnderOak USA;UOO-US;un;un;un;0.0;0.0
+0;Varsity Lakes;VAL-AU;un;un;un;0.0;0.0
+0;West_Challow_Observatory;WCO-UK;un;un;un;0.0;0.0
+0;West_Challow_Observatory_UK;WCO-UK;un;un;un;0.0;0.0
+0;Kermerrien observatory;KER-FR;un;un;un;0.0;0.0
+0;Meze;MEZ-FR;un;un;un;0.0;0.0
+0;RWSchram;???-??;un;un;un;0.0;0.0
+0;SSO-FR;SSO-FR;un;un;un;0.0;0.0
+0;ASBRA I - S�o Sebasti�o da Grama;SSG-BR;;BR;-46.792;-21.70169;
+0;ASBRA I - S?o Sebasti?o da Grama;SSG-BR;un;un;un;0.0;0.0
