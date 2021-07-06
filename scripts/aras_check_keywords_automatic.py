@@ -75,7 +75,7 @@ for fi in (files):
                     CRVAL1=CRVAL1+1
                 else:
                     print("Wavelenght missing:       ", fi[len(dir):])
-                    crit = 1
+                    crit = 1  
                 if 'JD-MID' in hdr:
                     if hdr['JD-MID'] == 0:
                         if 'DATE-OBS'in hdr:
@@ -90,7 +90,7 @@ for fi in (files):
                     err=4
                 else:
                     print("Observing time missing:      ", fi[len(dir):])
-                    crit=1
+                    crit=1  
                 if crit == 0:
                     if 'OBSERVER' in hdr:
                         if hdr['OBSERVER'] == "":
@@ -125,10 +125,19 @@ for fi in (files):
                     else:
                         print("Site missing:             ", fi[len(dir):])
                         err=2
+
                     if 'SPE_RPOW' in hdr:
                         if  hdr['SPE_RPOW'] > 0:
                             resOK=1
                             res1=res1+1
+                    if 'SPE_RPOW' in hdr:
+                        if  hdr['SPE_RPOW'] > 0:
+                            resOK=1
+                            res1=res1+1
+
+                    
+
+
                     if ('BSS_ITRP' in hdr) & (resOK == 0):
                         if hdr['BSS_ITRP'] > 0:
                             resOK=1
@@ -136,7 +145,7 @@ for fi in (files):
                     if resOK == 0:
                         if 'CDELT1' in hdr:
                             res3=res3+1
-
+                    
     except:
         print("Corrupted file (unknown error):           ", fi[len(dir):])
         nocor=nocor+1
