@@ -240,4 +240,6 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Wells, Somerset UK;no;un;un;un;0.0;0.0
 0;orlienas;ORL-FR;un;un;un;0.0;0.0
 0;-;;un;un;un;0.0;0.0
-0;OMSJ;OSJ-CA;Observatoire du Mont Saint Joseph;;CA;-71;45
+0;OMSJ;OSJ-CA;Observatoire du Mont Saint Joseph;;CA;-71.0;45.0
+0;UNM-US;DD Las Cruces-New Mexico;un;US;-106.56;32.28;
+0;DD Las Cruces-New Mexico;UNM-US;un;un;un;0.0;0.0
