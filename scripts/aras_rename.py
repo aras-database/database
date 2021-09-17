@@ -47,6 +47,7 @@ for fi in (files):
             time_string = "0"+time_string
         date_name = (Time(hdr['JD-MID'], format="jd").isot[0:10].replace("-","")+"_"+time_string)
         dst = "asdb_"+obj_name+"_"+date_name+".fit"
+        print(dst)
     while os.path.exists('../new_spectra/' + dst) == True:
         if int(dst[-7:-4]) < 100:
             dst = dst[:-7]+"0"+str(int(dst[-7:-4])+1)+dst[-4:]
