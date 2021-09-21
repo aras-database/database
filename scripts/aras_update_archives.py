@@ -41,7 +41,7 @@ try:
 except:
     pass
 
-dwarfnovae = ascii.read("../data/dwarfnovae.csv", header_start=0, data_start=1, delimiter=';',format='csv')
+dwarfnovae = ascii.read("../data/dwarf_novae.csv", header_start=0, data_start=1, delimiter=';',format='csv')
 try:
     novae.rename_column('ď»żstar_name_string', 'star_name_string')
 except:
