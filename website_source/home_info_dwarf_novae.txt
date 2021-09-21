@@ -1,0 +1,16 @@
+</p>
+		<br><br>
+		<p class="card-text" ><i>send spectra to francoismathieu.teyssier [at] gmail.com & arasdatabase [at] gmail.com</i></p>
+
+
+	  </div>
+    </div>
+  </div>
+
+</div>
+<br>
+<a href="https://ui.adsabs.harvard.edu/public-libraries/5OTOTwmjSzybSEuLO5kWFA" class="btn btn-secondary btn-lg btn-block active" role="button" aria-pressed="true">Publications using ARAS spectra</a>
+<br>
+
+<br>
+<!-- <h3>Dwarf Novae</h3> -->
