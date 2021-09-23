@@ -467,7 +467,7 @@ since_last_spec = []
 num_spec = []
 name_website = []
 for dwarf_nova in dwarf_novae["star_name_string"]:
-    if nova in symbiotic_stars["star_name_string"]:
+    if dwarf_nova in dwarf_novae["star_name_string"]:
         first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
         last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
         since_last_spec.append('<script>var date1, date2;date1 = new Date();date2 = new Date( "'+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10])+' 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script>')
@@ -475,15 +475,15 @@ for dwarf_nova in dwarf_novae["star_name_string"]:
         name_website.append('<a href="'+dwarf_nova+'.html">'+dwarf_novae["name"][dwarf_novae["star_name_string"]==dwarf_nova][0]+'</a>')
     else:
         try:
-            first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==nova]["date"])).value[:10]))
-            last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==nova]["date"])).value[:10]))
-            since_last_spec.append('<script>var date1, date2;date1 = new Date();date2 = new Date( "'+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==nova]["date"])).value[:10])+' 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script>')
+            first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
+            last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
+            since_last_spec.append('<script>var date1, date2;date1 = new Date();date2 = new Date( "'+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10])+' 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script>')
             num_spec.append(str(len(all_spectra[all_spectra["star_name_string"]==nova])))
-            name_website.append('<a href="'+nova+'.html">'+novae["name"][novae["star_name_string"]==nova][0]+'</a>')
+            name_website.append('<a href="'+nova+'.html">'+dwarf_novae["name"][dwarf_novae["star_name_string"]==dwarf_nova][0]+'</a>')
             if np.max(all_spectra[all_spectra["star_name_string"]==nova]["last_update"]) > 0: #last_update-10000000:
-                star_intro = open("../website_source/"+nova+".txt", "r").read()
-                star_info = '<div class="col-sm-6">\n    <div class="card">\n      <div class="card-body">\n\n        <p class="card-text">Number of spectra:   '+str(len(all_spectra[all_spectra["star_name_string"]==nova]))+'</p>\n<p class="card-text">First spectrum:   '+str(np.min(Time(all_spectra[all_spectra["star_name_string"]==nova]["date"])).value[:10])+'</p>\n<p class="card-text">Last spectrum:   '+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==nova]["date"])).value[:10])+'</p>\n<br>\n<p class="card-text" style="margin-top:0.36cm;"><i>send spectra to francoismathieu.teyssier [at] gmail.com & arasdatabase [at] gmail.com</i></p>\n      </div>\n    </div>\n  </div>\n\n</div>\n\n<br><style>table {text-align: center;}table thead th {text-align: center;}</style>'
-                current = df[df["star_name_string"]==nova]
+                star_intro = open("../website_source/"+dwarf_nova+".txt", "r").read()
+                star_info = '<div class="col-sm-6">\n    <div class="card">\n      <div class="card-body">\n\n        <p class="card-text">Number of spectra:   '+str(len(all_spectra[all_spectra["star_name_string"]==dwarf_nova]))+'</p>\n<p class="card-text">First spectrum:   '+str(np.min(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10])+'</p>\n<p class="card-text">Last spectrum:   '+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10])+'</p>\n<br>\n<p class="card-text" style="margin-top:0.36cm;"><i>send spectra to francoismathieu.teyssier [at] gmail.com & arasdatabase [at] gmail.com</i></p>\n      </div>\n    </div>\n  </div>\n\n</div>\n\n<br><style>table {text-align: center;}table thead th {text-align: center;}</style>'
+                current = df[df["star_name_string"]==dwarf_nova]
                 campaign_string=[]
                 try:
                     if campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(nova)] == "Ongoing campaign":
