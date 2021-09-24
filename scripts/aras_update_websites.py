@@ -566,18 +566,12 @@ home["Name"] = name_website
 camp_string = []
 surv_string = []
 outb_string = []
-# for stars in campaigns["star_name_string"]:
-#     if campaigns["campaign_type"][campaigns["star_name_string"]==stars] == "Nova in outburst":
-#         try:
-#             outb_string = outb_string + ", " + dwarf_novae["name"][dwarf_novae["star_name_string"]==stars][0]
-#         except:
-#             outb_string = dwarf_novae["name"][dwarf_novae["star_name_string"]==stars][0]
-            
-#     if campaigns["campaign_type"][campaigns["star_name_string"]==stars] == "Symbiotic nova outburst":
-#         try:
-#             outb_string = outb_string + ", " + dwarf_novae["name"][dwarf_novae["star_name_string"]==stars][0] + " (SyN)"
-#         except:
-#             outb_string = dwarf_novae["name"][dwarf_novae["star_name_string"]==stars][0] + " (SyN)"
+for stars in campaigns["star_name_string"]:
+    if campaigns["campaign_type"][campaigns["star_name_string"]==stars] == "Dwarf Nova in outburst":
+        try:
+            outb_string = outb_string + ", " + dwarf_novae["name"][dwarf_novae["star_name_string"]==stars][0]
+        except:
+            outb_string = dwarf_novae["name"][dwarf_novae["star_name_string"]==stars][0]
 
 if not camp_string:
     camp_string = ""
