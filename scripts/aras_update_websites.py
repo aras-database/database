@@ -467,7 +467,7 @@ num_spec = []
 name_website = []
 for dwarf_nova in dwarf_novae["star_name_string"]: ## why symbiotic_stars in novae part ?
     print(dwarf_nova)
-    if dwarf_nova in dwarf_novae["star_name_string"]:
+    if dwarf_nova in symbiotic_stars["star_name_string"]:
         first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
         last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
         since_last_spec.append('<script>var date1, date2;date1 = new Date();date2 = new Date( "'+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10])+' 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script>')
