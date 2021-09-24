@@ -485,16 +485,16 @@ for dwarf_nova in dwarf_novae["star_name_string"]: ## why symbiotic_stars in nov
                 current = df[df["star_name_string"]==dwarf_nova]
                 campaign_string=[]
                 try:
-                    if campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(nova)] == "Ongoing campaign":
+                    if campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(dwarf_nova)] == "Ongoing campaign":
                         campaign_type = "bg-success"
-                    elif campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(nova)] == "Nova in outburst":
+                    elif campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(dwarf_nova)] == "Dwarf Nova in outburst":
                         campaign_type = "bg-danger"
                     else:
                         campaign_type = "bg-dark"
                     try:
-                        campaign_string = '<div class="card text-white '+campaign_type+' mb-3">\n<div class="card-body">\n<h5 class="card-title">'+campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(nova)]+'</h5>\n<p class="card-text"><p class="card-text">'+campaigns["campaign_text"][np.array(campaigns["star_name_string"][:]).tolist().index(nova)]+'</p>\n</div>\n</div>\n<br>\n\n'
+                        campaign_string = '<div class="card text-white '+campaign_type+' mb-3">\n<div class="card-body">\n<h5 class="card-title">'+campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(dwarf_nova)]+'</h5>\n<p class="card-text"><p class="card-text">'+campaigns["campaign_text"][np.array(campaigns["star_name_string"][:]).tolist().index(dwarf_nova)]+'</p>\n</div>\n</div>\n<br>\n\n'
                     except:
-                        campaign_string = '<div class="card text-white '+campaign_type+' mb-3">\n<div class="card-body">\n<h5 class="card-title">'+campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(nova)]+'</h5></div>\n</div>\n<br>\n\n'
+                        campaign_string = '<div class="card text-white '+campaign_type+' mb-3">\n<div class="card-body">\n<h5 class="card-title">'+campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(dwarf_nova)]+'</h5></div>\n</div>\n<br>\n\n'
         
                 except:
                     campaign_string=''
