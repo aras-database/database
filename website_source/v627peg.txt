@@ -1,0 +1,18 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Dwarf Novae</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">V627 Peg</h5>
+      <p class="card-text">RA (2000):  21 38 06.62</p>
+  <p class="card-text">DEC (2000): +26 19 56.03</p>
+  <p class="card-text">V (mag): 9.6 - 16</p>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=V627+Peg&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+  </div>
+  </div>
+</div>
