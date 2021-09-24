@@ -553,11 +553,11 @@ for dwarf_nova in dwarf_novae["star_name_string"]: ## why symbiotic_stars in nov
                 website.close()
         except:
             print("")
-            # first_spec.append(str("-"))
-            # last_spec.append(str("-"))
-            # since_last_spec.append(str("-"))
-            # num_spec.append(str(0))
-            # name_website.append(dwarf_novae["name"][dwarf_novae["star_name_string"]==dwarf_nova][0])
+            first_spec.append(str("-"))
+            last_spec.append(str("-"))
+            since_last_spec.append(str("-"))
+            num_spec.append(str(0))
+            name_website.append(dwarf_novae["name"][dwarf_novae["star_name_string"]==dwarf_nova][0])
             
 print(first_spec)
 print(last_spec)
