@@ -9873,6 +9873,6 @@ dumb;star_name_string;date;time;jd;observer;site;resolution;lambda_min;lambda_ma
 0;asassn-14jv;2014-11-10;17:47;56971.742;BER;BVO-IT;722;4200;7100;asdb_asassn-14jv_20141110_741.fit;asdb_asassn-14jv_20141110_741.png;1632497840;
 0;asassn-15bp;2015-01-27;01:11;57049.05;PSO;TAT-HU;526;3679;7940;asdb_asassn-15bp_20150127_049.fit;asdb_asassn-15bp_20150127_049.png;1632497840;
 0;asassn-15ni;2015-07-28;20:57;57231.873;BER;BVO-IT;700;4500;7151;asdb_asassn-15ni_20150728_873.fit;asdb_asassn-15ni_20150728_873.png;1632497840;
-0;asassn-19om;2019-06-07;23:08;58641.964;PSO;TAT-HU;670;3723;7877;asdb_asassn-19om_20190607_964.fit;asdb_asassn-19om_20190607_964.png;1632497840;
-0;asassn-19om;2019-06-08;21:45;58642.907;PSO;TAT-HU;673;3871;7864;asdb_asassn-19om_20190608_906.fit;asdb_asassn-19om_20190608_906.png;1632497840;
-0;asassn-19om;2019-06-09;07:24;58643.309;FAS;DCO-US;946;3720;7306;asdb_asassn-19om_20190609_308.fit;asdb_asassn-19om_20190609_308.png;1632497840;
+0;asassn-19om;2019-06-07;23:08;58641.964;PSO;TAT-HU;670;3723;7877;asdb_asassn-19om_20190607_964.fit;asdb_asassn-19om_20190607_964.png;1632499134; 
+0;asassn-19om;2019-06-08;21:45;58642.907;PSO;TAT-HU;673;3871;7864;asdb_asassn-19om_20190608_906.fit;asdb_asassn-19om_20190608_906.png;1632499134; 
+0;asassn-19om;2019-06-09;07:24;58643.309;FAS;DCO-US;946;3720;7306;asdb_asassn-19om_20190609_308.fit;asdb_asassn-19om_20190609_308.png;1632499134; 

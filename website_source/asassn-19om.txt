@@ -9,8 +9,8 @@
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">ASASSN-19om</h5>
-      <p class="card-text">RA (2000):  18 39 58.06</p>
-  <p class="card-text">DEC (2000): +22 21 17.80</p>
+      <p class="card-text">RA (2000):  19 28 22.19</p>
+  <p class="card-text">DEC (2000): +55 32 01.20</p>
   <p class="card-text">V (mag):  - </p>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=ASASSN+-19om&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>
