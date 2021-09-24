@@ -8,7 +8,7 @@
 <div class="col-sm-6">
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title"ASASSN-14cv</h5>
+      <h5 class="card-title">ASASSN-14cv</h5>
       <p class="card-text">RA (2000):  17 43 48.57</p>
   <p class="card-text">DEC (2000): + 52 03 45.76/p>
   <p class="card-text">V (mag):  - </p>

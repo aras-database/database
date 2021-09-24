@@ -466,7 +466,6 @@ since_last_spec = []
 num_spec = []
 name_website = []
 for dwarf_nova in dwarf_novae["star_name_string"]: ## why symbiotic_stars in novae part ?
-    print(dwarf_nova)
     if dwarf_nova in symbiotic_stars["star_name_string"]:
         first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
         last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
@@ -559,8 +558,6 @@ for dwarf_nova in dwarf_novae["star_name_string"]: ## why symbiotic_stars in nov
             num_spec.append(str(0))
             name_website.append(dwarf_novae["name"][dwarf_novae["star_name_string"]==dwarf_nova][0])
             
-print(first_spec)
-print(last_spec)
 home["First spectrum"] = first_spec
 home["Last spectrum"] = last_spec
 home["No. of spectra"] = num_spec
