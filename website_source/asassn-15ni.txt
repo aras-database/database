@@ -11,7 +11,7 @@
       <h5 class="card-title">ASASSN-15ni</h5>
       <p class="card-text">RA (2000):  18 39 58.06</p>
   <p class="card-text">DEC (2000): +22 21 17.80</p>
-  <p class="card-text">V (mag):  - </p>
+  <p class="card-text">V (mag): 12.9 - 21:</p>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=ASASSN+-15ni&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>
   </div>

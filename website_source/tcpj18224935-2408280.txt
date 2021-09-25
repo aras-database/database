@@ -11,7 +11,7 @@
       <h5 class="card-title">TCP J18224935-2408280</h5>
       <p class="card-text">RA (2000): 18 22 49.5</p>
   <p class="card-text">DEC (2000): -24 08 28.0</p>
-  <p class="card-text">V (mag): To be completed</p>
+  <p class="card-text">V (mag): 13.1 - 16.0</p>
   <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/TCP J18224935-2408280/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=TCP J18224935-2408280&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
 
