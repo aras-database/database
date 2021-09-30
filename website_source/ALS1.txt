@@ -13,7 +13,7 @@
   <p class="card-text">DEC (2000):  +19 03 49.88</p>
   <p class="card-text">V (mag): 9.76/p>
   <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/ALS+1/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
-      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=[ALS88] 1&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=als-1&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>
   </div>
 </div>
