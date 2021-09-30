@@ -246,6 +246,8 @@ dumb;Keyword;Object
 0;SS LEP;SS Lep
 0;St HA 190;StHA 190
 0;St Ha 32;StHA 32
+0;stha32;StHA 32
+0;StHA32;StHA 32
 0;StHa 149;StHA 149
 0;StHA 149;StHA 149
 0;StHA 169;StHA 169
@@ -261,6 +263,8 @@ dumb;Keyword;Object
 0;StHA 55;StHA 55
 0;STHa 55;StHA 55
 0;STHA 55;StHA 55
+0;stha55;StHA 55
+0;StHA55;StHA 55
 0;stha149;StHA 149
 0;StHA149;StHA 149
 0;StHa169;StHA 169
@@ -592,3 +596,32 @@ dumb;Keyword;Object
 0;V1117 HER;
 0;V1405 CAS;
 0;V1472 AQL;
+0;Mira;o Cet
+0;MIrach;
+0;mwc960;
+0;StHA164;
+0;StHA180;
+0;V1044 Cen;
+0;V1117 Her;
+0;V1391 Cas;
+0;NSV 11776;
+0;V1972 Cyg;
+0;V2506 Sgr;
+0;V3005 Oph;
+0;V3804 Sgr;
+0;V4018 Sgr;
+0;V455 Sco;
+0;V5668 Sgr;
+0;V917 Sco;
+0;Vega;
+0;VV Cep;
+0;VW UMa;
+0;VY UMa;
+0;WRAY 15-1470;
+0;Wray 15-1470;
+0;X Cnc;
+0;X Leo;
+0;YZ Cnc;
+0;Z Cam;
+0;Z CMa;
+0;Z UMa;
