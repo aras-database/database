@@ -49,7 +49,7 @@ for fi in (files):
             hdr = hdu[0].header
             star_name_string = list_of_objects["Object"][list(list_of_objects["Keyword"]).index(list(set([hdr['OBJNAME'].lstrip()]).intersection(set(list_of_objects["Keyword"])))[0])].replace(" ", "").lower()
             date = Time(hdr['JD-MID'], format="jd").isot[0:10]
-            time = Time(hdr['JD-MID'], format="jd").isot[11:16]
+            time = Time(hdr['JD-MID'], format="jd").isot[12:16]
             jd = round(Time(hdr['JD-MID'], format="jd").mjd, 3)
             observer = list_of_observers["Observer"][np.array(list_of_observers["Keyword"][:]).tolist().index(hdr['OBSERVER'])]
             site = list_of_sites["Site"][np.array(list_of_sites["Keyword"][:]).tolist().index(hdr['BSS_SITE'])]
