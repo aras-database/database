@@ -607,7 +607,11 @@ dumb;Keyword;Object
 0;mwc960;MWC 960
 0;v917sco;V917 Sco
 0;V917 Sco;V917 Sco
-0;V1117 HER;##### ToDo: House cleaning from row 603 to 620
+0;StHA 164;StHA 164
+0;stha164;StHA 164
+0;V1044 Cen;V1044 Cen
+0;v1044cen;V1044 Cen
+0;V1117 HER;##### ToDo: House cleaning from this row  to end
 0;V1405 CAS;
 0;V1472 AQL;
 0;MIrach;
@@ -624,4 +628,4 @@ dumb;Keyword;Object
 0;V4018 Sgr;
 0;V5668 Sgr;
 0;V917 Sco;
-
+0;StHA164;StHA 164
