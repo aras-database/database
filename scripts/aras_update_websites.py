@@ -68,7 +68,6 @@ since_last_spec = []
 num_spec = []
 name_website = []
 for symbiotic in symbiotic_stars["star_name_string"]:
-    #print(symbiotic)
     first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10]))
     last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10]))
     since_last_spec.append('<script>var date1, date2;date1 = new Date();date2 = new Date( "'+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10])+' 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script>')
@@ -409,7 +408,6 @@ for nova in novae["star_name_string"]:
             since_last_spec.append(str("-"))
             num_spec.append(str(0))
             name_website.append(novae["name"][novae["star_name_string"]==nova][0])
-
 
 home["First spectrum"] = first_spec
 home["Last spectrum"] = last_spec
