@@ -51,7 +51,8 @@ dumb;star_name_string;name;ra;dec;gcvs;discovery_name
 0;novavel2017;Nova Vel 2017;08 50 29.62;-47 45 28.3;V549 Vel;ASASSN-17mt
 0;v3890sgr;V3890 Sgr;18 30 43.29;-24 01 08.9;V3890 Sgr;
 0;v407cyg;V407 Cyg;21 02 09.82;+45 46 32.7;V407 Cyg;
-0;v838mon;V838 Mon;07 04 04.82;-03 50 50.6;V838 Mon;
+0;v838mon;V838 Mon;07 04 04.82;-03 50 50.6;V838 Mon;Nova Mon 2002
+0;novamon2002;V838 Mon;07 04 04.82;-03 50 50.6;V838 Mon;Nova Mon 2002
 0;novaher2021;Nova Her 2021;18 57 30.95;+16 53 39.6;V1674 Her;TCP J18573095+1653396
 0;novasco2021b;Nova Sco 2021b;17 39 44.729;-36 16 40.19;;ASASSN-21lk
 0;novavul2021;Nova Vul 2021;20 21 07.70;+29 14 09 3;;TCP J20210770+2914093
