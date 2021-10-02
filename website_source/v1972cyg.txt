@@ -11,7 +11,7 @@
       <h5 class="card-title">V1972 Cyg</h5>
       <p class="card-text">RA (2000): 20 23 03.61</p>
   <p class="card-text">DEC (2000):  +39 29 49.91</p>
-  <p class="card-text">V (mag): 10.6/p>
+  <p class="card-text">V (mag): 10.6</p>
   <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/v1972-cyg/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=V1972+Cyg&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>
