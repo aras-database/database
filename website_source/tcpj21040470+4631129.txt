@@ -10,7 +10,7 @@
     <div class="card-body">
       <h5 class="card-title">TCP J21040470+4631129</h5>
       <p class="card-text">RA (2000):  17 59 24.12</p>
-  <p class="card-text">DEC (2000): +25 20 31.7/p>
+  <p class="card-text">DEC (2000): +25 20 31.7</p>
   <p class="card-text">V (mag): 8.4 - 18.1</p>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=TCP+J21040470+4631129&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>

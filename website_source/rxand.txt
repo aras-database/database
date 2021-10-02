@@ -8,7 +8,7 @@
 <div class="col-sm-6">
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title">V627 Peg</h5>
+      <h5 class="card-title">RX And</h5>
       <p class="card-text">RA (2000):  01 04 35.53</p>
   <p class="card-text">DEC (2000): +41 17 57.78</p>
   <p class="card-text">V (mag): 10.5 - 15</p>
