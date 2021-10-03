@@ -11,7 +11,7 @@
       <h5 class="card-title">Hen 4-204</h5>
       <p class="card-text">RA (2000): 22 45 01.41</p>
   <p class="card-text">DEC (2000):  -44 52 38.45</p>
-  <p class="card-text">V (mag): 9.74/p>
+  <p class="card-text">V (mag): 9.74</p>
   <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/hen-4-204/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=Hen+4-204&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>
