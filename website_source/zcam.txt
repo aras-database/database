@@ -1,0 +1,19 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Dwarf Novae</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Z Cam</h5>
+      <p class="card-text">RA (2000): 08 25 13.19</p>
+  <p class="card-text">DEC (2000):  +73 06 39.28</p>
+  <p class="card-text">V (mag): 11.927/p>
+  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/z-cam/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=Z+Cam&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+  </div>
+  </div>
+</div>
