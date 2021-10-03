@@ -1,0 +1,19 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Symbiotics Program</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Hen 2-228</h5>
+      <p class="card-text">RA (2000): 17 28 26.93</p>
+  <p class="card-text">DEC (2000):  -28 38 34.63</p>
+  <p class="card-text">V (mag): 15.3/p>
+  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/hen-2-228/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=Hen+2-228&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+  </div>
+  </div>
+</div>
