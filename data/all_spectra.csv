@@ -10888,4 +10888,3 @@ dumb;star_name_string;date;time;jd;observer;site;resolution;lambda_min;lambda_ma
 0;axper;2021-11-25;5:30;59543.23;FAS;DCO-US;1007;3699;7289;asdb_axper_20211125_229.fit;asdb_axper_20211125_229.png;1637867365;
 0;novacas2021;2021-11-22;9:31;59540.814;JJA;MDM-FR;1092;3800;6813;asdb_novacas2021_20211122_813.fit;asdb_novacas2021_20211122_813.png;1637867365;
 0;novacas2021;2021-11-25;4:29;59543.187;FAS;DCO-US;1005;3701;7289;asdb_novacas2021_20211125_187.fit;asdb_novacas2021_20211125_187.png;1637867365;
-0;novacas2021;2021-11-22;8:39;59540.777;FTE;ORS-FR;9500;4000;7200;asdb_novacas2021_20211122_777.fit;asdb_novacas2021_20211122_777.png;1637867577; 
