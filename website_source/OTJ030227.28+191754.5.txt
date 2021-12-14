@@ -1,0 +1,18 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Dwarf Novae</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">OT J030227.28+191754.5</h5>
+      <p class="card-text">RA (2000): 030227.28</p>
+  <p class="card-text">DEC (2000):  +191754.5</p>
+  <p class="card-text">V (mag): 13.55</p>
+      <a href="http://simbad.harvard.edu/simbad/" class="btn btn-secondary">SIMBAD</a>
+  </div>
+  </div>
+</div>
