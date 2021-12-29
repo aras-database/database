@@ -1,19 +1,5 @@
-from shutil import copy2, move
-from glob import glob
-from astropy.io import fits
-import matplotlib.pylab as plt
-import numpy as np
-import csv
 from astropy.io import ascii
-import os
-from specutils.spectra import Spectrum1D
-from matplotlib.ticker import (MultipleLocator, FormatStrFormatter, AutoMinorLocator)
-from astropy.time import Time
-from astropy import units as u
 import pandas as pd
-from zipfile import ZipFile
-from os.path import basename
-from difflib import SequenceMatcher
 
 
 
@@ -31,21 +17,29 @@ try:
 except:
     pass
 
+nb =0
+
+# df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
+# df1 =df.sort_values(by=["star_name_string","jd"])
+# print(df1)
+
+df1 = pd.read_csv('../data/all_spectra_sort.csv', delimiter=",")
 
 
-df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
-df1 =df.sort_values("star_name_string")
-df1 =df.sort_values(by=["star_name_string","jd"])
-print(df1)
+
 
 
 nLines = len(df1)
 print(nLines)
 for n in range(1,nLines):
-    if df1.file[n]==df1.file[n-1]:
+    if df1.jd[n]==df1.jd[n-1]:
+    # if df1.file[n]==df1.file[n-1]:
+    # if df1.date[n]==df1.date[n-1] and df1.time[n]==df1.time[n-1]:    
+        nb = nb+1
+        print(nb)
         print(n)
         print(df1.file[n-1])
         print(df1.file[n])
         
      
-df1.to_csv('../data/all_spectra_sort.csv',index=True)
+df1.to_csv('../data/all_spectra_sort.csv',index=False)
