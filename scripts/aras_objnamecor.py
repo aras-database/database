@@ -17,7 +17,9 @@ for r, d, f in os.walk(path):
 
 for f in files:
     n = n+1
-    if n < 12000:
+    if n > 7796:
+        print(n)
+        print(f)
         with fits.open(f, mode = 'update') as hdul:
             objname = hdul[0].header['OBJNAME']
 
