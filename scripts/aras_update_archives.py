@@ -23,6 +23,8 @@ def zipFilesInDir(dirName, zipFileName, filter):
                     filePath = os.path.join(folderName, filename)
                     zipObj.write(filePath, basename(filePath))
 
+n = 0
+
 all_spectra = ascii.read("../data/all_spectra.csv", header_start=0, data_start=1, delimiter=';',format='csv')
 try:
     all_spectra.rename_column('ď»żstar_name_string', 'star_name_string')
@@ -61,15 +63,19 @@ for symbiotic in symbiotic_stars["star_name_string"]:
             zipFilesInDir('../spectra/', '../archives/'+symbiotic+'2.zip', lambda name : ("chcyg_2019"  in name) or ("chcyg_202"  in name) )
 
 
+# update Symbiotics Archives after Cleaning OBJNAME (2022-02-02)
+
 # for symbiotic in symbiotic_stars["star_name_string"]:
-#     print(symbiotic)
-#     print(all_spectra["star_name_string"])
-#     if str(all_spectra["star_name_string"]) == 'v455sco':
-
-#             zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
-
-
-
+    
+#         if symbiotic != "chcyg":
+#              zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
+       
+#         if symbiotic == "chcyg":
+#             n = n + 1
+#             if n < 500:
+#                 zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
+#             else:
+#                 zipFilesInDir('../spectra/', '../archives/'+symbiotic+'2.zip', lambda name : symbiotic in name)
 
 
 
@@ -80,6 +86,7 @@ for nova in novae["star_name_string"]:
             zipFilesInDir('../spectra/', '../archives/'+nova+'.zip', lambda name : nova in name)
     except:
         pass
+
 for dwarfnova in dwarf_novae["star_name_string"]:
     try:
         if np.max(all_spectra[all_spectra["star_name_string"]==dwarfnova]["last_update"]) > last_update_archive:
