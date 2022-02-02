@@ -1,29 +1,17 @@
 # delete duplicates (criterions: objname, jd, observer)
 # and sort all_spectra by objname and jd
 # fmt - 2022-01-21
-import os
+
 import pandas as pd
-from astropy.io import fits
 
 
-df1 = pd.read_csv('../data/objects.csv', delimiter=";")
-# df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
-# df =df.sort_values(by=["star_name_string","jd"])
-# df = df.drop_duplicates(subset=["star_name_string", "jd","observer"], keep='last')
-# df.to_csv('../data/all_spectra.csv',index=False,sep = ';')
 
 
-path = r'C:\Users\franc\OneDrive\Documents\GitHub\database\spectra'
-files = []
-n = 0
-for r, d, f in os.walk(path):
-    for file in f: 
-        if '.fit' in file:
-            files.append(os.path.join(r, file))
+df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
+df =df.sort_values(by=["star_name_string","jd"])
+df = df.drop_duplicates(subset=["star_name_string", "jd","observer"], keep='last')
+df.to_csv('../data/all_spectra.csv',index=False,sep = ';')
 
-for f in files:
-    n = n+1
-    hdul = fits.open(f)
-    t1 = hdul[0].header['OBJNAME']
-    print(n,t1)
+
+
     
