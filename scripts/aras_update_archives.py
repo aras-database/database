@@ -63,7 +63,7 @@ for symbiotic in symbiotic_stars["star_name_string"]:
             zipFilesInDir('../spectra/', '../archives/'+symbiotic+'2.zip', lambda name : ("chcyg_2019"  in name) or ("chcyg_202"  in name) )
 
 
-# update Symbiotics Archives after Cleaning OBJNAME (2022-02-02)
+# *** update Symbiotics Archives after Cleaning OBJNAME (2022-02-02)
 
 # for symbiotic in symbiotic_stars["star_name_string"]:
     
