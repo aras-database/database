@@ -55,8 +55,7 @@ for f in files:
     print(t2)
     for column in data:
         if column[1] == t2:
-            indx = column[0] 
-            print(indx)
+            indx = column[0]
             ObjectName1 = data[indx-1][2]
             ObjectName2 = data[indx-1][3]
             ObjectName3 = data[indx-1][4]   
