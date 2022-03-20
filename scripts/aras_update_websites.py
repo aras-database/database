@@ -59,7 +59,7 @@ df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD", "observ
 home = pd.read_csv('../data/symbiotic_stars.csv', delimiter=";")
 home = home.rename(columns={"ra": "RA (2000)", "dec": "DEC (2000)", "frequency": "Frequency"}).replace(np.nan, '', regex=True)
 
-last_update = np.float(open("../data/last_update.txt", "r").read())
+last_update = float(open("../data/last_update.txt", "r").read())
 intro = open("../website_source/navigation.txt", "r").read()
 footer = open("../website_source/footer.txt", "r").read()
 first_spec = []
@@ -309,7 +309,7 @@ df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD", "observ
 home = pd.read_csv('../data/novae.csv', delimiter=";")
 home = home.rename(columns={"ra": "RA (2000)", "dec": "DEC (2000)", "gcvs": "GCVS", "discovery_name": "Discovery Name"}).replace(np.nan, '', regex=True)
 
-last_update = np.float(open("../data/last_update.txt", "r").read())
+last_update = float(open("../data/last_update.txt", "r").read())
 intro = open("../website_source/navigation_novae.txt", "r").read()
 footer = open("../website_source/footer_novae.txt", "r").read()
 first_spec = []
@@ -456,7 +456,7 @@ df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD", "observ
 home = pd.read_csv('../data/dwarf_novae.csv', delimiter=";")
 home = home.rename(columns={"ra": "RA (2000)", "dec": "DEC (2000)"}).replace(np.nan, '', regex=True)
 
-last_update = np.float(open("../data/last_update.txt", "r").read())
+last_update = float(open("../data/last_update.txt", "r").read())
 intro = open("../website_source/navigation_dwarf_novae.txt", "r").read()
 footer = open("../website_source/footer_dwarf_novae.txt", "r").read()
 first_spec = []
