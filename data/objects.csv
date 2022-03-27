@@ -675,7 +675,6 @@ dumb;Keyword;Object
 0;STHA32;StHA 32
 0;AS 280;AS 280
 0;AxPer;AX Per
-0;TYC 1371-69-6;TYC 1371-69-6
 0;Gaia19bpg;Gaia 19bpg
 0;OTJ0302;OT J030227.28+191754.5
 0;OMI Cet;omi Cet
@@ -684,11 +683,10 @@ dumb;Keyword;Object
 0;SS lep;SS Lep
 0;STHA 032;StHA 32
 0;V0471 PER;V471 Per
-0;New observation;
 0;STHA55;StHA 55
 0;Gaia20fut;Gaia 20fut
 0;V417 Cma;V417 CMa
-0;TYC 1371-69-1;TYC 1371-69-6
+0;TYC 1371-69-1;TYC 1371-69-1
 0;V648 Car;V648 Car
 0;Gaia19dpl;gaia 19dpl
 0;Gaia22aed;gaia 19aed
