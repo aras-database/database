@@ -42,17 +42,18 @@ for f in files:
     d = t1[0:10]
     h = t1[11:19]
     t2 = fitfile[0].header['OBJNAME']
+    print(t2)
 
     t2 = t2.lower()
     t2=t2.replace(' ','')
     t2=t2.replace('_','')
     datesp = d[0:4] + d[5:7] + d[8:10]
     timesp = int((int(h[0:2])+int(h[3:5])/60+int(h[6:8])/3600)/24*1000)+1
-    
+    print(t2)
     timesp = '{:03d}'.format(timesp)
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
-    print(t2)
+ 
     for column in data:
         if column[1] == t2:
             indx = column[0]
