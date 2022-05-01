@@ -56,4 +56,4 @@ dumb;star_name_string;name;ra;dec;gcvs;discovery_name
 0;novasco2021b;Nova Sco 2021b;17 39 44.729;-36 16 40.19;;ASASSN-21lk
 0;novavul2021;Nova Vul 2021;20 21 07.70;+29 14 09 3;;TCP J20210770+2914093
 0;rsoph;RS Oph;17 50 13.1;-06 42 28.5;RS Oph;
-0;novavel2022;Nova Vel 2022;09:29:53.06;-56:17:25.94;Gaia22alz;
+0;novavel2022;Nova Vel 2022;09:29:53.06;-56:17:25.94;;Gaia22alz
