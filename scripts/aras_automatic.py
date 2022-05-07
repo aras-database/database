@@ -25,7 +25,8 @@ import aras_update_archives
 
 comments_anw = 2
 while comments_anw == 2:
-    confirmation = input(str("Would you like to add comments to newly added spectra?  (Y/N)   "))
+    # confirmation = input(str("Would you like to add comments to newly added spectra?  (Y/N)   "))
+    confirmation = "N" # Temporary change (issue with Spyder config) - FTE 2002/05/07
     if confirmation == "Y" or confirmation == "y":
         comments_anw=1
         print("Do not forget to run aras_update_websites.py after including comments to all_spectra.csv file!")
