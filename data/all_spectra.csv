@@ -11172,3 +11172,4 @@ dumb;star_name_string;date;time;jd;observer;site;resolution;lambda_min;lambda_ma
 0;novavel2022;2022-05-02;0:46;59701.032;2SPOT;DSC-CL;567;3731;7806;asdb_novavel2022_20220502_032.fit;asdb_novavel2022_20220502_032.png;1651646259;
 0;rsoph;2022-04-22;3:24;59691.142;CBO;OCT-FR;523;3700;7566;asdb_rsoph_20220422_142.fit;asdb_rsoph_20220422_142.png;1651646259;
 0;rsoph;2022-05-01;2:30;59700.104;CBO;OCT-FR;529;3700;7566;asdb_rsoph_20220501_104.fit;asdb_rsoph_20220501_104.png;1651646259;
+0;v618sgr;2022-05-05;6:34;59704.691;VLZ;SSO-AU;1445;4705;6764;asdb_v618sgr_20220505_690.fit;asdb_v618sgr_20220505_690.png;1651907899;
