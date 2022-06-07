@@ -11226,3 +11226,4 @@ dumb;star_name_string;date;time;jd;observer;site;resolution;lambda_min;lambda_ma
 0;cqdra;2022-06-04;0:52;59734.87;JGF;SMM-SP;9000;3709;9412;asdb_cqdra_20220604_869.fit;asdb_cqdra_20220604_869.png;1654587741;
 0;tcrb;2022-05-11;1:29;59710.896;DBO;WCO-UK;1111;3901;7380;asdb_tcrb_20220511_895.fit;asdb_tcrb_20220511_895.png;1654587741;
 0;txcvn;2022-06-04;2:24;59734.934;JGF;SMM-SP;9000;3832;9426;asdb_txcvn_20220604_933.fit;asdb_txcvn_20220604_933.png;1654587741;
+0;usco;2022-06-07;4:12;59737.175;KSH;CAR-US;1000;3800;7089;asdb_usco_20220607_175.fit;asdb_usco_20220607_175.png;1654633922; 
