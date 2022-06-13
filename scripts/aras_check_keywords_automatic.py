@@ -63,9 +63,19 @@ for fi in (files):
                 hdr = hdu[0].header
                 if ('CRVAL1' in hdr) & ('CDELT1' in hdr) & ('NAXIS1' in hdr) & (hdr['CRVAL1'] > 2000):
                     CRVAL1=CRVAL1+1
+                elif ('CRVAL1' in hdr) & ('CDELT1' in hdr) & ('NAXIS1' in hdr) & (hdr['CRVAL1'] < 2000) & (hdr['CUNIT1'] == "nm"):
+                    fits.setval(fi, 'CDELT1', value=hdr['CDELT1']*10)
+                    fits.setval(fi, 'CRVAL1', value=hdr['CRVAL1']*10)
+                    fits.setval(fi, 'CUNIT1', value="Angstrom")
+                    CRVAL1=CRVAL1+1
+                elif ('CRVAL1' in hdr) & ('CDELT1' in hdr) & ('NAXIS1' in hdr) & (hdr['CRVAL1'] < 2000) & (hdr['CUNIT1'] == "Angstrom"):
+                    fits.setval(fi, 'CDELT1', value=hdr['CDELT1']*10)
+                    fits.setval(fi, 'CRVAL1', value=hdr['CRVAL1']*10)
+                    fits.setval(fi, 'CUNIT1', value="Angstrom")
+                    CRVAL1=CRVAL1+1
                 else:
                     print("Wavelenght missing:       ", fi[len(dir):])
-                    crit = 1
+                    crit = 1  
                 if 'JD-MID' in hdr:
                     if hdr['JD-MID'] == 0:
                         if 'DATE-OBS'in hdr:
@@ -80,7 +90,7 @@ for fi in (files):
                     err=4
                 else:
                     print("Observing time missing:      ", fi[len(dir):])
-                    crit=1
+                    crit=1  
                 if crit == 0:
                     if 'OBSERVER' in hdr:
                         if hdr['OBSERVER'] == "":
@@ -115,10 +125,19 @@ for fi in (files):
                     else:
                         print("Site missing:             ", fi[len(dir):])
                         err=2
+
                     if 'SPE_RPOW' in hdr:
                         if  hdr['SPE_RPOW'] > 0:
                             resOK=1
                             res1=res1+1
+                    if 'SPE_RPOW' in hdr:
+                        if  hdr['SPE_RPOW'] > 0:
+                            resOK=1
+                            res1=res1+1
+
+                    
+
+
                     if ('BSS_ITRP' in hdr) & (resOK == 0):
                         if hdr['BSS_ITRP'] > 0:
                             resOK=1
@@ -126,7 +145,7 @@ for fi in (files):
                     if resOK == 0:
                         if 'CDELT1' in hdr:
                             res3=res3+1
-
+                    
     except:
         print("Corrupted file (unknown error):           ", fi[len(dir):])
         nocor=nocor+1

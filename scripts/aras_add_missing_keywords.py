@@ -15,7 +15,6 @@ from zipfile import ZipFile
 from os.path import basename
 from difflib import SequenceMatcher
 
-
 missing_files = len(glob('../temporary/missing/observer/' + '*.fit'))+len(glob('../temporary/missing/site/' + '*.fit'))+len(glob('../temporary/missing/object/' + '*.fit'))+len(glob('../temporary/missing/observer/' + '*.fits'))+len(glob('../temporary/missing/site/' + '*.fits'))+len(glob('../temporary/missing/object/' + '*.fits'))
 while missing_files > 0:
     dir = '../temporary/missing/observer/'
@@ -23,7 +22,6 @@ while missing_files > 0:
     for fi in (files):
         print("File:", fi[len(dir):])
         obs_input = input('Observer:   ')
-       
         fits.setval(fi, 'OBSERVER', value=obs_input)
         move(fi, '../temporary/updated/'+fi[len(dir):])
 
@@ -40,7 +38,6 @@ while missing_files > 0:
     for fi in (files):
         print("File:", fi[len(dir):])
         obs_input = input('Observing site:   ')
-      
         fits.setval(fi, 'BSS_SITE', value=obs_input)
         move(fi, '../temporary/updated/'+fi[len(dir):])
 
