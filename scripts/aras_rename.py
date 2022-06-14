@@ -39,9 +39,7 @@ files = glob(dir + '*.fit')+glob(dir + '*.fits')
 for fi in (files):
     with fits.open(fi) as hdu:
         hdr = hdu[0].header
-        print(hdr['OBJNAME'])
         obj_name = list_of_objects["Object"][list(list_of_objects["Keyword"]).index(list(set([hdr['OBJNAME'].lstrip()]).intersection(set(list_of_objects["Keyword"])))[0])].replace(" ", "").lower()
-        print(obj_name)
         time_string = str(int((float(Time(hdr['JD-MID'], format="jd").isot[11:13])+float(Time(hdr['JD-MID'], format="jd").isot[14:16])/60+float(Time(hdr['JD-MID'], format="jd").isot[17:])/3600)/24*1000))
         if int(time_string) <10:
             time_string = "00"+time_string
@@ -49,7 +47,6 @@ for fi in (files):
             time_string = "0"+time_string
         date_name = (Time(hdr['JD-MID'], format="jd").isot[0:10].replace("-","")+"_"+time_string)
         dst = "asdb_"+obj_name+"_"+date_name+".fit"
-        print(dst)
     while os.path.exists('../new_spectra/' + dst) == True:
         if int(dst[-7:-4]) < 100:
             dst = dst[:-7]+"0"+str(int(dst[-7:-4])+1)+dst[-4:]

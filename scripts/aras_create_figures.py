@@ -66,4 +66,6 @@ for fi in (files):
 
     plt.plot(spec.spectral_axis.value,spec.flux.value,'C3-')
     plt.savefig('../figures/' + fi[len(dir):-4]+'.png')
+    fig = plt.figure(figsize = (6,3), dpi=72)
+    plt.show(fig)# added by FTE 28/11/2021
     plt.close(fig)

@@ -68,7 +68,6 @@ since_last_spec = []
 num_spec = []
 name_website = []
 for symbiotic in symbiotic_stars["star_name_string"]:
-    #print(symbiotic)
     first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10]))
     last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10]))
     since_last_spec.append('<script>var date1, date2;date1 = new Date();date2 = new Date( "'+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10])+' 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script>')
@@ -323,7 +322,7 @@ for nova in novae["star_name_string"]:
         first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==nova]["date"])).value[:10]))
         last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==nova]["date"])).value[:10]))
         since_last_spec.append('<script>var date1, date2;date1 = new Date();date2 = new Date( "'+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==nova]["date"])).value[:10])+' 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script>')
-        num_spec.append(str(len(all_spectra[all_spectra["star_name_string"]==nova]))) 
+        num_spec.append(str(len(all_spectra[all_spectra["star_name_string"]==nova])))
         name_website.append('<a href="'+nova+'.html">'+novae["name"][novae["star_name_string"]==nova][0]+'</a>')
     else:
         try:
@@ -348,7 +347,7 @@ for nova in novae["star_name_string"]:
                         campaign_string = '<div class="card text-white '+campaign_type+' mb-3">\n<div class="card-body">\n<h5 class="card-title">'+campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(nova)]+'</h5>\n<p class="card-text"><p class="card-text">'+campaigns["campaign_text"][np.array(campaigns["star_name_string"][:]).tolist().index(nova)]+'</p>\n</div>\n</div>\n<br>\n\n'
                     except:
                         campaign_string = '<div class="card text-white '+campaign_type+' mb-3">\n<div class="card-body">\n<h5 class="card-title">'+campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(nova)]+'</h5></div>\n</div>\n<br>\n\n'
-        
+
                 except:
                     campaign_string=''
                 if nova !="chcyg":
@@ -356,7 +355,7 @@ for nova in novae["star_name_string"]:
                 else:
                     current_year_string = str(np.max(Time(all_spectra[all_spectra["star_name_string"]==nova]["date"])).value[:4])
                     campaign_string = campaign_string + '<a href="archives/'+nova+'1.zip" class="btn btn-secondary">Download 2011-2018 spectra as *.zip file (' + str(round(os.stat('../archives/'+nova+'1.zip').st_size/(1048576),1))+' MB)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+'<a href="archives/'+nova+'2.zip" class="btn btn-secondary">Download 2019-'+current_year_string +' spectra as *.zip file (' + str(round(os.stat('../archives/'+nova+'2.zip').st_size/(1048576),1))+' MB)</a><br><br>'
-        
+
                 file_string = []
                 image_string = []
                 resolution_string = []
@@ -390,12 +389,12 @@ for nova in novae["star_name_string"]:
                     if current.iloc[i]["&lambda;<sub>max</sub>"] >7500:
                         wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#8C001A" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
                     wavelength_string.append(wavelength_string_temp)
-        
+
                 current["File"] = file_string
                 current["Preview"] = image_string
                 current['<div style="display:none;">Resolution</div>'] = resolution_string
                 current['<div style="display:none;"Wavelength</div>'] = wavelength_string
-        
+
                 table = current.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
                 website = open("../"+nova+".html", "w")
                 try:
@@ -409,7 +408,6 @@ for nova in novae["star_name_string"]:
             since_last_spec.append(str("-"))
             num_spec.append(str(0))
             name_website.append(novae["name"][novae["star_name_string"]==nova][0])
-            
 
 home["First spectrum"] = first_spec
 home["Last spectrum"] = last_spec
@@ -425,7 +423,7 @@ for stars in campaigns["star_name_string"]:
             outb_string = outb_string + ", " + novae["name"][novae["star_name_string"]==stars][0]
         except:
             outb_string = novae["name"][novae["star_name_string"]==stars][0]
-            
+
     if campaigns["campaign_type"][campaigns["star_name_string"]==stars] == "Symbiotic nova outburst":
         try:
             outb_string = outb_string + ", " + novae["name"][novae["star_name_string"]==stars][0] + " (SyN)"
@@ -466,12 +464,12 @@ last_update.close()
 # since_last_spec = []
 # num_spec = []
 # name_website = []
-# for dwarf_nova in dwarf_novae["star_name_string"]: 
+# for dwarf_nova in dwarf_novae["star_name_string"]: ## why symbiotic_stars in novae part ?
 #     if dwarf_nova in symbiotic_stars["star_name_string"]:
 #         first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
 #         last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10]))
 #         since_last_spec.append('<script>var date1, date2;date1 = new Date();date2 = new Date( "'+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:10])+' 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script>')
-#         num_spec.append(str(len(all_spectra[all_spectra["star_name_string"]==dwarf_nova]))) 
+#         num_spec.append(str(len(all_spectra[all_spectra["star_name_string"]==dwarf_nova])))
 #         name_website.append('<a href="'+dwarf_nova+'.html">'+dwarf_novae["name"][dwarf_novae["star_name_string"]==dwarf_nova][0]+'</a>')
 #     else:
 #         try:
@@ -496,7 +494,7 @@ last_update.close()
 #                         campaign_string = '<div class="card text-white '+campaign_type+' mb-3">\n<div class="card-body">\n<h5 class="card-title">'+campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(dwarf_nova)]+'</h5>\n<p class="card-text"><p class="card-text">'+campaigns["campaign_text"][np.array(campaigns["star_name_string"][:]).tolist().index(dwarf_nova)]+'</p>\n</div>\n</div>\n<br>\n\n'
 #                     except:
 #                         campaign_string = '<div class="card text-white '+campaign_type+' mb-3">\n<div class="card-body">\n<h5 class="card-title">'+campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(dwarf_nova)]+'</h5></div>\n</div>\n<br>\n\n'
-        
+
 #                 except:
 #                     campaign_string=''
 #                 if dwarf_nova !="chcyg": ## à supprimer
@@ -504,7 +502,7 @@ last_update.close()
 #                 else:
 #                     current_year_string = str(np.max(Time(all_spectra[all_spectra["star_name_string"]==dwarf_nova]["date"])).value[:4])
 #                     campaign_string = campaign_string + '<a href="archives/'+dwarf_nova+'1.zip" class="btn btn-secondary">Download 2011-2018 spectra as *.zip file (' + str(round(os.stat('../archives/'+nova+'1.zip').st_size/(1048576),1))+' MB)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+'<a href="archives/'+nova+'2.zip" class="btn btn-secondary">Download 2019-'+current_year_string +' spectra as *.zip file (' + str(round(os.stat('../archives/'+dwarf_nova+'2.zip').st_size/(1048576),1))+' MB)</a><br><br>'
-        
+
 #                 file_string = []
 #                 image_string = []
 #                 resolution_string = []
@@ -538,12 +536,12 @@ last_update.close()
 #                     if current.iloc[i]["&lambda;<sub>max</sub>"] >7500:
 #                         wavelength_string_temp = wavelength_string_temp + '<svg xmlns="http://www.w3.org/2000/svg" width="5" height="16" fill="#8C001A" class="bi bi-square-fill" viewBox="1 0 5 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/></svg>'
 #                     wavelength_string.append(wavelength_string_temp)
-        
+
 #                 current["File"] = file_string
 #                 current["Preview"] = image_string
 #                 current['<div style="display:none;">Resolution</div>'] = resolution_string
 #                 current['<div style="display:none;"Wavelength</div>'] = wavelength_string
-        
+
 #                 table = current.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
 #                 website = open("../"+dwarf_nova+".html", "w")
 #                 try:
@@ -558,9 +556,6 @@ last_update.close()
 #             since_last_spec.append(str("-"))
 #             num_spec.append(str(0))
 #             name_website.append(dwarf_novae["name"][dwarf_novae["star_name_string"]==dwarf_nova][0])
-
-# print(first_spec)            
-
 
 # home["First spectrum"] = first_spec
 # home["Last spectrum"] = last_spec
@@ -584,7 +579,7 @@ last_update.close()
 # if not outb_string:
 #     outb_string = ""
 # home_table = home.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Name","RA (2000)", "DEC (2000)", "No. of spectra", "First spectrum", "Last spectrum", "Days since last"])
-# sym_info = '<p class="card-text">Number of stars: '+str(len(home))+'\n</p><p class="card-text">Number of spectra: '+str(home.astype({'No. of spectra': 'int32'})["No. of spectra"].sum(axis=0))+'\n</p><p class="card-text">Last update: '+str(Time.now().isot)[0:10]+', '+str(Time.now().isot)[11:16]+'</p>\n<br><br>\n<a href="observers.html" class="btn btn-secondary">Observers</a>\n        <a href="observatories.html" class="btn btn-secondary">Observatories</a>\n\n      </div>\n    </div>\n  </div>\n\n  <div class="col-sm-6">\n    <div class="card">\n      <div class="card-body">\n        <h5 class="card-title">Stars of special interest</h5>\n<p class="card-text" style="margin-bottom:2.358cm;">dwarf_novae in outburst: '+outb_string
+# sym_info = '<p class="card-text">Number of stars: '+str(len(home))+'\n</p><p class="card-text">Number of spectra: '+str(home.astype({'No. of spectra': 'int32'})["No. of spectra"].sum(axis=0))+'\n</p><p class="card-text">Last update: '+str(Time.now().isot)[0:10]+', '+str(Time.now().isot)[11:16]+'</p>\n<br><br>\n<a href="observers.html" class="btn btn-secondary">Observers</a>\n        <a href="observatories.html" class="btn btn-secondary">Observatories</a>\n\n      </div>\n    </div>\n  </div>\n\n  <div class="col-sm-6">\n    <div class="card">\n      <div class="card-body">\n        <h5 class="card-title">Stars of special interest</h5>\n<p class="card-text" style="margin-bottom:2.358cm;">Dwarf novae in outburst: '+outb_string
 # home_top = open("../website_source/home_top_dwarf_novae.txt", "r").read()
 # home_footer = open("../website_source/home_footer_dwarf_novae.txt", "r").read()
 # home_info = open("../website_source/home_info_dwarf_novae.txt", "r").read()
