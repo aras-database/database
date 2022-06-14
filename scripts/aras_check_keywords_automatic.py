@@ -21,6 +21,10 @@ dir = '../new_spectra/'
 
 files = glob(dir + '*.fit')+glob(dir + '*.fits')
 
+
+
+
+
 if automatic == 0:
     print('Number of spectra:        ', len(files))
 
@@ -60,7 +64,9 @@ for fi in (files):
     err=0
     try:
         with fits.open(fi) as hdu:
+                
                 hdr = hdu[0].header
+                
                 if ('CRVAL1' in hdr) & ('CDELT1' in hdr) & ('NAXIS1' in hdr) & (hdr['CRVAL1'] > 2000):
                     CRVAL1=CRVAL1+1
                 else:
@@ -81,6 +87,7 @@ for fi in (files):
                 else:
                     print("Observing time missing:      ", fi[len(dir):])
                     crit=1
+                
                 if crit == 0:
                     if 'OBSERVER' in hdr:
                         if hdr['OBSERVER'] == "":
@@ -115,6 +122,7 @@ for fi in (files):
                     else:
                         print("Site missing:             ", fi[len(dir):])
                         err=2
+                   
                     if 'SPE_RPOW' in hdr:
                         if  hdr['SPE_RPOW'] > 0:
                             resOK=1
@@ -126,11 +134,12 @@ for fi in (files):
                     if resOK == 0:
                         if 'CDELT1' in hdr:
                             res3=res3+1
-
+                        
     except:
-        print("Corrupted file (unknown error):           ", fi[len(dir):])
-        nocor=nocor+1
-        move(fi, '../temporary/corrupted/'+fi[len(dir):])
+        print("exception")
+        # print("Corrupted file (unknown error):           ", fi[len(dir):])
+        # nocor=nocor+1
+        # move(fi, '../temporary/corrupted/'+fi[len(dir):])
     if crit == 1:
         print("Corrupted file (known_error):           ", fi[len(dir):])
         nocor=nocor+1
