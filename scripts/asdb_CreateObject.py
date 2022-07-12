@@ -4,12 +4,12 @@ from astroquery.simbad import Simbad
 import os
 
 #data
-ObjName = 'V343 Ser'
+ObjName = 'StHa 154'
 Program = "ARAS Symbiotics Program"
 File0 = 'symbiotic_stars.csv'
-hr = "2" # Priority HR
-lr = "1" # Priority LR
-cadency = 30
+hr = "3" # Priority HR
+lr = "0" # Priority LR
+cadency = 10
 
 # Mise en forme
 FileName = ObjName.replace(" ", "") + '.txt'
