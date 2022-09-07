@@ -8,9 +8,9 @@ import os
 from astropy.io import fits
 from specutils import Spectrum1D
 from shutil import copyfile
-import pandas as pd
 
-os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\new_spectra') 
+
+os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\temporary\symbiotics') 
 cwd = os.getcwd() 
 path= cwd
 
@@ -18,8 +18,7 @@ files = []
 n = 0
 
 
-df = pd.read_csv(r'C:\Users\franc\OneDrive\Documents\GitHub\database\data\objects.csv')
-print(df)
+
 
 
 for r, d, f in os.walk(path):
@@ -41,9 +40,10 @@ for f in files:
     # #########read header
     
   
-    t2 = fitfile[0].header['OBJNAME']
-
-    a  = df.loc[df.Keyword == t2]
+    ObjectName = fitfile[0].header['OBJNAME']
+    print(ObjectName)
+    t2 = ObjectName.replace(" ")
+    print(t2)
 
 
     #t2 = t2.lower()
@@ -57,7 +57,7 @@ for f in files:
 
     
     
-    fits.setval(f, 'OBJNAME', value = ObjectName1,comment = 'corrected by asdb, if necessary')
+    fits.setval(f, 'OBJNAME', value = ObjectName,comment = 'corrected by asdb, if necessary')
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
    
     #Copy Files
