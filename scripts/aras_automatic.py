@@ -39,4 +39,4 @@ while comments_anw == 2:
         print("Answer with Y or N.")
       
 #Temporary T CrB campaign
-import Monitoring_TCrB
+#import Monitoring_TCrB
