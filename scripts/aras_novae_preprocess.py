@@ -10,7 +10,7 @@ from specutils import Spectrum1D
 from shutil import copyfile
 from astropy.io import ascii
 
-os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\temporary\symbiotics') 
+os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\new_spectra\novae') 
 cwd = os.getcwd() 
 path= cwd
 
@@ -71,6 +71,11 @@ for f in files:
     fits.setval(f, 'OBJNAME2', value=ObjectName2,comment = 'GCVS name added by asdb' )
     fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
+   
+    
+    #
+   
+    
    
     #Copy Files
     
