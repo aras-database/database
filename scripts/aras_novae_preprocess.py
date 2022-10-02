@@ -60,6 +60,12 @@ for f in files:
             ObjectName1 = data[indx-1][2]
             ObjectName2 = data[indx-1][3]
             ObjectName3 = data[indx-1][4]   
+            
+    ObjectName1 = "Nova Men 2022"
+    ObjectName2 = "--"
+    ObjectName3 = "AT 2022ufh"            
+            
+            
                  
     print(ObjectName1)         
     print(ObjectName2)
