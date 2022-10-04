@@ -56,6 +56,8 @@ campaigns = ascii.read("../data/campaigns.csv", header_start=0, data_start=1, de
 
 df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
 df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD", "observer": "Observer", "site": "Site", "resolution": "Resolution", "lambda_min": "&lambda;<sub>min</sub>","lambda_max": "&lambda;<sub>max</sub>", "comment": "Comments"}).replace(np.nan, '', regex=True)
+# trial
+
 home = pd.read_csv('../data/symbiotic_stars.csv', delimiter=";")
 home = home.rename(columns={"ra": "RA (2000)", "dec": "DEC (2000)", "frequency": "Frequency"}).replace(np.nan, '', regex=True)
 
