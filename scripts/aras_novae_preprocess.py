@@ -89,7 +89,7 @@ for f in files:
     os.rename(f,ArasFileName)
     copyfile(ArasFileName,'C:/Users/franc/OneDrive/Documents/GitHub\database/new_spectra/' + ArasFileName)
     
-    #os.remove(ArasFileName)
+    os.remove(ArasFileName)
     print(ArasFileName) 
     print('************************************************************************************')
     
