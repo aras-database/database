@@ -147,7 +147,6 @@ for symbiotic in symbiotic_stars["star_name_string"]:
         current["Preview"] = image_string
         current['<div style="display:none;">Resolution</div>'] = resolution_string
         current['<div style="display:none;"Wavelength</div>'] = wavelength_string
-        print(current)
         table = current.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
         website = open("../"+symbiotic+".html", "w")
         try:
