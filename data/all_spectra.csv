@@ -11744,3 +11744,5 @@ dumb;star_name_string;date;time;jd;observer;site;resolution;lambda_min;lambda_ma
 0;zzcmi;2022-02-11;21:43;59622.405;FBO;SJI-FR;1000;4051;7500;asdb_zzcmi_20220211_905.fit;asdb_zzcmi_20220211_905.png;1644825272;
 0;zzcmi;2022-02-20;03:17;59630.637;FAS;DCO-US;1029;3751;7301;asdb_zzcmi_20220220_137.fit;asdb_zzcmi_20220220_137.png;1645520819;
 0;zzcmi;2022-03-22;22:06;59661.421;DBO;WCO-UK;1097;3900;7380;asdb_zzcmi_20220322_921.fit;asdb_zzcmi_20220322_921.png;1648107390;
+0;rrtel;2022-11-04;13:11;59888.049;CEL;MAR-AU;10000;3986;7405;asdb_rrtel_20221104_549.fit;asdb_rrtel_20221104_549.png;1667651770; 
+0;zzcmi;2022-11-04;18:55;59888.289;CEL;MAR-AU;10000;3986;7405;asdb_zzcmi_20221104_788.fit;asdb_zzcmi_20221104_788.png;1667651770; 
