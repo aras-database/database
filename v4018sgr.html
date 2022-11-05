@@ -95,7 +95,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -111,8 +111,8 @@
   <tbody>
     <tr>
       <td>2021-05-12</td>
-      <td>1:12</td>
-      <td>59346.467</td>
+      <td>11:12</td>
+      <td>59346.967</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>494</td>
@@ -127,7 +127,7 @@
     <tr>
       <td>2020-07-25</td>
       <td>07:03</td>
-      <td>59055.294</td>
+      <td>59055.794</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>841</td>
@@ -142,7 +142,7 @@
     <tr>
       <td>2020-07-22</td>
       <td>07:04</td>
-      <td>59052.295</td>
+      <td>59052.795</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>498</td>
@@ -162,7 +162,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -178,14 +178,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

@@ -76,7 +76,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -93,7 +93,7 @@
     <tr>
       <td>2020-07-19</td>
       <td>11:32</td>
-      <td>59049.481</td>
+      <td>59049.981</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>3876</td>
@@ -107,8 +107,8 @@
     </tr>
     <tr>
       <td>2020-07-19</td>
-      <td>12:55</td>
-      <td>59049.538</td>
+      <td>12:54</td>
+      <td>59050.038</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1794</td>
@@ -122,8 +122,8 @@
     </tr>
     <tr>
       <td>2020-07-19</td>
-      <td>22:05</td>
-      <td>59049.921</td>
+      <td>22:06</td>
+      <td>59050.421</td>
       <td>BUI</td>
       <td>ANT-FR</td>
       <td>11000</td>
@@ -138,7 +138,7 @@
     <tr>
       <td>2020-07-20</td>
       <td>04:27</td>
-      <td>59050.186</td>
+      <td>59050.686</td>
       <td>KSH</td>
       <td>CAR-US</td>
       <td>1000</td>
@@ -152,8 +152,8 @@
     </tr>
     <tr>
       <td>2020-07-21</td>
-      <td>11:40</td>
-      <td>59051.487</td>
+      <td>11:41</td>
+      <td>59051.987</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1677</td>
@@ -168,7 +168,7 @@
     <tr>
       <td>2020-07-29</td>
       <td>10:52</td>
-      <td>59059.453</td>
+      <td>59059.953</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1708</td>
@@ -188,7 +188,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -204,14 +204,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

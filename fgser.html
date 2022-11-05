@@ -96,7 +96,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -112,8 +112,8 @@
   <tbody>
     <tr>
       <td>2022-08-05</td>
-      <td>1:34</td>
-      <td>59796.899</td>
+      <td>21:34</td>
+      <td>59797.399</td>
       <td>YAM</td>
       <td>KOL-SK</td>
       <td>1182</td>
@@ -127,8 +127,8 @@
     </tr>
     <tr>
       <td>2020-07-27</td>
-      <td>0:49</td>
-      <td>59057.868</td>
+      <td>20:49</td>
+      <td>59058.368</td>
       <td>TMEPAD</td>
       <td>KOL-SK</td>
       <td>986</td>
@@ -143,7 +143,7 @@
     <tr>
       <td>2020-05-31</td>
       <td>11:45</td>
-      <td>59000.490</td>
+      <td>59000.990</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>826</td>
@@ -158,7 +158,7 @@
     <tr>
       <td>2020-05-29</td>
       <td>10:53</td>
-      <td>58998.454</td>
+      <td>58998.954</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>820</td>
@@ -173,7 +173,7 @@
     <tr>
       <td>2020-05-25</td>
       <td>11:36</td>
-      <td>58994.484</td>
+      <td>58994.984</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>483</td>
@@ -187,8 +187,8 @@
     </tr>
     <tr>
       <td>2019-07-12</td>
-      <td>8:00</td>
-      <td>58676.334</td>
+      <td>08:00</td>
+      <td>58676.834</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>1037</td>
@@ -202,8 +202,8 @@
     </tr>
     <tr>
       <td>2019-07-03</td>
-      <td>0:02</td>
-      <td>58667.419</td>
+      <td>10:03</td>
+      <td>58667.919</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>663</td>
@@ -217,8 +217,8 @@
     </tr>
     <tr>
       <td>2018-06-22</td>
-      <td>2:32</td>
-      <td>58291.939</td>
+      <td>22:32</td>
+      <td>58292.439</td>
       <td>DBO</td>
       <td>WCO-UK</td>
       <td>1099</td>
@@ -232,8 +232,8 @@
     </tr>
     <tr>
       <td>2017-09-23</td>
-      <td>6:03</td>
-      <td>58019.252</td>
+      <td>06:02</td>
+      <td>58019.752</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>613</td>
@@ -247,8 +247,8 @@
     </tr>
     <tr>
       <td>2017-08-26</td>
-      <td>6:09</td>
-      <td>57991.257</td>
+      <td>06:10</td>
+      <td>57991.757</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>970</td>
@@ -262,8 +262,8 @@
     </tr>
     <tr>
       <td>2017-08-05</td>
-      <td>2:17</td>
-      <td>57970.929</td>
+      <td>22:17</td>
+      <td>57971.429</td>
       <td>DBO</td>
       <td>WCO-UK</td>
       <td>981</td>
@@ -277,8 +277,8 @@
     </tr>
     <tr>
       <td>2014-07-25</td>
-      <td>0:30</td>
-      <td>56863.021</td>
+      <td>00:30</td>
+      <td>56863.521</td>
       <td>DBO</td>
       <td>WCO-UK</td>
       <td>900</td>
@@ -292,8 +292,8 @@
     </tr>
     <tr>
       <td>2013-08-05</td>
-      <td>1:05</td>
-      <td>56509.879</td>
+      <td>21:05</td>
+      <td>56510.379</td>
       <td>FTE</td>
       <td>ORS-FR</td>
       <td>883</td>
@@ -307,8 +307,8 @@
     </tr>
     <tr>
       <td>2012-06-27</td>
-      <td>0:07</td>
-      <td>56105.005</td>
+      <td>00:07</td>
+      <td>56105.505</td>
       <td>BUI</td>
       <td>CAS-FR</td>
       <td>1000</td>
@@ -328,7 +328,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -344,14 +344,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

@@ -76,7 +76,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -93,7 +93,7 @@
     <tr>
       <td>2014-03-11</td>
       <td>00:17</td>
-      <td>56727.012</td>
+      <td>56727.512</td>
       <td>RLE</td>
       <td>THO-UK</td>
       <td>509</td>
@@ -107,8 +107,8 @@
     </tr>
     <tr>
       <td>2014-03-11</td>
-      <td>04:58</td>
-      <td>56727.208</td>
+      <td>04:59</td>
+      <td>56727.708</td>
       <td>BUI</td>
       <td>CAS-FR</td>
       <td>621</td>
@@ -123,7 +123,7 @@
     <tr>
       <td>2014-03-13</td>
       <td>03:21</td>
-      <td>56729.140</td>
+      <td>56729.640</td>
       <td>BUI</td>
       <td>CAS-FR</td>
       <td>619</td>
@@ -138,7 +138,7 @@
     <tr>
       <td>2014-03-14</td>
       <td>01:37</td>
-      <td>56730.068</td>
+      <td>56730.568</td>
       <td>RLE</td>
       <td>THO-UK</td>
       <td>462</td>
@@ -153,7 +153,7 @@
     <tr>
       <td>2014-03-22</td>
       <td>23:58</td>
-      <td>56738.999</td>
+      <td>56739.499</td>
       <td>GER</td>
       <td>HOU-NL</td>
       <td>214</td>
@@ -168,7 +168,7 @@
     <tr>
       <td>2014-03-23</td>
       <td>23:48</td>
-      <td>56739.992</td>
+      <td>56740.492</td>
       <td>RLE</td>
       <td>THO-UK</td>
       <td>661</td>
@@ -183,7 +183,7 @@
     <tr>
       <td>2014-04-06</td>
       <td>00:21</td>
-      <td>56753.015</td>
+      <td>56753.515</td>
       <td>GER</td>
       <td>HOU-NL</td>
       <td>107</td>
@@ -198,7 +198,7 @@
     <tr>
       <td>2014-04-06</td>
       <td>23:38</td>
-      <td>56753.985</td>
+      <td>56754.485</td>
       <td>OGA</td>
       <td>OHP-FR</td>
       <td>696</td>
@@ -213,7 +213,7 @@
     <tr>
       <td>2014-04-07</td>
       <td>08:08</td>
-      <td>56754.339</td>
+      <td>56754.839</td>
       <td>LES</td>
       <td>MRO-CA</td>
       <td>1443</td>
@@ -227,8 +227,8 @@
     </tr>
     <tr>
       <td>2014-04-14</td>
-      <td>04:09</td>
-      <td>56761.174</td>
+      <td>04:10</td>
+      <td>56761.674</td>
       <td>BUI</td>
       <td>CAS-FR</td>
       <td>646</td>
@@ -242,8 +242,8 @@
     </tr>
     <tr>
       <td>2014-05-12</td>
-      <td>05:17</td>
-      <td>56789.220</td>
+      <td>05:16</td>
+      <td>56789.720</td>
       <td>LES</td>
       <td>MRO-CA</td>
       <td>1695</td>
@@ -258,7 +258,7 @@
     <tr>
       <td>2014-05-14</td>
       <td>23:39</td>
-      <td>56791.986</td>
+      <td>56792.486</td>
       <td>BUI</td>
       <td>CAS-FR</td>
       <td>2265</td>
@@ -273,7 +273,7 @@
     <tr>
       <td>2014-05-16</td>
       <td>00:36</td>
-      <td>56793.025</td>
+      <td>56793.525</td>
       <td>BUI</td>
       <td>CAS-FR</td>
       <td>2259</td>
@@ -287,8 +287,8 @@
     </tr>
     <tr>
       <td>2014-05-20</td>
-      <td>05:04</td>
-      <td>56797.212</td>
+      <td>05:05</td>
+      <td>56797.712</td>
       <td>LES</td>
       <td>MRO-CA</td>
       <td>1674</td>
@@ -303,7 +303,7 @@
     <tr>
       <td>2014-05-23</td>
       <td>22:35</td>
-      <td>56800.941</td>
+      <td>56801.441</td>
       <td>BUI</td>
       <td>CAS-FR</td>
       <td>635</td>
@@ -323,7 +323,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -339,14 +339,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

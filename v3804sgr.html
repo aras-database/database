@@ -95,7 +95,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -111,8 +111,8 @@
   <tbody>
     <tr>
       <td>2021-07-11</td>
-      <td>8:09</td>
-      <td>59406.340</td>
+      <td>08:09</td>
+      <td>59406.840</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>679</td>
@@ -126,8 +126,8 @@
     </tr>
     <tr>
       <td>2020-07-26</td>
-      <td>7:36</td>
-      <td>59056.317</td>
+      <td>07:36</td>
+      <td>59056.817</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>834</td>
@@ -141,8 +141,8 @@
     </tr>
     <tr>
       <td>2020-07-23</td>
-      <td>6:44</td>
-      <td>59053.281</td>
+      <td>06:44</td>
+      <td>59053.781</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>487</td>
@@ -162,7 +162,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -178,14 +178,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

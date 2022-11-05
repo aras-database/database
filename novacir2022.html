@@ -76,7 +76,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -92,8 +92,8 @@
   <tbody>
     <tr>
       <td>2022-06-26</td>
-      <td>2:42</td>
-      <td>59756.946</td>
+      <td>22:42</td>
+      <td>59757.446</td>
       <td>LTOC</td>
       <td>SEA-NZ</td>
       <td>614</td>
@@ -107,8 +107,8 @@
     </tr>
     <tr>
       <td>2022-06-27</td>
-      <td>9:31</td>
-      <td>59757.813</td>
+      <td>19:30</td>
+      <td>59758.313</td>
       <td>LTOC</td>
       <td>SEA-NZ</td>
       <td>608</td>
@@ -122,8 +122,8 @@
     </tr>
     <tr>
       <td>2022-07-01</td>
-      <td>3:46</td>
-      <td>59761.990</td>
+      <td>23:45</td>
+      <td>59762.490</td>
       <td>LTOC</td>
       <td>SEA-NZ</td>
       <td>669</td>
@@ -137,8 +137,8 @@
     </tr>
     <tr>
       <td>2022-07-03</td>
-      <td>3:17</td>
-      <td>59763.970</td>
+      <td>23:16</td>
+      <td>59764.470</td>
       <td>LTOC</td>
       <td>SEA-NZ</td>
       <td>429</td>
@@ -158,7 +158,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -174,14 +174,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

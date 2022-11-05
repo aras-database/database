@@ -94,7 +94,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -110,8 +110,8 @@
   <tbody>
     <tr>
       <td>2022-10-31</td>
-      <td>3:29</td>
-      <td>59883.562</td>
+      <td>13:29</td>
+      <td>59884.062</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -125,8 +125,8 @@
     </tr>
     <tr>
       <td>2022-09-24</td>
-      <td>5:10</td>
-      <td>59846.632</td>
+      <td>15:10</td>
+      <td>59847.132</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -140,8 +140,8 @@
     </tr>
     <tr>
       <td>2022-08-11</td>
-      <td>4:50</td>
-      <td>59802.618</td>
+      <td>14:49</td>
+      <td>59803.118</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -155,8 +155,8 @@
     </tr>
     <tr>
       <td>2022-07-11</td>
-      <td>2:36</td>
-      <td>59771.525</td>
+      <td>12:36</td>
+      <td>59772.025</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -170,8 +170,8 @@
     </tr>
     <tr>
       <td>2022-04-28</td>
-      <td>9:45</td>
-      <td>59697.824</td>
+      <td>19:46</td>
+      <td>59698.324</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -185,8 +185,8 @@
     </tr>
     <tr>
       <td>2021-09-08</td>
-      <td>07:02</td>
-      <td>59465.294</td>
+      <td>07:03</td>
+      <td>59465.794</td>
       <td>2SPOT</td>
       <td>DSC-CL</td>
       <td>565</td>
@@ -206,7 +206,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -222,14 +222,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

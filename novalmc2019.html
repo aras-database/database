@@ -76,7 +76,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -93,7 +93,7 @@
     <tr>
       <td>2019-11-13</td>
       <td>11:25</td>
-      <td>58800.476</td>
+      <td>58800.976</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1688</td>
@@ -108,7 +108,7 @@
     <tr>
       <td>2019-11-15</td>
       <td>11:32</td>
-      <td>58802.481</td>
+      <td>58802.981</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>2098</td>
@@ -128,7 +128,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -144,14 +144,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

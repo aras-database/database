@@ -102,7 +102,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -118,8 +118,8 @@
   <tbody>
     <tr>
       <td>2022-09-11</td>
-      <td>2:14</td>
-      <td>59833.926</td>
+      <td>22:13</td>
+      <td>59834.426</td>
       <td>VBO</td>
       <td>GAI-FR</td>
       <td>676</td>
@@ -133,8 +133,8 @@
     </tr>
     <tr>
       <td>2022-08-12</td>
-      <td>2:51</td>
-      <td>59803.119</td>
+      <td>02:51</td>
+      <td>59803.619</td>
       <td>KSH</td>
       <td>CAR-US</td>
       <td>1000</td>
@@ -148,8 +148,8 @@
     </tr>
     <tr>
       <td>2022-08-02</td>
-      <td>3:27</td>
-      <td>59793.977</td>
+      <td>23:26</td>
+      <td>59794.477</td>
       <td>CBO</td>
       <td>OCT-FR</td>
       <td>536</td>
@@ -163,8 +163,8 @@
     </tr>
     <tr>
       <td>2022-07-20</td>
-      <td>4:34</td>
-      <td>59780.191</td>
+      <td>04:35</td>
+      <td>59780.691</td>
       <td>KSH</td>
       <td>CAR-US</td>
       <td>1000</td>
@@ -178,8 +178,8 @@
     </tr>
     <tr>
       <td>2022-07-09</td>
-      <td>6:09</td>
-      <td>59769.257</td>
+      <td>06:10</td>
+      <td>59769.757</td>
       <td>FAS</td>
       <td>DCO-US</td>
       <td>1057</td>
@@ -193,8 +193,8 @@
     </tr>
     <tr>
       <td>2022-07-08</td>
-      <td>7:46</td>
-      <td>59768.324</td>
+      <td>07:46</td>
+      <td>59768.824</td>
       <td>BHU</td>
       <td>LGO-US</td>
       <td>486</td>
@@ -208,8 +208,8 @@
     </tr>
     <tr>
       <td>2022-07-06</td>
-      <td>4:00</td>
-      <td>59766.167</td>
+      <td>04:00</td>
+      <td>59766.667</td>
       <td>KSH</td>
       <td>CAR-US</td>
       <td>1000</td>
@@ -229,7 +229,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -245,14 +245,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

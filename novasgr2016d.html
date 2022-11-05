@@ -76,7 +76,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -93,7 +93,7 @@
     <tr>
       <td>2016-10-27</td>
       <td>11:48</td>
-      <td>57688.492</td>
+      <td>57688.992</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>525</td>
@@ -108,7 +108,7 @@
     <tr>
       <td>2016-10-28</td>
       <td>11:44</td>
-      <td>57689.489</td>
+      <td>57689.989</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>529</td>
@@ -122,8 +122,8 @@
     </tr>
     <tr>
       <td>2016-10-30</td>
-      <td>11:56</td>
-      <td>57691.498</td>
+      <td>11:57</td>
+      <td>57691.998</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>533</td>
@@ -138,7 +138,7 @@
     <tr>
       <td>2016-11-01</td>
       <td>12:28</td>
-      <td>57693.520</td>
+      <td>57694.020</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>522</td>
@@ -153,7 +153,7 @@
     <tr>
       <td>2016-11-09</td>
       <td>11:55</td>
-      <td>57701.497</td>
+      <td>57701.997</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>536</td>
@@ -168,7 +168,7 @@
     <tr>
       <td>2016-11-09</td>
       <td>12:24</td>
-      <td>57701.517</td>
+      <td>57702.017</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>8867</td>
@@ -183,7 +183,7 @@
     <tr>
       <td>2016-11-12</td>
       <td>11:38</td>
-      <td>57704.485</td>
+      <td>57704.985</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>541</td>
@@ -197,8 +197,8 @@
     </tr>
     <tr>
       <td>2016-11-18</td>
-      <td>11:53</td>
-      <td>57710.496</td>
+      <td>11:54</td>
+      <td>57710.996</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>530</td>
@@ -218,7 +218,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -234,14 +234,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

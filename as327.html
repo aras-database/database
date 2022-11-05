@@ -95,7 +95,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -111,8 +111,8 @@
   <tbody>
     <tr>
       <td>2021-05-15</td>
-      <td>1:49</td>
-      <td>59349.493</td>
+      <td>11:49</td>
+      <td>59349.993</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>796</td>
@@ -126,8 +126,8 @@
     </tr>
     <tr>
       <td>2021-05-11</td>
-      <td>1:42</td>
-      <td>59345.488</td>
+      <td>11:42</td>
+      <td>59345.988</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>578</td>
@@ -142,7 +142,7 @@
     <tr>
       <td>2020-07-21</td>
       <td>08:11</td>
-      <td>59051.341</td>
+      <td>59051.841</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>485</td>
@@ -157,7 +157,7 @@
     <tr>
       <td>2020-05-28</td>
       <td>11:44</td>
-      <td>58997.489</td>
+      <td>58997.989</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>827</td>
@@ -172,7 +172,7 @@
     <tr>
       <td>2020-05-24</td>
       <td>11:21</td>
-      <td>58993.473</td>
+      <td>58993.973</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>497</td>
@@ -192,7 +192,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -208,14 +208,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

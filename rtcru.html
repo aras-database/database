@@ -96,7 +96,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -112,8 +112,8 @@
   <tbody>
     <tr>
       <td>2020-09-23</td>
-      <td>9:32</td>
-      <td>59115.397</td>
+      <td>09:31</td>
+      <td>59115.897</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1120</td>
@@ -127,8 +127,8 @@
     </tr>
     <tr>
       <td>2020-09-08</td>
-      <td>9:23</td>
-      <td>59100.391</td>
+      <td>09:23</td>
+      <td>59100.891</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>984</td>
@@ -142,8 +142,8 @@
     </tr>
     <tr>
       <td>2020-09-07</td>
-      <td>9:18</td>
-      <td>59099.388</td>
+      <td>09:18</td>
+      <td>59099.888</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>925</td>
@@ -157,8 +157,8 @@
     </tr>
     <tr>
       <td>2019-07-28</td>
-      <td>0:45</td>
-      <td>58692.449</td>
+      <td>10:46</td>
+      <td>58692.949</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1742</td>
@@ -178,7 +178,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -194,14 +194,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

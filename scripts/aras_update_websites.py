@@ -55,7 +55,7 @@ except:
 campaigns = ascii.read("../data/campaigns.csv", header_start=0, data_start=1, delimiter=';',format='csv')
 
 df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
-df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD", "observer": "Observer", "site": "Site", "resolution": "Resolution", "lambda_min": "&lambda;<sub>min</sub>","lambda_max": "&lambda;<sub>max</sub>", "comment": "Comments"}).replace(np.nan, '', regex=True)
+df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD 24..", "observer": "Observer", "site": "Site", "resolution": "Resolution", "lambda_min": "&lambda;<sub>min</sub>","lambda_max": "&lambda;<sub>max</sub>", "comment": "Comments"}).replace(np.nan, '', regex=True)
 
 
 home = pd.read_csv('../data/symbiotic_stars.csv', delimiter=";")
@@ -79,11 +79,11 @@ for symbiotic in symbiotic_stars["star_name_string"]:
         star_intro = open("../website_source/"+symbiotic+".txt", "r").read()
         star_info = '<div class="col-sm-6">\n    <div class="card">\n      <div class="card-body">\n\n        <p class="card-text">Number of spectra:   '+str(len(all_spectra[all_spectra["star_name_string"]==symbiotic]))+'</p>\n<p class="card-text">First spectrum:   '+str(np.min(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10])+'</p>\n<p class="card-text">Last spectrum:   '+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10])+'</p>\n<br><br>\n<p class="card-text" style="margin-bottom:0.055cm;"><i>send spectra to francoismathieu.teyssier [at] gmail.com & arasdatabase [at] gmail.com</i></p>\n      </div>\n    </div>\n  </div>\n\n</div>\n\n<br><style>table {text-align: center;}table thead th {text-align: center;}</style>'
         current = df[df["star_name_string"]==symbiotic]
-        
+
         #trial
-        current = current.sort_values(by = ['JD'], ascending = [False])
+        current = current.sort_values(by = ['JD 24..'], ascending = [False])
         #end
-        
+
         campaign_string=[]
         try:
             if campaigns["campaign_type"][np.array(campaigns["star_name_string"][:]).tolist().index(symbiotic)] == "Ongoing campaign":
@@ -147,7 +147,7 @@ for symbiotic in symbiotic_stars["star_name_string"]:
         current["Preview"] = image_string
         current['<div style="display:none;">Resolution</div>'] = resolution_string
         current['<div style="display:none;"Wavelength</div>'] = wavelength_string
-        table = current.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
+        table = current.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Date","Time (UT)","JD 24..","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
         website = open("../"+symbiotic+".html", "w")
         try:
             website.write(intro+"\n"+star_intro+star_info+campaign_string+"\n"+table+footer)
@@ -245,7 +245,7 @@ df_merc['<div style="display:none;">Resolution</div>'] = resolution_string
 df_merc['<div style="display:none;"Wavelength</div>'] = wavelength_string
 df_merc["Object"] = object_name_string
 
-table = df_merc.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Object","Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
+table = df_merc.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Object","Date","Time (UT)","JD 24..","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
 
 footer = open("../website_source/special_footer.txt", "r").read()
 merc_info = open("../website_source/merc.txt", "r").read()
@@ -299,7 +299,7 @@ df_lucy['<div style="display:none;">Resolution</div>'] = resolution_string
 df_lucy['<div style="display:none;"Wavelength</div>'] = wavelength_string
 df_lucy["Object"] = object_name_string
 
-table = df_lucy.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Object","Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
+table = df_lucy.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Object","Date","Time (UT)","JD 24..","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
 
 footer = open("../website_source/special_footer.txt", "r").read()
 lucy_info = open("../website_source/lucy.txt", "r").read()
@@ -311,7 +311,7 @@ lucy_website.close()
 # Novae
 
 df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
-df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD", "observer": "Observer", "site": "Site", "resolution": "Resolution", "lambda_min": "&lambda;<sub>min</sub>","lambda_max": "&lambda;<sub>max</sub>", "comment": "Comments"}).replace(np.nan, '', regex=True)
+df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD 24..", "observer": "Observer", "site": "Site", "resolution": "Resolution", "lambda_min": "&lambda;<sub>min</sub>","lambda_max": "&lambda;<sub>max</sub>", "comment": "Comments"}).replace(np.nan, '', regex=True)
 home = pd.read_csv('../data/novae.csv', delimiter=";")
 home = home.rename(columns={"ra": "RA (2000)", "dec": "DEC (2000)", "gcvs": "GCVS", "discovery_name": "Discovery Name"}).replace(np.nan, '', regex=True)
 
@@ -401,7 +401,7 @@ for nova in novae["star_name_string"]:
                 current['<div style="display:none;">Resolution</div>'] = resolution_string
                 current['<div style="display:none;"Wavelength</div>'] = wavelength_string
 
-                table = current.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
+                table = current.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Date","Time (UT)","JD 24..","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
                 website = open("../"+nova+".html", "w")
                 try:
                     website.write(intro+"\n"+star_intro+star_info+campaign_string+"\n"+table+footer)
@@ -458,7 +458,7 @@ last_update.close()
 #dwarf_novae
 
 # df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
-# df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD", "observer": "Observer", "site": "Site", "resolution": "Resolution", "lambda_min": "&lambda;<sub>min</sub>","lambda_max": "&lambda;<sub>max</sub>", "comment": "Comments"}).replace(np.nan, '', regex=True)
+# df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD 24..", "observer": "Observer", "site": "Site", "resolution": "Resolution", "lambda_min": "&lambda;<sub>min</sub>","lambda_max": "&lambda;<sub>max</sub>", "comment": "Comments"}).replace(np.nan, '', regex=True)
 # home = pd.read_csv('../data/dwarf_novae.csv', delimiter=";")
 # home = home.rename(columns={"ra": "RA (2000)", "dec": "DEC (2000)"}).replace(np.nan, '', regex=True)
 
@@ -548,7 +548,7 @@ last_update.close()
 #                 current['<div style="display:none;">Resolution</div>'] = resolution_string
 #                 current['<div style="display:none;"Wavelength</div>'] = wavelength_string
 
-#                 table = current.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Date","Time (UT)","JD","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
+#                 table = current.to_html(index=False, escape=False,classes="display", table_id = "table_id",border=0, columns=["Date","Time (UT)","JD 24..","Observer","Site","Resolution",'<div style="display:none;">Resolution</div>',"&lambda;<sub>min</sub>","&lambda;<sub>max</sub>",'<div style="display:none;"Wavelength</div>',"File","Preview","Comments"])
 #                 website = open("../"+dwarf_nova+".html", "w")
 #                 try:
 #                     website.write(intro+"\n"+star_intro+star_info+campaign_string+"\n"+table+footer)

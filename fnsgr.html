@@ -96,7 +96,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -112,8 +112,8 @@
   <tbody>
     <tr>
       <td>2021-06-11</td>
-      <td>1:09</td>
-      <td>59376.465</td>
+      <td>11:09</td>
+      <td>59376.965</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>514</td>
@@ -128,7 +128,7 @@
     <tr>
       <td>2020-07-24</td>
       <td>07:36</td>
-      <td>59054.317</td>
+      <td>59054.817</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>814</td>
@@ -142,8 +142,8 @@
     </tr>
     <tr>
       <td>2020-07-23</td>
-      <td>09:16</td>
-      <td>59053.386</td>
+      <td>09:15</td>
+      <td>59053.886</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>484</td>
@@ -157,8 +157,8 @@
     </tr>
     <tr>
       <td>2018-07-15</td>
-      <td>0:43</td>
-      <td>58314.447</td>
+      <td>10:43</td>
+      <td>58314.947</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>671</td>
@@ -172,8 +172,8 @@
     </tr>
     <tr>
       <td>2018-06-13</td>
-      <td>0:31</td>
-      <td>58282.438</td>
+      <td>10:30</td>
+      <td>58282.938</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>877</td>
@@ -187,8 +187,8 @@
     </tr>
     <tr>
       <td>2017-09-23</td>
-      <td>5:25</td>
-      <td>58019.226</td>
+      <td>05:25</td>
+      <td>58019.726</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>609</td>
@@ -202,8 +202,8 @@
     </tr>
     <tr>
       <td>2017-08-26</td>
-      <td>7:30</td>
-      <td>57991.312</td>
+      <td>07:29</td>
+      <td>57991.812</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>921</td>
@@ -217,8 +217,8 @@
     </tr>
     <tr>
       <td>2017-07-01</td>
-      <td>3:51</td>
-      <td>57935.577</td>
+      <td>13:50</td>
+      <td>57936.077</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1708</td>
@@ -232,8 +232,8 @@
     </tr>
     <tr>
       <td>2014-07-02</td>
-      <td>2:43</td>
-      <td>56840.530</td>
+      <td>12:43</td>
+      <td>56841.030</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1573</td>
@@ -247,8 +247,8 @@
     </tr>
     <tr>
       <td>2014-06-26</td>
-      <td>0:58</td>
-      <td>56834.457</td>
+      <td>10:58</td>
+      <td>56834.957</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1643</td>
@@ -268,7 +268,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -284,14 +284,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

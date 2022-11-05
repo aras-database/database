@@ -76,7 +76,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -93,7 +93,7 @@
     <tr>
       <td>2019-07-09</td>
       <td>13:17</td>
-      <td>58673.554</td>
+      <td>58674.054</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1732</td>
@@ -108,7 +108,7 @@
     <tr>
       <td>2019-07-12</td>
       <td>12:43</td>
-      <td>58676.530</td>
+      <td>58677.030</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1623</td>
@@ -123,7 +123,7 @@
     <tr>
       <td>2019-07-13</td>
       <td>13:22</td>
-      <td>58677.557</td>
+      <td>58678.057</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1358</td>
@@ -138,7 +138,7 @@
     <tr>
       <td>2019-07-14</td>
       <td>12:37</td>
-      <td>58678.526</td>
+      <td>58679.026</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1715</td>
@@ -153,7 +153,7 @@
     <tr>
       <td>2019-07-17</td>
       <td>12:41</td>
-      <td>58681.529</td>
+      <td>58682.029</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1580</td>
@@ -168,7 +168,7 @@
     <tr>
       <td>2019-07-19</td>
       <td>13:00</td>
-      <td>58683.542</td>
+      <td>58684.042</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1710</td>
@@ -183,7 +183,7 @@
     <tr>
       <td>2019-07-25</td>
       <td>12:44</td>
-      <td>58689.531</td>
+      <td>58690.031</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1820</td>
@@ -198,7 +198,7 @@
     <tr>
       <td>2019-07-28</td>
       <td>11:55</td>
-      <td>58692.497</td>
+      <td>58692.997</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1702</td>
@@ -213,7 +213,7 @@
     <tr>
       <td>2019-08-03</td>
       <td>12:54</td>
-      <td>58698.538</td>
+      <td>58699.038</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1444</td>
@@ -233,7 +233,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -249,14 +249,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

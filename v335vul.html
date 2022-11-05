@@ -96,7 +96,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -112,8 +112,8 @@
   <tbody>
     <tr>
       <td>2022-08-25</td>
-      <td>0:51</td>
-      <td>59816.869</td>
+      <td>20:51</td>
+      <td>59817.369</td>
       <td>DBO</td>
       <td>WCO-UK</td>
       <td>1159</td>
@@ -127,8 +127,8 @@
     </tr>
     <tr>
       <td>2019-07-25</td>
-      <td>1:18</td>
-      <td>58689.888</td>
+      <td>21:18</td>
+      <td>58690.388</td>
       <td>JMI</td>
       <td>SAO-FR</td>
       <td>900</td>
@@ -142,8 +142,8 @@
     </tr>
     <tr>
       <td>2018-07-26</td>
-      <td>0:15</td>
-      <td>58325.011</td>
+      <td>00:15</td>
+      <td>58325.511</td>
       <td>TRO</td>
       <td>PON-UK</td>
       <td>615</td>
@@ -157,8 +157,8 @@
     </tr>
     <tr>
       <td>2018-06-18</td>
-      <td>2:11</td>
-      <td>58287.925</td>
+      <td>22:12</td>
+      <td>58288.425</td>
       <td>SOL</td>
       <td>AQL-IT</td>
       <td>7280</td>
@@ -172,8 +172,8 @@
     </tr>
     <tr>
       <td>2017-09-20</td>
-      <td>6:25</td>
-      <td>58016.268</td>
+      <td>06:25</td>
+      <td>58016.768</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>803</td>
@@ -187,8 +187,8 @@
     </tr>
     <tr>
       <td>2016-10-31</td>
-      <td>0:16</td>
-      <td>57692.845</td>
+      <td>20:16</td>
+      <td>57693.345</td>
       <td>FBO</td>
       <td>SJI-FR</td>
       <td>2200</td>
@@ -202,8 +202,8 @@
     </tr>
     <tr>
       <td>2016-10-09</td>
-      <td>9:44</td>
-      <td>57670.823</td>
+      <td>19:45</td>
+      <td>57671.323</td>
       <td>JGF</td>
       <td>SMM-SP</td>
       <td>1253</td>
@@ -217,8 +217,8 @@
     </tr>
     <tr>
       <td>2016-08-25</td>
-      <td>2:01</td>
-      <td>57625.917</td>
+      <td>22:00</td>
+      <td>57626.417</td>
       <td>PSO</td>
       <td>TAT-HU</td>
       <td>1714</td>
@@ -232,8 +232,8 @@
     </tr>
     <tr>
       <td>2016-08-23</td>
-      <td>3:14</td>
-      <td>57623.968</td>
+      <td>23:13</td>
+      <td>57624.468</td>
       <td>OTH</td>
       <td>OBE-FR</td>
       <td>11000</td>
@@ -247,8 +247,8 @@
     </tr>
     <tr>
       <td>2016-08-22</td>
-      <td>1:48</td>
-      <td>57622.909</td>
+      <td>21:48</td>
+      <td>57623.409</td>
       <td>JGF</td>
       <td>SMM-SP</td>
       <td>1048</td>
@@ -262,8 +262,8 @@
     </tr>
     <tr>
       <td>2016-08-22</td>
-      <td>1:15</td>
-      <td>57622.886</td>
+      <td>21:15</td>
+      <td>57623.386</td>
       <td>FCA</td>
       <td>PAG-SP</td>
       <td>785</td>
@@ -277,8 +277,8 @@
     </tr>
     <tr>
       <td>2016-08-14</td>
-      <td>2:15</td>
-      <td>57614.927</td>
+      <td>22:14</td>
+      <td>57615.427</td>
       <td>BER</td>
       <td>BVO-IT</td>
       <td>5810</td>
@@ -298,7 +298,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -314,14 +314,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

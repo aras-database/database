@@ -96,7 +96,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -112,8 +112,8 @@
   <tbody>
     <tr>
       <td>2021-06-11</td>
-      <td>7:39</td>
-      <td>59376.319</td>
+      <td>07:39</td>
+      <td>59376.819</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>518</td>
@@ -127,8 +127,8 @@
     </tr>
     <tr>
       <td>2021-05-11</td>
-      <td>0:42</td>
-      <td>59345.447</td>
+      <td>10:43</td>
+      <td>59345.947</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>582</td>
@@ -142,8 +142,8 @@
     </tr>
     <tr>
       <td>2019-07-03</td>
-      <td>7:38</td>
-      <td>58667.318</td>
+      <td>07:37</td>
+      <td>58667.818</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>664</td>
@@ -157,8 +157,8 @@
     </tr>
     <tr>
       <td>2018-07-13</td>
-      <td>7:44</td>
-      <td>58312.322</td>
+      <td>07:43</td>
+      <td>58312.822</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>785</td>
@@ -172,8 +172,8 @@
     </tr>
     <tr>
       <td>2012-06-26</td>
-      <td>3:21</td>
-      <td>56104.973</td>
+      <td>23:21</td>
+      <td>56105.473</td>
       <td>BUI</td>
       <td>CAS-FR</td>
       <td>1000</td>
@@ -193,7 +193,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -209,14 +209,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

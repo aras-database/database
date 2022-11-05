@@ -96,7 +96,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -112,8 +112,8 @@
   <tbody>
     <tr>
       <td>2022-03-27</td>
-      <td>0:44</td>
-      <td>59665.864</td>
+      <td>20:44</td>
+      <td>59666.364</td>
       <td>PAD</td>
       <td>KOL-SK</td>
       <td>991</td>
@@ -127,8 +127,8 @@
     </tr>
     <tr>
       <td>2022-02-19</td>
-      <td>9:35</td>
-      <td>59629.816</td>
+      <td>19:35</td>
+      <td>59630.316</td>
       <td>FBO</td>
       <td>SJI-FR</td>
       <td>1000</td>
@@ -142,8 +142,8 @@
     </tr>
     <tr>
       <td>2021-10-10</td>
-      <td>2:57</td>
-      <td>59497.123</td>
+      <td>02:57</td>
+      <td>59497.623</td>
       <td>PAD</td>
       <td>KOL-SK</td>
       <td>890</td>
@@ -157,8 +157,8 @@
     </tr>
     <tr>
       <td>2021-04-04</td>
-      <td>1:17</td>
-      <td>59308.887</td>
+      <td>21:17</td>
+      <td>59309.387</td>
       <td>FBO</td>
       <td>SJI-FR</td>
       <td>1000</td>
@@ -172,8 +172,8 @@
     </tr>
     <tr>
       <td>2021-03-30</td>
-      <td>0:14</td>
-      <td>59303.843</td>
+      <td>20:13</td>
+      <td>59304.343</td>
       <td>VLE</td>
       <td>ORL-FR</td>
       <td>600</td>
@@ -187,8 +187,8 @@
     </tr>
     <tr>
       <td>2019-02-15</td>
-      <td>0:50</td>
-      <td>58529.868</td>
+      <td>20:49</td>
+      <td>58530.368</td>
       <td>FCA</td>
       <td>PAG-SP</td>
       <td>763</td>
@@ -202,8 +202,8 @@
     </tr>
     <tr>
       <td>2019-02-09</td>
-      <td>4:58</td>
-      <td>58523.208</td>
+      <td>04:59</td>
+      <td>58523.708</td>
       <td>FAS</td>
       <td>DCO-US</td>
       <td>893</td>
@@ -217,8 +217,8 @@
     </tr>
     <tr>
       <td>2017-12-15</td>
-      <td>6:23</td>
-      <td>58102.266</td>
+      <td>06:23</td>
+      <td>58102.766</td>
       <td>FAS</td>
       <td>DCO-US</td>
       <td>949</td>
@@ -232,8 +232,8 @@
     </tr>
     <tr>
       <td>2017-09-24</td>
-      <td>0:37</td>
-      <td>58020.443</td>
+      <td>10:37</td>
+      <td>58020.943</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>606</td>
@@ -247,8 +247,8 @@
     </tr>
     <tr>
       <td>2017-02-20</td>
-      <td>2:00</td>
-      <td>57804.917</td>
+      <td>22:00</td>
+      <td>57805.417</td>
       <td>FCA</td>
       <td>PAG-SP</td>
       <td>841</td>
@@ -262,8 +262,8 @@
     </tr>
     <tr>
       <td>2017-01-07</td>
-      <td>1:30</td>
-      <td>57760.896</td>
+      <td>21:30</td>
+      <td>57761.396</td>
       <td>FBO</td>
       <td>SJI-FR</td>
       <td>2200</td>
@@ -277,8 +277,8 @@
     </tr>
     <tr>
       <td>2016-03-29</td>
-      <td>1:21</td>
-      <td>57476.890</td>
+      <td>21:21</td>
+      <td>57477.390</td>
       <td>JGF</td>
       <td>SMM-SP</td>
       <td>948</td>
@@ -292,8 +292,8 @@
     </tr>
     <tr>
       <td>2016-03-11</td>
-      <td>1:44</td>
-      <td>57458.906</td>
+      <td>21:44</td>
+      <td>57459.406</td>
       <td>JGF</td>
       <td>SMM-SP</td>
       <td>808</td>
@@ -307,8 +307,8 @@
     </tr>
     <tr>
       <td>2016-03-10</td>
-      <td>2:00</td>
-      <td>57457.917</td>
+      <td>22:00</td>
+      <td>57458.417</td>
       <td>JGF</td>
       <td>SMM-SP</td>
       <td>969</td>
@@ -328,7 +328,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -344,14 +344,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

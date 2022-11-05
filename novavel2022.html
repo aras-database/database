@@ -76,7 +76,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -92,8 +92,8 @@
   <tbody>
     <tr>
       <td>2022-05-01</td>
-      <td>0:40</td>
-      <td>59700.028</td>
+      <td>00:40</td>
+      <td>59700.528</td>
       <td>2SPOT</td>
       <td>DSC-CL</td>
       <td>564</td>
@@ -107,8 +107,8 @@
     </tr>
     <tr>
       <td>2022-05-02</td>
-      <td>0:46</td>
-      <td>59701.032</td>
+      <td>00:46</td>
+      <td>59701.532</td>
       <td>2SPOT</td>
       <td>DSC-CL</td>
       <td>567</td>
@@ -122,8 +122,8 @@
     </tr>
     <tr>
       <td>2022-05-03</td>
-      <td>0:35</td>
-      <td>59702.442</td>
+      <td>10:36</td>
+      <td>59702.942</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1150</td>
@@ -137,8 +137,8 @@
     </tr>
     <tr>
       <td>2022-05-05</td>
-      <td>1:59</td>
-      <td>59704.500</td>
+      <td>12:00</td>
+      <td>59705.000</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1242</td>
@@ -152,8 +152,8 @@
     </tr>
     <tr>
       <td>2022-05-06</td>
-      <td>0:01</td>
-      <td>59705.417</td>
+      <td>10:00</td>
+      <td>59705.917</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1175</td>
@@ -167,8 +167,8 @@
     </tr>
     <tr>
       <td>2022-05-08</td>
-      <td>1:48</td>
-      <td>59707.492</td>
+      <td>11:48</td>
+      <td>59707.992</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1190</td>
@@ -182,8 +182,8 @@
     </tr>
     <tr>
       <td>2022-05-09</td>
-      <td>0:20</td>
-      <td>59708.431</td>
+      <td>10:20</td>
+      <td>59708.931</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1150</td>
@@ -197,8 +197,8 @@
     </tr>
     <tr>
       <td>2022-05-10</td>
-      <td>1:37</td>
-      <td>59709.484</td>
+      <td>11:36</td>
+      <td>59709.984</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>819</td>
@@ -218,7 +218,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -234,14 +234,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

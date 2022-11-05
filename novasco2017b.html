@@ -76,7 +76,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -92,8 +92,8 @@
   <tbody>
     <tr>
       <td>2017-10-18</td>
-      <td>11:43</td>
-      <td>58044.488</td>
+      <td>11:42</td>
+      <td>58044.988</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>539</td>
@@ -108,7 +108,7 @@
     <tr>
       <td>2017-10-19</td>
       <td>12:01</td>
-      <td>58045.501</td>
+      <td>58046.001</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>533</td>
@@ -123,7 +123,7 @@
     <tr>
       <td>2017-10-20</td>
       <td>12:07</td>
-      <td>58046.505</td>
+      <td>58047.005</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>539</td>
@@ -138,7 +138,7 @@
     <tr>
       <td>2017-10-22</td>
       <td>12:08</td>
-      <td>58048.506</td>
+      <td>58049.006</td>
       <td>PJL</td>
       <td>SPO-AU</td>
       <td>538</td>
@@ -158,7 +158,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -174,14 +174,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

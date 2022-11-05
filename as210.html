@@ -96,7 +96,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -112,8 +112,8 @@
   <tbody>
     <tr>
       <td>2021-05-15</td>
-      <td>0:06</td>
-      <td>59349.421</td>
+      <td>10:06</td>
+      <td>59349.921</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>799</td>
@@ -127,8 +127,8 @@
     </tr>
     <tr>
       <td>2021-05-13</td>
-      <td>8:00</td>
-      <td>59347.334</td>
+      <td>08:00</td>
+      <td>59347.834</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>493</td>
@@ -142,8 +142,8 @@
     </tr>
     <tr>
       <td>2021-05-11</td>
-      <td>8:55</td>
-      <td>59345.372</td>
+      <td>08:55</td>
+      <td>59345.872</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>579</td>
@@ -158,7 +158,7 @@
     <tr>
       <td>2020-05-29</td>
       <td>08:58</td>
-      <td>58998.374</td>
+      <td>58998.874</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>802</td>
@@ -173,7 +173,7 @@
     <tr>
       <td>2020-05-26</td>
       <td>08:45</td>
-      <td>58995.365</td>
+      <td>58995.865</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>492</td>
@@ -187,8 +187,8 @@
     </tr>
     <tr>
       <td>2019-07-06</td>
-      <td>7:43</td>
-      <td>58670.322</td>
+      <td>07:43</td>
+      <td>58670.822</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>905</td>
@@ -202,8 +202,8 @@
     </tr>
     <tr>
       <td>2019-07-03</td>
-      <td>6:43</td>
-      <td>58667.280</td>
+      <td>06:43</td>
+      <td>58667.780</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>670</td>
@@ -217,8 +217,8 @@
     </tr>
     <tr>
       <td>2018-07-07</td>
-      <td>6:51</td>
-      <td>58306.286</td>
+      <td>06:51</td>
+      <td>58306.786</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>908</td>
@@ -232,8 +232,8 @@
     </tr>
     <tr>
       <td>2018-06-14</td>
-      <td>5:43</td>
-      <td>58283.239</td>
+      <td>05:44</td>
+      <td>58283.739</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>833</td>
@@ -253,7 +253,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -269,14 +269,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

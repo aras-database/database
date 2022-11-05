@@ -94,7 +94,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -110,8 +110,8 @@
   <tbody>
     <tr>
       <td>2022-05-29</td>
-      <td>1:39</td>
-      <td>59728.486</td>
+      <td>11:39</td>
+      <td>59728.986</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -125,8 +125,8 @@
     </tr>
     <tr>
       <td>2022-05-05</td>
-      <td>1:44</td>
-      <td>59704.489</td>
+      <td>11:44</td>
+      <td>59704.989</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -140,8 +140,8 @@
     </tr>
     <tr>
       <td>2022-04-29</td>
-      <td>1:24</td>
-      <td>59698.475</td>
+      <td>11:24</td>
+      <td>59698.975</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -155,8 +155,8 @@
     </tr>
     <tr>
       <td>2022-04-12</td>
-      <td>2:08</td>
-      <td>59681.506</td>
+      <td>12:08</td>
+      <td>59682.006</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -170,8 +170,8 @@
     </tr>
     <tr>
       <td>2022-03-10</td>
-      <td>3:42</td>
-      <td>59648.571</td>
+      <td>13:42</td>
+      <td>59649.071</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -185,8 +185,8 @@
     </tr>
     <tr>
       <td>2022-02-13</td>
-      <td>4:44</td>
-      <td>59623.614</td>
+      <td>14:44</td>
+      <td>59624.114</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -200,8 +200,8 @@
     </tr>
     <tr>
       <td>2022-02-09</td>
-      <td>2:53</td>
-      <td>59619.537</td>
+      <td>12:53</td>
+      <td>59620.037</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -215,8 +215,8 @@
     </tr>
     <tr>
       <td>2022-01-19</td>
-      <td>3:48</td>
-      <td>59598.575</td>
+      <td>13:48</td>
+      <td>59599.075</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -230,8 +230,8 @@
     </tr>
     <tr>
       <td>2022-01-13</td>
-      <td>4:37</td>
-      <td>59592.609</td>
+      <td>14:36</td>
+      <td>59593.109</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -245,8 +245,8 @@
     </tr>
     <tr>
       <td>2022-01-06</td>
-      <td>6:22</td>
-      <td>59585.682</td>
+      <td>16:22</td>
+      <td>59586.182</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -260,8 +260,8 @@
     </tr>
     <tr>
       <td>2022-01-02</td>
-      <td>5:36</td>
-      <td>59581.651</td>
+      <td>15:37</td>
+      <td>59582.151</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -281,7 +281,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -297,14 +297,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

@@ -94,7 +94,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -110,8 +110,8 @@
   <tbody>
     <tr>
       <td>2021-05-24</td>
-      <td>0:16</td>
-      <td>59358.428</td>
+      <td>10:16</td>
+      <td>59358.928</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1271</td>
@@ -125,8 +125,8 @@
     </tr>
     <tr>
       <td>2021-05-23</td>
-      <td>0:43</td>
-      <td>59357.447</td>
+      <td>10:43</td>
+      <td>59357.947</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1028</td>
@@ -140,8 +140,8 @@
     </tr>
     <tr>
       <td>2021-05-22</td>
-      <td>3:34</td>
-      <td>59356.565</td>
+      <td>13:33</td>
+      <td>59357.065</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1059</td>
@@ -155,8 +155,8 @@
     </tr>
     <tr>
       <td>2021-05-22</td>
-      <td>9:24</td>
-      <td>59356.392</td>
+      <td>09:24</td>
+      <td>59356.892</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>600</td>
@@ -170,8 +170,8 @@
     </tr>
     <tr>
       <td>2021-05-21</td>
-      <td>0:32</td>
-      <td>59355.439</td>
+      <td>10:32</td>
+      <td>59355.939</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1031</td>
@@ -185,8 +185,8 @@
     </tr>
     <tr>
       <td>2021-05-21</td>
-      <td>0:27</td>
-      <td>59355.436</td>
+      <td>10:27</td>
+      <td>59355.936</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>600</td>
@@ -200,8 +200,8 @@
     </tr>
     <tr>
       <td>2021-05-19</td>
-      <td>0:49</td>
-      <td>59353.451</td>
+      <td>10:49</td>
+      <td>59353.951</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>600</td>
@@ -215,8 +215,8 @@
     </tr>
     <tr>
       <td>2021-05-18</td>
-      <td>0:26</td>
-      <td>59352.435</td>
+      <td>10:26</td>
+      <td>59352.935</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1272</td>
@@ -230,8 +230,8 @@
     </tr>
     <tr>
       <td>2020-07-21</td>
-      <td>2:35</td>
-      <td>59051.524</td>
+      <td>12:34</td>
+      <td>59052.024</td>
       <td>BHQ</td>
       <td>ARM-AU</td>
       <td>1778</td>
@@ -245,8 +245,8 @@
     </tr>
     <tr>
       <td>2020-07-19</td>
-      <td>0:31</td>
-      <td>59049.438</td>
+      <td>10:30</td>
+      <td>59049.938</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1176</td>
@@ -266,7 +266,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -282,14 +282,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

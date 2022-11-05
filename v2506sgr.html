@@ -95,7 +95,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -111,8 +111,8 @@
   <tbody>
     <tr>
       <td>2020-05-31</td>
-      <td>1:10</td>
-      <td>59000.466</td>
+      <td>11:11</td>
+      <td>59000.966</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>851</td>
@@ -126,8 +126,8 @@
     </tr>
     <tr>
       <td>2020-05-24</td>
-      <td>0:34</td>
-      <td>58993.441</td>
+      <td>10:35</td>
+      <td>58993.941</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>443</td>
@@ -147,7 +147,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -163,14 +163,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

@@ -76,7 +76,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -93,7 +93,7 @@
     <tr>
       <td>2019-10-29</td>
       <td>18:24</td>
-      <td>58785.767</td>
+      <td>58786.267</td>
       <td>FCA</td>
       <td>PAG-SP</td>
       <td>859</td>
@@ -107,8 +107,8 @@
     </tr>
     <tr>
       <td>2019-10-29</td>
-      <td>19:28</td>
-      <td>58785.811</td>
+      <td>19:27</td>
+      <td>58786.311</td>
       <td>PCA</td>
       <td>LEC-IT</td>
       <td>532</td>
@@ -123,7 +123,7 @@
     <tr>
       <td>2019-11-04</td>
       <td>17:05</td>
-      <td>58791.712</td>
+      <td>58792.212</td>
       <td>SOL</td>
       <td>AQL-IT</td>
       <td>1765</td>
@@ -138,7 +138,7 @@
     <tr>
       <td>2019-11-04</td>
       <td>19:23</td>
-      <td>58791.808</td>
+      <td>58792.308</td>
       <td>PCA</td>
       <td>LEC-IT</td>
       <td>519</td>
@@ -152,8 +152,8 @@
     </tr>
     <tr>
       <td>2019-11-07</td>
-      <td>17:43</td>
-      <td>58794.738</td>
+      <td>17:42</td>
+      <td>58795.238</td>
       <td>SOL</td>
       <td>AQL-IT</td>
       <td>1876</td>
@@ -167,8 +167,8 @@
     </tr>
     <tr>
       <td>2019-11-08</td>
-      <td>19:05</td>
-      <td>58795.796</td>
+      <td>19:06</td>
+      <td>58796.296</td>
       <td>PCA</td>
       <td>LEC-IT</td>
       <td>531</td>
@@ -183,7 +183,7 @@
     <tr>
       <td>2019-11-10</td>
       <td>18:23</td>
-      <td>58797.766</td>
+      <td>58798.266</td>
       <td>PCA</td>
       <td>LEC-IT</td>
       <td>520</td>
@@ -197,8 +197,8 @@
     </tr>
     <tr>
       <td>2019-11-18</td>
-      <td>18:26</td>
-      <td>58805.768</td>
+      <td>18:25</td>
+      <td>58806.268</td>
       <td>PCA</td>
       <td>LEC-IT</td>
       <td>522</td>
@@ -218,7 +218,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -234,14 +234,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

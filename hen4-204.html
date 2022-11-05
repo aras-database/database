@@ -94,7 +94,7 @@
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -110,8 +110,8 @@
   <tbody>
     <tr>
       <td>2022-11-01</td>
-      <td>2:58</td>
-      <td>59884.541</td>
+      <td>12:59</td>
+      <td>59885.041</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -125,8 +125,8 @@
     </tr>
     <tr>
       <td>2022-10-02</td>
-      <td>3:56</td>
-      <td>59854.581</td>
+      <td>13:56</td>
+      <td>59855.081</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -140,8 +140,8 @@
     </tr>
     <tr>
       <td>2022-08-22</td>
-      <td>5:07</td>
-      <td>59813.630</td>
+      <td>15:07</td>
+      <td>59814.130</td>
       <td>CEL</td>
       <td>MAR-AU</td>
       <td>10000</td>
@@ -156,7 +156,7 @@
     <tr>
       <td>2021-09-08</td>
       <td>08:26</td>
-      <td>59465.352</td>
+      <td>59465.852</td>
       <td>2SPOT</td>
       <td>DSC-CL</td>
       <td>566</td>
@@ -170,8 +170,8 @@
     </tr>
     <tr>
       <td>2021-07-15</td>
-      <td>07:57</td>
-      <td>59410.331</td>
+      <td>07:56</td>
+      <td>59410.831</td>
       <td>2SPOT</td>
       <td>DSC-CL</td>
       <td>575</td>
@@ -185,8 +185,8 @@
     </tr>
     <tr>
       <td>2021-05-24</td>
-      <td>18:45</td>
-      <td>59358.781</td>
+      <td>18:44</td>
+      <td>59359.281</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1271</td>
@@ -200,8 +200,8 @@
     </tr>
     <tr>
       <td>2021-05-24</td>
-      <td>8:37</td>
-      <td>59358.776</td>
+      <td>18:37</td>
+      <td>59359.276</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>600</td>
@@ -216,7 +216,7 @@
     <tr>
       <td>2021-05-22</td>
       <td>19:07</td>
-      <td>59356.797</td>
+      <td>59357.297</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>1084</td>
@@ -230,8 +230,8 @@
     </tr>
     <tr>
       <td>2020-07-30</td>
-      <td>1:41</td>
-      <td>59060.487</td>
+      <td>11:41</td>
+      <td>59060.987</td>
       <td>VLZ</td>
       <td>SSO-AU</td>
       <td>913</td>
@@ -251,7 +251,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -267,14 +267,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>
