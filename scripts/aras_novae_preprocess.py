@@ -42,14 +42,17 @@ for f in files:
     d = t1[0:10]
     h = t1[11:19]
     t2 = fitfile[0].header['OBJNAME']
-    print(t2)
+    print("objname.header",t2)
 
     t2 = t2.lower()
     t2=t2.replace(' ','')
     t2=t2.replace('_','')
+    
+    print(t2)
+    
     datesp = d[0:4] + d[5:7] + d[8:10]
     timesp = int((int(h[0:2])+int(h[3:5])/60+int(h[6:8])/3600)/24*1000)+1
-    print(t2)
+    
     timesp = '{:03d}'.format(timesp)
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
@@ -61,9 +64,9 @@ for f in files:
             ObjectName2 = data[indx-1][3]
             ObjectName3 = data[indx-1][4]   
             
-    ObjectName1 = "Nova Men 2022"
-    ObjectName2 = "--"
-    ObjectName3 = "AT 2022ufh"            
+    ObjectName1 = "Nova Cas 2021"
+    ObjectName2 = "V1405 Cas"
+    ObjectName3 = ""            
             
             
                  

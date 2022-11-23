@@ -1,0 +1,17 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+      <div class="col-lg-12 text-center">
+            <h1 class="mt-5">ARAS Novae Program</h1><br>
+            <div class="row">
+            <div class="col-sm-6">
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Name</h5>
+                <p class="card-text">GCVS Name: GCVSName</p>
+                <p class="card-text">Discovery Name: DiscoveryName</p>
+                <p class="card-text">RA (2000): C1</p>
+                <p class="card-text">DEC (2000): C2</p>
+         </div>
+     </div>
+</div>
