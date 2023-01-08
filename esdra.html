@@ -88,13 +88,13 @@
 
 </div>
 
-<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/esdra.zip" class="btn btn-secondary">Download all spectra as *.zip file (51.1 MB)</a>
+<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/esdra.zip" class="btn btn-secondary">Download all spectra as *.zip file (0.0 MB)</a>
 <table border="0" class="dataframe display" id="table_id">
   <thead>
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -110,8 +110,8 @@
   <tbody>
     <tr>
       <td>2020-05-26</td>
-      <td>7:38</td>
-      <td>58995.319</td>
+      <td>07:39</td>
+      <td>58995.819</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>477</td>
@@ -125,8 +125,8 @@
     </tr>
     <tr>
       <td>2020-05-29</td>
-      <td>8:10</td>
-      <td>58998.341</td>
+      <td>08:11</td>
+      <td>58998.841</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>806</td>
@@ -140,8 +140,8 @@
     </tr>
     <tr>
       <td>2020-05-31</td>
-      <td>7:05</td>
-      <td>59000.296</td>
+      <td>07:06</td>
+      <td>59000.796</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>871</td>
@@ -155,8 +155,8 @@
     </tr>
     <tr>
       <td>2021-05-10</td>
-      <td>9:29</td>
-      <td>59344.396</td>
+      <td>09:30</td>
+      <td>59344.896</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>532</td>
@@ -170,8 +170,8 @@
     </tr>
     <tr>
       <td>2021-05-15</td>
-      <td>8:55</td>
-      <td>59349.372</td>
+      <td>08:55</td>
+      <td>59349.872</td>
       <td>JRF</td>
       <td>MTP-US</td>
       <td>784</td>
@@ -191,7 +191,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -207,14 +207,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

@@ -88,13 +88,13 @@
 
 </div>
 
-<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/rxand.zip" class="btn btn-secondary">Download all spectra as *.zip file (51.1 MB)</a>
+<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/rxand.zip" class="btn btn-secondary">Download all spectra as *.zip file (0.0 MB)</a>
 <table border="0" class="dataframe display" id="table_id">
   <thead>
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -110,8 +110,8 @@
   <tbody>
     <tr>
       <td>2016-08-25</td>
-      <td>01:35</td>
-      <td>57625.067</td>
+      <td>01:36</td>
+      <td>57625.567</td>
       <td>EBE</td>
       <td>SSO-FR</td>
       <td>523</td>
@@ -125,8 +125,8 @@
     </tr>
     <tr>
       <td>2020-01-04</td>
-      <td>4:39</td>
-      <td>58852.194</td>
+      <td>04:39</td>
+      <td>58852.694</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>521</td>
@@ -140,8 +140,8 @@
     </tr>
     <tr>
       <td>2020-01-11</td>
-      <td>3:17</td>
-      <td>58859.137</td>
+      <td>03:17</td>
+      <td>58859.637</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>869</td>
@@ -155,8 +155,8 @@
     </tr>
     <tr>
       <td>2020-10-28</td>
-      <td>7:07</td>
-      <td>59150.297</td>
+      <td>07:07</td>
+      <td>59150.797</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>511</td>
@@ -170,8 +170,8 @@
     </tr>
     <tr>
       <td>2020-10-29</td>
-      <td>8:28</td>
-      <td>59151.353</td>
+      <td>08:28</td>
+      <td>59151.853</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>858</td>
@@ -185,8 +185,8 @@
     </tr>
     <tr>
       <td>2021-09-13</td>
-      <td>9:19</td>
-      <td>59470.388</td>
+      <td>09:18</td>
+      <td>59470.888</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>539</td>
@@ -200,8 +200,8 @@
     </tr>
     <tr>
       <td>2021-09-14</td>
-      <td>9:17</td>
-      <td>59471.387</td>
+      <td>09:17</td>
+      <td>59471.887</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>739</td>
@@ -215,8 +215,8 @@
     </tr>
     <tr>
       <td>2021-09-20</td>
-      <td>9:12</td>
-      <td>59477.384</td>
+      <td>09:12</td>
+      <td>59477.884</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>540</td>
@@ -236,7 +236,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -252,14 +252,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

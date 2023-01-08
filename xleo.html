@@ -88,13 +88,13 @@
 
 </div>
 
-<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/xleo.zip" class="btn btn-secondary">Download all spectra as *.zip file (51.1 MB)</a>
+<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/xleo.zip" class="btn btn-secondary">Download all spectra as *.zip file (0.0 MB)</a>
 <table border="0" class="dataframe display" id="table_id">
   <thead>
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -110,8 +110,8 @@
   <tbody>
     <tr>
       <td>2019-12-29</td>
-      <td>2:45</td>
-      <td>58846.532</td>
+      <td>12:46</td>
+      <td>58847.032</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>490</td>
@@ -125,8 +125,8 @@
     </tr>
     <tr>
       <td>2020-01-28</td>
-      <td>1:10</td>
-      <td>58876.466</td>
+      <td>11:11</td>
+      <td>58876.966</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>505</td>
@@ -140,8 +140,8 @@
     </tr>
     <tr>
       <td>2020-02-16</td>
-      <td>9:28</td>
-      <td>58895.395</td>
+      <td>09:28</td>
+      <td>58895.895</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>507</td>
@@ -155,8 +155,8 @@
     </tr>
     <tr>
       <td>2020-04-12</td>
-      <td>5:41</td>
-      <td>58951.237</td>
+      <td>05:41</td>
+      <td>58951.737</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>531</td>
@@ -170,8 +170,8 @@
     </tr>
     <tr>
       <td>2020-04-17</td>
-      <td>5:04</td>
-      <td>58956.212</td>
+      <td>05:05</td>
+      <td>58956.712</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>914</td>
@@ -191,7 +191,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -207,14 +207,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

@@ -87,13 +87,13 @@
 
 </div>
 
-<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/vsxj213806.5+261957.zip" class="btn btn-secondary">Download all spectra as *.zip file (51.1 MB)</a>
+<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/vsxj213806.5+261957.zip" class="btn btn-secondary">Download all spectra as *.zip file (0.0 MB)</a>
 <table border="0" class="dataframe display" id="table_id">
   <thead>
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -110,7 +110,7 @@
     <tr>
       <td>2014-10-25</td>
       <td>22:01</td>
-      <td>56955.918</td>
+      <td>56956.418</td>
       <td>PSO</td>
       <td>TAT-HU</td>
       <td>506</td>
@@ -125,7 +125,7 @@
     <tr>
       <td>2014-10-26</td>
       <td>21:14</td>
-      <td>56956.885</td>
+      <td>56957.385</td>
       <td>PSO</td>
       <td>TAT-HU</td>
       <td>491</td>
@@ -139,8 +139,8 @@
     </tr>
     <tr>
       <td>2014-10-27</td>
-      <td>20:39</td>
-      <td>56957.860</td>
+      <td>20:38</td>
+      <td>56958.360</td>
       <td>FTE</td>
       <td>ORS-FR</td>
       <td>820</td>
@@ -155,7 +155,7 @@
     <tr>
       <td>2014-10-30</td>
       <td>22:19</td>
-      <td>56960.930</td>
+      <td>56961.430</td>
       <td>PSO</td>
       <td>TAT-HU</td>
       <td>488</td>
@@ -170,7 +170,7 @@
     <tr>
       <td>2014-11-02</td>
       <td>20:36</td>
-      <td>56963.859</td>
+      <td>56964.359</td>
       <td>PSO</td>
       <td>TAT-HU</td>
       <td>527</td>
@@ -190,7 +190,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -206,14 +206,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>

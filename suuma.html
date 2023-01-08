@@ -88,13 +88,13 @@
 
 </div>
 
-<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/suuma.zip" class="btn btn-secondary">Download all spectra as *.zip file (51.1 MB)</a>
+<br><style>table {text-align: center;}table thead th {text-align: center;}</style><a href="archives/suuma.zip" class="btn btn-secondary">Download all spectra as *.zip file (0.0 MB)</a>
 <table border="0" class="dataframe display" id="table_id">
   <thead>
     <tr style="text-align: right;">
       <th>Date</th>
       <th>Time (UT)</th>
-      <th>JD</th>
+      <th>JD 24..</th>
       <th>Observer</th>
       <th>Site</th>
       <th>Resolution</th>
@@ -110,8 +110,8 @@
   <tbody>
     <tr>
       <td>2020-01-04</td>
-      <td>0:06</td>
-      <td>58852.421</td>
+      <td>10:06</td>
+      <td>58852.921</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>530</td>
@@ -125,8 +125,8 @@
     </tr>
     <tr>
       <td>2020-01-10</td>
-      <td>0:49</td>
-      <td>58858.451</td>
+      <td>10:49</td>
+      <td>58858.951</td>
       <td>JRF</td>
       <td>UHO-US</td>
       <td>781</td>
@@ -146,7 +146,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2021 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark bg-dark" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
   </div>
   <!-- Copyright -->
 
@@ -162,14 +162,14 @@ $(document).ready( function () {
     $('#table_id').DataTable({
     paging: false,
     "columnDefs": [ {
-       "targets": [ 6, 9 ],
+       "targets": [ 6, 9, 10, 11, 12 ],
        "orderable": false
     },
     {
       "targets":  [ 6, 9 ],
       "className": "text-left",
  }],
-    "order": [[2,'asc']]
+    "order": [[2,'desc']]
 });
 } );
 </script>
