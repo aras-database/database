@@ -35,7 +35,7 @@ df1 = df1[df1["date"].dt.date > date_debut]
 intervalle = 3
 fig, ax = plt.subplots()
 
-for i in range(0,5):
+for i in range(0,3):
     print(i) 
     if i == 0:
         df2 = df1
@@ -46,10 +46,10 @@ for i in range(0,5):
     if i == 2:
         df2 = df1[(df1["lambda_min"]< 3601)]
         y0 = 2       
-    if i == 3:
-        df2 = df1[(df1["resolution"]> 8000) & (df1["resolution"] < 12000)]
-        y0 = 2.5  
-    if i ==4:
+    # if i == 3:
+    #     df2 = df1[(df1["resolution"]> 8000) & (df1["resolution"] < 12000)]
+    #     y0 = 2.5  
+    if i ==3:
         df2 = df1[(df1["resolution"]> 12000)]
         y0 = 3 
     
