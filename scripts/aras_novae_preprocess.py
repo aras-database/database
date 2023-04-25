@@ -64,10 +64,10 @@ for f in files:
             ObjectName2 = data[indx-1][3]
             ObjectName3 = data[indx-1][4]   
             
-    ObjectName="TCP J17562787-1714548"
-    ObjectName1 = "Nova Sgr 2023"
-    ObjectName2 = ""
-    ObjectName3 = "TCP J17562787-1714548"            
+    
+    ObjectName1 = "Nova Sco 2023"
+    ObjectName2 = "V1716 Sco"
+    ObjectName3 = "PNV J17224490-4137160'' "            
             
             
                  
