@@ -76,4 +76,5 @@ for fi in (files):
         move(fi, '../spectra/'+fi[len(dir):])
     except:
         print("Uknown problem with file: "+fi[len(dir):])
+        print(site)
 ascii.write(all_spectra, '../data/all_spectra.csv', format="csv", delimiter = ";",overwrite=True)
