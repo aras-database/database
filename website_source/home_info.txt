@@ -9,7 +9,7 @@
 
 </div>
 <br>
-<a href="https://ui.adsabs.harvard.edu/public-libraries/5OTOTwmjSzybSEuLO5kWFA" class="btn btn-secondary btn-lg btn-block active" role="button" aria-pressed="true">Publications using ARAS spectra</a>
+<a href="https://ui.adsabs.harvard.edu/user/libraries/jd9bULL8SU-uBHbblit3Xw" class="btn btn-secondary btn-lg btn-block active" role="button" aria-pressed="true">Publications using ARAS spectra</a>
 <br>
 <div class="card">
   <div class="card-body">
