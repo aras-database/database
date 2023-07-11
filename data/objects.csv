@@ -437,8 +437,8 @@ dumb;Keyword;Object
 0;delta sge;del Sge
 0;DQ SER;DQ Ser
 0;ERDEL;ER Del
-0;V2523 OPH; V2523 Oph
-0;Hen 4-129,Hen 4-129
+0;V2523 OPH;V2523 Oph
+0;Hen 4-129,Hen 4-129;
 0;Omi Ceti;Omi Cet
 0;STHA 154;StHA 154
 0;STHA-154;StHA 154
@@ -450,7 +450,7 @@ dumb;Keyword;Object
 0;StHA 180;StHA 180
 0;V1329_Cyg;V1329 Cyg
 0;V1329 CYG;V1329 Cyg
-0;V343 Ser; V343 Ser
+0;V343 Ser;V343 Ser
 0;V407_Cyg;V407 Cyg
 0;V0934 HER;V934 Her
 0;V618 Sgr;V618 Sgr
@@ -477,4 +477,5 @@ dumb;Keyword;Object
 0;StHA180;StHA 180
 0;Z_And;Z And
 0;v618 sgr;V618 Sgr
-0;Omi Ceti;omi Cet          
+0;Omi Ceti;omi Cet
+0;NovaSco2023;Nova Sco 2023
