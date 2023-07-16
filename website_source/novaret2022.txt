@@ -8,7 +8,7 @@
 <div class="col-sm-6">
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title">Nova Ret 2020</h5>
+      <h5 class="card-title">Nova Ret 2022</h5>
       <p class="card-text">RA (2000): 03 58 29.55</p>
   <p class="card-text">DEC (2000):  -54 46 41.23</p>
   <p class="card-text">V (mag): MagnitudeV</p>
