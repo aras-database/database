@@ -315,9 +315,7 @@ df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD 24..", "o
 home = pd.read_csv('../data/novae.csv', delimiter=";")
 home = home.rename(columns={"ra": "RA (2000)", "dec": "DEC (2000)", "gcvs": "GCVS", "discovery_name": "Discovery Name"}).replace(np.nan, '', regex=True)
 
-### à supprimer
-print(home)
-###
+
 last_update = float(open("../data/last_update.txt", "r").read())
 intro = open("../website_source/navigation_novae.txt", "r").read()
 footer = open("../website_source/footer_novae.txt", "r").read()
@@ -418,11 +416,7 @@ for nova in novae["star_name_string"]:
             num_spec.append(str(0))
             name_website.append(novae["name"][novae["star_name_string"]==nova][0])
 
-# Check
-print(first_spec)
-print(len(first_spec))
 
-# End Check
 
 home["First spectrum"] = first_spec
 home["Last spectrum"] = last_spec
