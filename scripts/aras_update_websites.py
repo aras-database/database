@@ -309,7 +309,7 @@ lucy_website.close()
 
 
 # Novae
-print("novae")
+
 df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
 df = df.rename(columns={"date": "Date", "time": "Time (UT)", "jd": "JD 24..", "observer": "Observer", "site": "Site", "resolution": "Resolution", "lambda_min": "&lambda;<sub>min</sub>","lambda_max": "&lambda;<sub>max</sub>", "comment": "Comments"}).replace(np.nan, '', regex=True)
 home = pd.read_csv('../data/novae.csv', delimiter=";")

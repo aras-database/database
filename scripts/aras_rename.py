@@ -37,6 +37,7 @@ dir = '../new_spectra/'
 files = glob(dir + '*.fit')+glob(dir + '*.fits')
 
 for fi in (files):
+    print(fi)
     with fits.open(fi) as hdu:
         hdr = hdu[0].header
         obj_name = list_of_objects["Object"][list(list_of_objects["Keyword"]).index(list(set([hdr['OBJNAME'].lstrip()]).intersection(set(list_of_objects["Keyword"])))[0])].replace(" ", "").lower()
