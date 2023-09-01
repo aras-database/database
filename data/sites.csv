@@ -272,4 +272,5 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Mezery (CH);MEZ-CH;CH;6.7167;46.75;;
 0;La Mesa;SDC-US;US;-116.996173;32.751858;;
 0;Menghini;MEN-US;US;-116.607;33.104
-0;Azara;AZA-SP;SP;;;;
+0;Azara;AZA-SP;SP;;
+0;Lorient;LOR-FR;FR;47.75;-3.37
