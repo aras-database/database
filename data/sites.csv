@@ -265,12 +265,13 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Rutherford street;SEA-NZ;Saesteorra;New Zeland;175.464208;-41.218624;
 0;CAJMS - IAU199 - Planete Sciences;CPS-FR;;France;2.26;48.17;
 0;Pelleautier;ASA-FR;;France;6;44;
+0;ASA-FR;ASA-FR;;France;6;44;
 0;IUSB Observatory;IUSB-US;Indiana;USA;-86.24;;41.65
 0;Pelleautier FR;ASA-FR;;France;6;44;
 0;San Jose, CA, USA;SJO-US;USA;-121.8258;;37.2883;
 0;Saint-Roch 37390;SRO-FR;FR;;;;
 0;Mezery (CH);MEZ-CH;CH;6.7167;46.75;;
 0;La Mesa;SDC-US;US;-116.996173;32.751858;;
-0;Menghini;MEN-US;US;-116.607;33.104
-0;Azara;AZA-SP;SP;;
-0;Lorient;LOR-FR;FR;47.75;-3.37
+0;Menghini;MEN-US;US;-116.607;33.104;;
+0;Azara;AZA-SP;SP;;;;
+0;Lorient;LOR-FR;FR;47.75;-3.37;;
