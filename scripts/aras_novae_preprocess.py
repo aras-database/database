@@ -74,29 +74,28 @@ for f in files:
     print(ObjectName3)
     
     
-    fits.setval(f, 'OBJNAME', value = ObjectName1,comment = 'corrected by asdb, if necessary')
-    #fits.setval(f, 'OBJNAME1', value = t2,comment = 'Original OBJNAME in the header')
-    fits.setval(f, 'OBJNAME2', value=ObjectName2,comment = 'GCVS name added by asdb' )
-    fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
-    ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
+    rep = input("Correct OBJNAME y/n : ")
+    
+    if rep == 'y':
+        fits.setval(f, 'OBJNAME', value = ObjectName1,comment = 'corrected by asdb, if necessary')
+        #fits.setval(f, 'OBJNAME1', value = t2,comment = 'Original OBJNAME in the header')
+        #fits.setval(f, 'OBJNAME2', value=ObjectName2,comment = 'GCVS name added by asdb' )
+        #fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
+        ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
    
+        #Copy Files
     
-    #
-   
-    
-   
-    #Copy Files
-    
-    fitfile.close()
-    os.rename(f,ArasFileName)
-    copyfile(ArasFileName,'C:/Users/franc/OneDrive/Documents/GitHub\database/new_spectra/' + ArasFileName)
-    
-    #os.remove(ArasFileName)
-    print(ArasFileName) 
-    print('************************************************************************************')
+        fitfile.close()
+        os.rename(f,ArasFileName)
+        copyfile(ArasFileName,'C:/Users/franc/OneDrive/Documents/GitHub\database/new_spectra/' + ArasFileName)
+        
+        #os.remove(ArasFileName)
+        print(ArasFileName) 
+        print('************************************************************************************')
     
     
-
+    else:
+        print('OBJNAME not found')
 
 
 
