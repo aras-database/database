@@ -53,21 +53,53 @@ for fi in (files):
             jd = round(Time(hdr['JD-MID'], format="jd").mjd+0.5, 3)
             observer = list_of_observers["Observer"][np.array(list_of_observers["Keyword"][:]).tolist().index(hdr['OBSERVER'])]
             site = list_of_sites["Site"][np.array(list_of_sites["Keyword"][:]).tolist().index(hdr['BSS_SITE'])]
+            
+            
+            # if 'SPE_RPOW' in hdr:
+            #     if  hdr['SPE_RPOW'] > 0:
+            #         resolution = np.int(hdr['SPE_RPOW'])
+            #         resOK=1
+            #         print("ok2")
+            # if ('BSS_ITRP' in hdr) & (resOK == 0):
+            #     if hdr['BSS_ITRP'] > 0:
+            #         resolution = np.int(hdr['BSS_ITRP'])
+            #         resOK=1
+            # if resOK == 0:
+            #     if 'CDELT1' in hdr:
+            #         resolution = np.int(550/hdr['CDELT1'])
+            #     else:
+            #         resolution = np.int(-10)
+            # lambda_min = np.int(np.round(hdr['CRVAL1']))
+            # lambda_max = np.int(np.round(hdr['CRVAL1']+hdr['NAXIS1']*hdr['CDELT1']))
+            
+            
             if 'SPE_RPOW' in hdr:
                 if  hdr['SPE_RPOW'] > 0:
-                    resolution = np.int(hdr['SPE_RPOW'])
+                    resolution = np.round(hdr['SPE_RPOW'],0)
                     resOK=1
             if ('BSS_ITRP' in hdr) & (resOK == 0):
                 if hdr['BSS_ITRP'] > 0:
-                    resolution = np.int(hdr['BSS_ITRP'])
+                    resolution = np.round(hdr['BSS_ITRP'],0)
                     resOK=1
             if resOK == 0:
-                if 'CDELT1' in hdr:
-                    resolution = np.int(550/hdr['CDELT1'])
-                else:
-                    resolution = np.int(-10)
-            lambda_min = np.int(np.round(hdr['CRVAL1']))
-            lambda_max = np.int(np.round(hdr['CRVAL1']+hdr['NAXIS1']*hdr['CDELT1']))
+                print("checks resolution keyword ")
+                    
+            
+            
+            
+            
+            lambda_min = np.round(hdr['CRVAL1'],0)
+            lambda_max = np.round(hdr['CRVAL1']+hdr['NAXIS1']*hdr['CDELT1'],0)
+            
+            
+            
+            
+            
+            resolution = 9000
+ 
+            
+            
+            
             file = fi[len(dir):]
             preview = fi[len(dir):-4]+'.png'
             comment = " "
