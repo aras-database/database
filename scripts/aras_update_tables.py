@@ -95,7 +95,7 @@ for fi in (files):
             
             
             
-            resolution = 9000
+            
  
             
             
