@@ -43,8 +43,8 @@ except:
     pass
 
 for fi in (files):
-    resOK=0
-    try:
+        resOK=0
+    
         with fits.open(fi) as hdu:
             hdr = hdu[0].header
             star_name_string = list_of_objects["Object"][list(list_of_objects["Keyword"]).index(list(set([hdr['OBJNAME'].lstrip()]).intersection(set(list_of_objects["Keyword"])))[0])].replace(" ", "").lower()
@@ -95,7 +95,7 @@ for fi in (files):
             
             
             
-            
+            #resolution = 9000
  
             
             
@@ -106,7 +106,5 @@ for fi in (files):
             last_update = Time.now().unix
             all_spectra.add_row([0,star_name_string, date, time, jd, observer, site, resolution, lambda_min, lambda_max, file, preview, last_update, comment])
         move(fi, '../spectra/'+fi[len(dir):])
-    except:
-        print("Uknown problem with file: "+fi[len(dir):])
-        print(site)
+    
 ascii.write(all_spectra, '../data/all_spectra.csv', format="csv", delimiter = ";",overwrite=True)
