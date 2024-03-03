@@ -4,7 +4,7 @@ from astroquery.simbad import Simbad
 import os
 
 #data
-ObjName = 'WRAY 15-157'
+ObjName = "PN Th 3-18" 
 Program = "ARAS Symbiotics Program"
 File0 = 'symbiotic_stars.csv'
 hr = "3" # Priority HR
