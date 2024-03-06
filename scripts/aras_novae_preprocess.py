@@ -65,8 +65,9 @@ for f in files:
             ObjectName3 = data[indx-1][4]   
             
     
-    
-            
+    ObjectName1 = "Nova Sco 2014"
+    ObjectName2 = "V1534 Sco"
+    ObjectName3 ="PNV_J17261813-3809354"        
             
                  
     print(ObjectName1)         
@@ -78,9 +79,9 @@ for f in files:
     
     if rep == 'y':
         fits.setval(f, 'OBJNAME', value = ObjectName1,comment = 'corrected by asdb, if necessary')
-        #fits.setval(f, 'OBJNAME1', value = t2,comment = 'Original OBJNAME in the header')
+        fits.setval(f, 'OBJNAME1', value = t2,comment = 'Original OBJNAME in the header')
         #fits.setval(f, 'OBJNAME2', value=ObjectName2,comment = 'GCVS name added by asdb' )
-        #fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
+        fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
         ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
    
         #Copy Files
