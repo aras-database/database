@@ -4,7 +4,7 @@ from astroquery.simbad import Simbad
 import os
 
 #data
-ObjName = 'Nova Sgr 2023b'
+ObjName = 'Nova Oph 2024'
 Program = "ARAS Novae Program"
 File0 = 'novae.csv'
 
@@ -24,9 +24,8 @@ print()
 print("New Object: ", ObjName)
 print()
 
-Coord1 = "17 52 50.20"
-Coord2 = "-20 24 15.0"
-
+Coord1 = "17 39 57.20"
+Coord2 = "-26 27 41.0"
 
 file_in = "maquette.txt"
 file_out = FileName
@@ -36,7 +35,7 @@ filedata = f.read()
 f.close()
 
 GCSVName =  ''
-DiscoveryName ='TCP J17525020-2024150'
+DiscoveryName ='TCP J17395720-2627410'
 
 
 filedata = filedata.replace('ProgramTitle',Program)
