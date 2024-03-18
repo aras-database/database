@@ -65,9 +65,9 @@ for f in files:
             ObjectName3 = data[indx-1][4]   
             
     
-    ObjectName1 = "Nova Cas 2021"
-    ObjectName2 = "V1405 Cas"
-    ObjectName3 ="PNV J23244760+6111140"        
+    ObjectName1 = "Nova Sco 2023"
+    ObjectName2 = "V1716 Sco"
+    ObjectName3 ="PNV J17224490-4137160"        
             
                  
     print(ObjectName1)         
@@ -90,7 +90,7 @@ for f in files:
         os.rename(f,ArasFileName)
         copyfile(ArasFileName,'C:/Users/franc/OneDrive/Documents/GitHub\database/new_spectra/' + ArasFileName)
         
-        #os.remove(ArasFileName)
+        os.remove(ArasFileName)
         print(ArasFileName) 
         print('************************************************************************************')
     
