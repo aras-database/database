@@ -268,7 +268,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;IUSB Observatory;IUSB-US;Indiana;USA;-86.24;;41.65
 0;Pelleautier FR;ASA-FR;;France;6;44;
 0;San Jose, CA, USA;SJO-US;USA;-121.8258;;37.2883;
-0;Saint-Roch 37390;SRO-FR;FR;;;;
+0;Saint-Roch;SRO-FR;Saint-Roch;France;0.5824;47.4439;
 0;Mezery (CH);MEZ-CH;CH;6.7167;46.75
 0;La Mesa;SDC-US;US;;
 0;DSC;DSC-CL;un;Chili;un;-70.85;-30.53
@@ -278,5 +278,4 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Miror;XXX-XX;x;x;x;x
 0;AZARA;ELG-SP;El gallinero;SP;356.413;40.883;
 0;PinonPines_Jrf;MTP-US;;Mt. Pinos, Nordic Base, CA;UK;-119.13;34.81
-0;Erbenheim;ERB-DE;Erbenheim;DE;8.3;50.1
                                                      
