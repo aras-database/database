@@ -1,0 +1,19 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Novae Program</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">AT 2024epj</h5>
+      <p class="card-text">RA (2000): 04 55 03.930</p>
+  <p class="card-text">DEC (2000):  -65 55 57.02</p>
+  <p class="card-text">V (mag): MagnitudeV</p>
+  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/Nom1/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=Nom2&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+  </div>
+  </div>
+</div>
