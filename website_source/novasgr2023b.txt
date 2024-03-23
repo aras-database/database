@@ -12,7 +12,6 @@
       <p class="card-text">RA (2000): 17 52 50.20</p>
   <p class="card-text">DEC (2000):  -20 24 15.0</p>
   <p class="card-text">V (mag): MagnitudeV</p>
-  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/Nom1/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=Nom2&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>
   </div>
