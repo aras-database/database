@@ -416,17 +416,14 @@ for nova in novae["star_name_string"]:
             num_spec.append(str(0))
             name_website.append(novae["name"][novae["star_name_string"]==nova][0])
 
-# check
-print("ok1")
+
 print(first_spec)
 print(last_spec)
 home["First spectrum"] = first_spec
-print("ok2")
 home["Last spectrum"] = last_spec
 home["No. of spectra"] = num_spec
 home["Days since last"] = since_last_spec
 home["Name"] = name_website
-print("ok3")
 
 
 camp_string = []
@@ -463,7 +460,7 @@ home_website.close()
 last_update = open("../data/last_update.txt", "w")
 last_update.write(str(Time.now().unix))
 last_update.close()
-print("ok4")
+
 #dwarf_novae
 
 # df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
