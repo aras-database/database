@@ -65,9 +65,9 @@ for f in files:
             ObjectName3 = data[indx-1][4]   
             
     
-    ObjectName1 = "Nova Oph 2024"
-    ObjectName2 = "V4370 Oph"
-    ObjectName3 ="TCP J17395720-2627410"        
+    ObjectName1 = "Nova LMC 2024b"
+    ObjectName2 = ""
+    ObjectName3 ="ASASSN-24ck"        
             
                  
     print(ObjectName1)         
