@@ -10,7 +10,7 @@
     <div class="card-body">
       <h5 class="card-title">AS 255</h5>
       <p class="card-text">RA (2000): 17 57 08.71</p>
-  <p class="card-text">DEC (2000):  -35 15 37.81</p>
+  <p class="card-text">DEC (2000):  -35 15 37.80</p>
   <p class="card-text">V (mag): 12.6</p>
   <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/as-255/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=AS+255&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
