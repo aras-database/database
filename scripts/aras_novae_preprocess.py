@@ -65,13 +65,13 @@ for f in files:
             ObjectName3 = data[indx-1][4]   
             
     
-    ObjectName1 = "Nova LMC 2024b"
-    ObjectName2 = ""
-    ObjectName3 ="ASASSN-24ck"        
+    # ObjectName1 = "Nova LMC 2024b"
+    # ObjectName2 = ""
+    # ObjectName3 ="ASASSN-24ck"        
        
-    # ObjectName1 = "Nova Sco 2024"
-    # ObjectName2 = "V1723 Sco"
-    # ObjectName3 ="PNV_J17261813-3809354"    
+    ObjectName1 = "Nova Sco 2024"
+    ObjectName2 = "V1723 Sco"
+    ObjectName3 ="PNV_J17261813-3809354"    
 
 
                  
