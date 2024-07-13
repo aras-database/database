@@ -1,12 +1,10 @@
 dumb;star_name_string;campaign_type;campaign_text
 0;agdra;Ongoing campaign;Orbital variations in low state upon the request of Jaroslav Merc & Rudolf Gális.
 0;chcyg;Ongoing campaign;H alpha line at R > 10.000 upon the request of Dr A. Skopal.
-0;raqr;Ongoing campaign;
-0;tcrb;Pre-Outburst State (high accretion rate);One spectrum/day until next outburst
+0;raqr;Eclipse of the hot component;Ongoing campaign
+0;tcrb;Pre-Outburst State (low accretion rate);One spectrum/day until the next nova outburst
 0;cicyg;Ongoing survey;
 0;agpeg;Ongoing survey;
 0;bfcyg;Ongoing survey;
 0;axper;Ongoing survey;
 0;cncha;Symbiotic nova outburst;
-0;stha154;no symbiotic activity in visible range;low resolution spectra 1/10 days to detect variations (continuum, emission lines)
-0;gkper;dwarf nova outburst;low and high resolution spectra Daily monitoring of the outburst (about 100 days)
