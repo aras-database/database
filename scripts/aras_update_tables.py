@@ -81,6 +81,14 @@ for fi in (files):
                 if hdr['BSS_ITRP'] > 0:
                     resolution = np.round(hdr['BSS_ITRP'],0)
                     resOK=1
+            if ('BSS_ESRP' in hdr) & (resOK == 0):
+                if hdr['BSS_ESRP'] > 0:
+                    resolution = np.round(hdr['BSS_ESRP'],0)
+                    resOK=1
+                           
+                    
+                    
+                    
             if resOK == 0:
                 print("checks resolution keyword ")
                     

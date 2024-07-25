@@ -51,6 +51,7 @@ CRVAL1=0
 res1=0
 res2=0
 res3=0
+res4=0
 site = 0
 nocor=0
 RES=[]
@@ -127,6 +128,12 @@ for fi in (files):
                         if  hdr['SPE_RPOW'] > 0:
                             resOK=1
                             res1=res1+1
+                            
+                    if 'BSS_ESRP' in hdr:
+                        if  hdr['BSS_ESRP'] > 0:
+                            resOK=1
+                            res4=res4+1      
+                        
                     if ('BSS_ITRP' in hdr) & (resOK == 0):
                         if hdr['BSS_ITRP'] > 0:
                             resOK=1
