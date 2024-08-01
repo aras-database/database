@@ -69,9 +69,9 @@ for f in files:
     # ObjectName2 = ""
     # ObjectName3 ="ASASSN-24ck"        
        
-    ObjectName1 = "Nova Sco 2024"
-    ObjectName2 = "V1723 Sco"
-    ObjectName3 ="PNV_J17261813-3809354"    
+    ObjectName1 = "Nova Vul 2024"
+    ObjectName2 = ""
+    ObjectName3 ="PNV J19430751+2100204"    
 
 
                  
