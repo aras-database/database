@@ -285,5 +285,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Aitp-SpaceObs;W96-CL;;Chile;CL;-68.1796;-22.931
 0;Aitp-alsace;W96-CL;;Chile;CL;-68.1796;-22.931
 0;Baden;BAD-FR;;France;FR;-2.93493;47.6163
-0;OAPA Osservatorio Piero Angela        ;OAPA-IT;;Italia;IT;;
+0;OAPA Osservatorio Piero Angela;OAPA-IT;;Italia;IT;;
 0;Girond;GIR-FR;Girond 07;France;FR;4.33;44.88
+0;Oaks & Stars;OAK-UK;;;;;
+0;Osservatorio Astronomico Piero Angela;OAPA-IT;;Italia;IT;;
