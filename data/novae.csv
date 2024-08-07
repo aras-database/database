@@ -68,4 +68,4 @@ dumb;star_name_string;name;ra;dec;gcvs;discovery_name
 0;novaoph2024;Nova Oph 2024;17 39 57.20;-26 27 41.0;V4370 Oph;TCP J17395720-2627410
 0;at2024epj;AT 2024epj;04 55 03.930;-65 55 57.02;;ASASSN-24by
 0;novalmc2024b;Nova LMC 2024b;05 09 20.73;-67 08 22.34;;ASASSN-24ck
-0;novavul2024;Nova Vul 2024;19 43 07.51;+21 00 20.4;;PNV J19430751+2100204 
+0;novavul2024;Nova Vul 2024;19 43 07.51;+21 00 20.4;V615 Vul;PNV J19430751+2100204 
