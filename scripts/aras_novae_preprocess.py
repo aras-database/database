@@ -70,7 +70,7 @@ for f in files:
     # ObjectName3 ="ASASSN-24ck"        
        
     ObjectName1 = "Nova Vul 2024"
-    ObjectName2 = ""
+    ObjectName2 = "V615 Vul"
     ObjectName3 ="PNV J19430751+2100204"    
 
 
