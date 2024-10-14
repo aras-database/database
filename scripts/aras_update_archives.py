@@ -54,7 +54,7 @@ last_update_archive = float(open("../data/last_update_archive.txt", "r").read())
 
 for symbiotic in symbiotic_stars["star_name_string"]:
     if np.max(all_spectra[all_spectra["star_name_string"]==symbiotic]["last_update"]) > last_update_archive:
-        #old
+        #old 2024-10-14
         # if symbiotic != "chcyg":
         #     zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
         # else:
