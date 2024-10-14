@@ -50,17 +50,25 @@ except:
     pass
 
 
-
-
-
 last_update_archive = float(open("../data/last_update_archive.txt", "r").read())
 
 for symbiotic in symbiotic_stars["star_name_string"]:
     if np.max(all_spectra[all_spectra["star_name_string"]==symbiotic]["last_update"]) > last_update_archive:
-        if symbiotic != "chcyg":
-            zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
-        else:
-            zipFilesInDir('../spectra/', '../archives/'+symbiotic+'2.zip', lambda name : ("chcyg_2019"  in name) or ("chcyg_202"  in name) )
+        #old
+        # if symbiotic != "chcyg":
+        #     zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
+        # else:
+        #     zipFilesInDir('../spectra/', '../archives/'+symbiotic+'2.zip', lambda name : ("chcyg_2019"  in name) or ("chcyg_202"  in name) )
+
+        if symbiotic != "chcyg" or symbiotic != "tcrb":
+             zipFilesInDir('../spectra/', '../archives/'+symbiotic+'.zip', lambda name : symbiotic in name)
+        if symbiotic == "chcyg":
+             zipFilesInDir('../spectra/', '../archives/'+symbiotic+'2.zip', lambda name : ("chcyg_2019"  in name) or ("chcyg_202"  in name) )
+        if symbiotic == "tcrb":
+             zipFilesInDir('../spectra/', '../archives/'+symbiotic+'2.zip', lambda name : ("tcrb_2024"  in name) )
+
+
+
 
 
 # *** update Symbiotics Archives after Cleaning OBJNAME (2022-02-02)
