@@ -461,6 +461,10 @@ last_update = open("../data/last_update.txt", "w")
 last_update.write(str(Time.now().unix))
 last_update.close()
 
+
+print("OK Novae")
+
+
 #dwarf_novae
 
 # df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
