@@ -462,7 +462,7 @@ last_update.write(str(Time.now().unix))
 last_update.close()
 
 
-print("OK Novae")
+
 
 
 #dwarf_novae
