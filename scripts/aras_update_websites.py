@@ -154,6 +154,8 @@ for symbiotic in symbiotic_stars["star_name_string"]:
         except:
             website.write(intro+"\n"+star_intro+star_info+"\n"+table+footer)
         website.close()
+        
+ 
 home["First spectrum"] = first_spec
 home["Last spectrum"] = last_spec
 home["No. of spectra"] = num_spec
@@ -417,12 +419,14 @@ for nova in novae["star_name_string"]:
             name_website.append(novae["name"][novae["star_name_string"]==nova][0])
 
 
-print(first_spec)
-print(last_spec)
-home["First spectrum"] = first_spec
-home["Last spectrum"] = last_spec
-home["No. of spectra"] = num_spec
-home["Days since last"] = since_last_spec
+
+n=len(first_spec)-1
+
+
+home["First spectrum"] = first_spec[0:n]
+home["Last spectrum"] = last_spec[0:n]
+home["No. of spectra"] = num_spec[0:n]
+home["Days since last"] = since_last_spec[0:n]
 home["Name"] = name_website
 
 
