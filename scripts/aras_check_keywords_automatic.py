@@ -22,7 +22,7 @@ dir = '../new_spectra/'
 files = glob(dir + '*.fit')+glob(dir + '*.fits')
 
 
-
+print(files)
 
 
 if automatic == 0:
