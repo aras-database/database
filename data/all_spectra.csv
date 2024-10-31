@@ -14333,3 +14333,4 @@ dumb;star_name_string;date;time;jd;observer;site;resolution;lambda_min;lambda_ma
 0;v1413aql;2024-10-26;02:42;60609.613;FAS;DCO-US;986;3750;7261;asdb_v1413aql_20241026_112.fit;asdb_v1413aql_20241026_112.png;1730022048;
 0;egand;2024-10-30;05:25;60613.726;FAS;DCO-US;1002;3751;7261;asdb_egand_20241030_226.fit;asdb_egand_20241030_226.png;1730397461;
 0;omicet;2024-10-27;15:00;60611.125;CEL;MAR-AU;10000;3986;7406;asdb_omicet_20241027_625.fit;asdb_omicet_20241027_625.png;1730397461;
+0;tcrb;2024-10-03;02:14;60586.594;JFN;S*Q-US;1967;4256;5261;asdb_tcrb_20241003_094.fit;asdb_tcrb_20241003_094.png;1730411968; 
