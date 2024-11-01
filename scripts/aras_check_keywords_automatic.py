@@ -15,7 +15,7 @@ from zipfile import ZipFile
 from os.path import basename
 from difflib import SequenceMatcher
 
-automatic = 1
+automatic = 0
 
 dir = '../new_spectra/'
 
