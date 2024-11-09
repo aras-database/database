@@ -65,13 +65,7 @@ for f in files:
             ObjectName3 = data[indx-1][4]   
             
     
-    # ObjectName1 = "Nova LMC 2024b"
-    # ObjectName2 = ""
-    # ObjectName3 ="ASASSN-24ck"        
-       
-    ObjectName1 = "Nova Sco 2024c"
-    ObjectName2 = "V1725 Sco"
-    ObjectName3 ="TCP J17064645-3528079"    
+
 
 
                  
