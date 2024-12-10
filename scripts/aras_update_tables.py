@@ -43,6 +43,7 @@ except:
     pass
 
 for fi in (files):
+        print(fi)
         resOK=0
     
         with fits.open(fi) as hdu:
