@@ -126,7 +126,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;San Polo a Mosciano AAF;SPL-??;;;;0.0;0.0
 0;Shenton Park;SPO-AU;;Shenton;AU;115.82;-31.96
 0;SSO-AU;SSO-AU;un;un;un;0.0;0.0
-0;Saint Sordelin;SSO-FR;;Vaux sur Mer;FR;-1.03;45.65
+0;St Sordelin;SSO-FR;;Vaux sur Mer;FR;-1.03;45.65
 0;iTelescope - SSO site;SSO-AU;un;un;un;0.0;0.0
 0;Siding Springs Observatory iTelescope Facility;SSO-AU;un;un;un;0.0;0.0
 0;Staffelfelden;STA-FR;;STA-FR;FR;47.83;7.28
@@ -292,3 +292,4 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Oaks&Stars;OAK-US;;US;-98.50794;31.31753;
 0;Goyrans;GOY-FR;;;;;
 0;Oaks & Stars;OAK-US;;US;-98.50794;31.31753;
+
