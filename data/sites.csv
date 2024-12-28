@@ -124,7 +124,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Sta. Maria M.;SMM-SP;;Sta. Maria De Montmagrastell;SP;1.11;41.72
 0;SMU;SMU-FR;;Saint Martin d'Uriage;FR;5.83;45.15
 0;San Polo a Mosciano AAF;SPL-??;;;;0.0;0.0
-0;Shenton Park;SPO-AU;;Shenton;AU;115.82;-31.96
+0;Shenton Park Observatory;SPO-AU;;Shenton;AU;115.82;-31.96
 0;SSO-AU;SSO-AU;un;un;un;0.0;0.0
 0;St Sordelin;SSO-FR;;Vaux sur Mer;FR;-1.03;45.65
 0;iTelescope - SSO site;SSO-AU;un;un;un;0.0;0.0
@@ -292,4 +292,4 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Oaks&Stars;OAK-US;;US;-98.50794;31.31753;
 0;Goyrans;GOY-FR;;;;;
 0;Oaks & Stars;OAK-US;;US;-98.50794;31.31753;
-
+Shenton Park Observatory
