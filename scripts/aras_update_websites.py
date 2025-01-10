@@ -326,6 +326,9 @@ lucy_website.write(lucy_info+table+footer)
 lucy_website.close()
 
 
+print('ok')
+
+
 # Novae
 
 df = pd.read_csv('../data/all_spectra.csv', delimiter=";")
@@ -436,8 +439,8 @@ for nova in novae["star_name_string"]:
 
 
 
-n=len(first_spec)-1
-
+n=len(first_spec)
+print(n)
 
 home["First spectrum"] = first_spec[0:n]
 home["Last spectrum"] = last_spec[0:n]
