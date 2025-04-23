@@ -9,7 +9,7 @@ considered as "galactic confirmed".
 <br />
 <br />
 V, B: magnitudes V and B from SIMBAD<br />
-GP,BP: magnitudes from GAIA in the blue and green filters<br />
+GP,BP: magnitudes from GAIA <br />
 Mag is the last measure obtained in AAVSO database in Band V, Visible, CV, TG<br />
 Dlast is the number of days since the last observation in bands V, Visible, CV, TG<br />
 <br />
