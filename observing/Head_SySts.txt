@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Bright Symbiotic Stars List for Southern Observers</title>
+<title>Symbiotic Stars List for Observers</title>
 <style>
     table {
       font-family: arial, sans-serif;
@@ -21,4 +21,4 @@
 
   <body>
     <center>
-    <h1><p class="p2">List of Bright (V < 12) Symbiotic Stars for Southern Observers (DEC < 20&deg)</p></h1>
+    <h1><p class="p2">List of  Symbiotic Stars with photometry</p></h1>
