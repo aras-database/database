@@ -4,10 +4,10 @@ from astroquery.simbad import Simbad
 import os
 
 #data
-ObjName = "RX Pup" 
+ObjName = "V648 Car" 
 Program = "ARAS Symbiotics Program"
 File0 = 'symbiotic_stars.csv'
-hr = "-" # Priority HR
+hr = "1" # Priority HR
 lr = "1" # Priority LR
 cadency = 30
 
