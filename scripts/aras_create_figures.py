@@ -49,23 +49,32 @@ for fi in (files):
         obs_string = list_of_observers["Observer"][list(list_of_observers["Keyword"]).index(list(set([hdr['OBSERVER'].lstrip()]).intersection(set(list_of_observers["Keyword"])))[0])]
     if hdr['CUNIT1'] == "ANGSTROM":
         fits.setval(fi, 'CUNIT1', value="angstrom")
-    spec = Spectrum1D.read(fi, format='wcs1d-fits')
-    fig = plt.figure(figsize = (9,4), dpi=120)
-    if np.median(spec.flux.value) > 1*10**(-5):
-        plt.ylabel('Relative flux')
-    else:
-        plt.ylabel('Flux [erg.s⁻¹.cm⁻².Å⁻¹]')
-    plt.xlabel('Wavelength [Å]')
-
-    title_string = obj_name + " | " + date_string + " | " + time_string + " | " + obs_string
-    plt.title(title_string)
-    ax = plt.gca()
-    ax.tick_params(which='both', direction='in')
-    ax.xaxis.set_minor_locator(AutoMinorLocator())
-    ax.yaxis.set_minor_locator(AutoMinorLocator())
-
-    plt.plot(spec.spectral_axis.value,spec.flux.value,'C3-')
-    plt.savefig('../figures/' + fi[len(dir):-4]+'.png')
-    fig = plt.figure(figsize = (6,3), dpi=72)
-    plt.show(fig)# added by FTE 28/11/2021
-    plt.close(fig)
+        
+    try:
+        spec = Spectrum1D.read(fi, format='wcs1d-fits')
+       
+    
+        
+        
+        fig = plt.figure(figsize = (9,4), dpi=120)
+        if np.median(spec.flux.value) > 1*10**(-5):
+            plt.ylabel('Relative flux')
+        else:
+            plt.ylabel('Flux [erg.s⁻¹.cm⁻².Å⁻¹]')
+        plt.xlabel('Wavelength [Å]')
+    
+        title_string = obj_name + " | " + date_string + " | " + time_string + " | " + obs_string
+        plt.title(title_string)
+        ax = plt.gca()
+        ax.tick_params(which='both', direction='in')
+        ax.xaxis.set_minor_locator(AutoMinorLocator())
+        ax.yaxis.set_minor_locator(AutoMinorLocator())
+    
+        plt.plot(spec.spectral_axis.value,spec.flux.value,'C3-')
+    except:      
+        plt.savefig('../figures/' + fi[len(dir):-4]+'.png')
+        fig = plt.figure(figsize = (6,3), dpi=72)
+        plt.show(fig)# added by FTE 28/11/2021
+        plt.close(fig)
+   
+        pass

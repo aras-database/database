@@ -13,10 +13,10 @@ if len(glob('../temporary/' + '*.csv'))>0:
 
 print("Renaming the files.")
 import aras_rename
-
+print("ok")
 print("Creating figures.")
 import aras_create_figures
-
+print("ok")
 print("Writing entries to table.")
 import aras_update_tables
 
