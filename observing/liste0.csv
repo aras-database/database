@@ -1,0 +1,29 @@
+n,Star name,interest,Type,state
+0,CQ Dra,3,Accretion powered,quiescent
+1,BD Cam,3,Accretion powered,quiescent
+2,CH Cyg,0,Accretion powered,high state
+3,EG And,1,Accretion powered,quiescent
+4,V934 Her,3,Accretion powered,quiescent
+5,Z And,0,Shell burning,quiescent
+6,SU Lyn,1,Accretion powered,quiescent
+7,AG Peg,0,Shell burning,quiescent
+8,AG Dra,0,Shell burning,quiescent
+9,RW Hya,0,Shell burning,quiescent
+10,BF Cyg,1,Shell burning,quiescent
+11,T CrB,00,Accretion powered,quiescent
+12,TX CVn,1,Shell burning,quiescent
+13,ER Del,2,Accretion powered,quiescent
+14,StHA 190,1,Shell burning,quiescent
+15,CI Cyg,0,Shell burning,quiescent
+16,RS Oph,1,Accretion powered,quiescent
+17,AX Per,0,Shell burning,quiescent
+18,V443 Her,0,Shell burning,quiescent
+19,V1016 Cyg,0,Shell burning,Syst Nova
+20,StHA 149,1,Shell burning,quiescent
+21,CL Sco,1,Shell burning,quiescent
+22,V1413 Aql,00,Shell burning,outburst
+23,V2905 Sgr,1,Shell burning,quiescent
+24,V919 Sgr,1,Shell burning,quiescent
+25,V4074 Sgr,1,Shell burning,quiescent
+26,H 2-5,1,Shell burning,quiescent
+27,V2116 Oph,1,Accretion powered,quiescent
