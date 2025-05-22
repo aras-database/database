@@ -1,29 +1,45 @@
-n,Star name,interest,Type,state
+n,Star name,Interest,Type,State
 0,CQ Dra,3,Accretion powered,quiescent
-1,BD Cam,3,Accretion powered,quiescent
+1,BD Cam,3,Accretion powered,quiescence
 2,CH Cyg,0,Accretion powered,high state
-3,EG And,1,Accretion powered,quiescent
-4,V934 Her,3,Accretion powered,quiescent
-5,Z And,0,Shell burning,quiescent
-6,SU Lyn,1,Accretion powered,quiescent
-7,AG Peg,0,Shell burning,quiescent
-8,AG Dra,0,Shell burning,quiescent
-9,RW Hya,0,Shell burning,quiescent
-10,BF Cyg,1,Shell burning,quiescent
-11,T CrB,00,Accretion powered,quiescent
-12,TX CVn,1,Shell burning,quiescent
-13,ER Del,2,Accretion powered,quiescent
-14,StHA 190,1,Shell burning,quiescent
-15,CI Cyg,0,Shell burning,quiescent
-16,RS Oph,1,Accretion powered,quiescent
-17,AX Per,0,Shell burning,quiescent
-18,V443 Her,0,Shell burning,quiescent
-19,V1016 Cyg,0,Shell burning,Syst Nova
-20,StHA 149,1,Shell burning,quiescent
-21,CL Sco,1,Shell burning,quiescent
+3,EG And,1,Accretion powered,quiescence
+4,V934 Her,3,Accretion powered,quiescence
+5,Z And,0,Shell burning,quiescence
+6,SU Lyn,1,Accretion powered,quiescence
+7,AG Peg,0,Shell burning,quiescence
+8,AG Dra,0,Shell burning,quiescence
+9,RW Hya,0,Shell burning,quiescence
+10,BF Cyg,1,Shell burning,quiescence
+11,T CrB,00,Accretion powered,quiescence
+12,TX CVn,1,Shell burning,quiescence
+13,ER Del,2,Accretion powered,quiescence
+14,StHA 190,1,Shell burning,quiescence
+15,CI Cyg,0,Shell burning,quiescence
+16,RS Oph,1,Accretion powered,quiescence
+17,AX Per,0,Shell burning,quiescence
+18,V443 Her,0,Shell burning,quiescence
+19,V1016 Cyg,0,Shell burning,SySt Nova
+20,StHA 149,1,Shell burning,quiescence
+21,CL Sco,1,Shell burning,quiescence
 22,V1413 Aql,00,Shell burning,outburst
-23,V2905 Sgr,1,Shell burning,quiescent
-24,V919 Sgr,1,Shell burning,quiescent
-25,V4074 Sgr,1,Shell burning,quiescent
-26,H 2-5,1,Shell burning,quiescent
-27,V2116 Oph,1,Accretion powered,quiescent
+23,V2905 Sgr,1,Shell burning,quiescence
+24,V919 Sgr,1,Shell burning,quiescence
+25,V4074 Sgr,1,Shell burning,quiescence
+26,H 2-5,1,Shell burning,quiescence
+27,V2116 Oph,1,Accretion powered,quiescence
+28,CL Sco,1,Shell burning,quiescence
+29,ASAS J152058-4519.7,2,Accretion powered,quiescence
+30,V2116 Oph,2,Accretion powered,quiescence
+31,KX TrA,1,Shell burning,quiescence
+32,RR Tel,0,Shell burning,quiescence
+33,V399 Pav,1,Shell burning,quiescence
+34,V1014 Cen,0,?,quiescence
+35,BI Cru,1,Shell burning,quiescence
+36,Hen 3-1768,1,Shell burning,quiescence
+37,SY Mus,1,Shell burning,quiescence
+38,CN Cha,0,Shell burning,SySt Nova
+39,V420 Hya,2,Accretion powered,quiescence
+40,V648 Car,2,Accretion powered,quiescence
+41,StHA 149,1,Shell burning,quiescence
+
+
