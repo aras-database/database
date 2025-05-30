@@ -70,9 +70,13 @@ since_last_spec = []
 num_spec = []
 name_website = []
 for symbiotic in symbiotic_stars["star_name_string"]:
+
     first_spec.append(str(np.min(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10]))
     last_spec.append(str(np.max(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10]))
     since_last_spec.append('<script>var date1, date2;date1 = new Date();date2 = new Date( "'+str(np.max(Time(all_spectra[all_spectra["star_name_string"]==symbiotic]["date"])).value[:10])+' 00:00:00" );var res = Math.abs(date1 - date2) / 1000;var days = Math.floor(res / 86400);document.write(days);</script>')
+
+    
+    
     num_spec.append(str(len(all_spectra[all_spectra["star_name_string"]==symbiotic])))
     name_website.append('<a href="'+symbiotic+'.html">'+symbiotic_stars["name"][symbiotic_stars["star_name_string"]==symbiotic][0]+'</a>')
     if np.max(all_spectra[all_spectra["star_name_string"]==symbiotic]["last_update"]) > 0: #last_update-10000000:
