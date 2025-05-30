@@ -50,7 +50,9 @@ for fi in (files):
         obs_string = list_of_observers["Observer"][list(list_of_observers["Keyword"]).index(list(set([hdr['OBSERVER'].lstrip()]).intersection(set(list_of_observers["Keyword"])))[0])]
     if hdr['CUNIT1'] == "ANGSTROM":
         fits.setval(fi, 'CUNIT1', value="angstrom")
-    spec = Spectrum1D.read(fi, format='wcs1d-fits')
+    #spec = Spectrum1D.read(fi, format='wcs1d-fits')
+    spec = Spectrum1D.read(fi)
+    
     fig = plt.figure(figsize = (9,4), dpi=120)
     if np.median(spec.flux.value) > 1*10**(-5):
         plt.ylabel('Relative flux')
