@@ -451,12 +451,11 @@ for nova in novae["star_name_string"]:
 
 n=len(first_spec)
 print(n)
-
 home["First spectrum"] = first_spec[0:n]
 home["Last spectrum"] = last_spec[0:n]
 home["No. of spectra"] = num_spec[0:n]
 home["Days since last"] = since_last_spec[0:n]
-home["Name"] = name_website
+home["Name"] = name_website[0:n]
 
 
 camp_string = []
