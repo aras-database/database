@@ -69,6 +69,11 @@ for f in files:
     ObjectName2 = "V0462 Lup"
     ObjectName3 = "ASASSN-25cm"
 
+    ObjectName1 = "PNV Vel 2025"
+    ObjectName2 = "V0XXX Vel"
+    ObjectName3 = "'PNV J10251200-5331109'"
+
+
 
                  
     print(ObjectName1)         

@@ -1,12 +1,23 @@
 from astropy.coordinates import SkyCoord
 from astroquery.simbad import Simbad
-#from astropy.io import ascii
 import os
 
+# todo
+# saut de ligne
+# add ligne in objects.csv
+
+
+
 #data
-ObjName = 'Nova Lup 2025'
+ObjName = 'PNV Vel 2025'
 Program = "ARAS Novae Program"
 File0 = 'novae.csv'
+Coord1 = "10 25 12.00"
+Coord2 = " -53 31 10.9"
+GCSVName =  'V0XXX Vel'
+DiscoveryName ='PNV J10251200-5331109'
+
+
 
 # Mise en forme
 FileName = ObjName.replace(" ", "") + '.txt'
@@ -24,8 +35,7 @@ print()
 print("New Object: ", ObjName)
 print()
 
-Coord1 = "15 08 03.27"
-Coord2 = "-40 08 29.58"
+
 
 file_in = "maquette.txt"
 file_out = FileName
@@ -34,8 +44,7 @@ f = open(file_in,'r')
 filedata = f.read()
 f.close()
 
-GCSVName =  ''
-DiscoveryName ='ASASSN-25cm'
+
 
 
 filedata = filedata.replace('ProgramTitle',Program)
