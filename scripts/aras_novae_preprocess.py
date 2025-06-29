@@ -57,14 +57,19 @@ for f in files:
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
  
-
+    n=2
     
-    ObjectName1 = "Nova Lup 2025"
-    ObjectName2 = "V0462 Lup"
-    ObjectName3 = "ASASSN-25cm"
-    ObjectName1 = "PNV Vel 2025"
-    ObjectName2 = "V0572 Vel"
-    ObjectName3 = "'PNV J10251200-5331109'"
+    if n == 1:
+    
+        ObjectName1 = "Nova Lup 2025"
+        ObjectName2 = "V0462 Lup"
+        ObjectName3 = "ASASSN-25cm"
+    
+    if n==2:
+    
+        ObjectName1 = "PNV Vel 2025"
+        ObjectName2 = "V0572 Vel"
+        ObjectName3 = "'PNV J10251200-5331109'"
     
 
 
