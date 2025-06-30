@@ -72,7 +72,8 @@ for f in files:
         ObjectName3 = "'PNV J10251200-5331109'"
     
 
-
+    t2=ObjectName1.replace(" ","")
+    t2=t2.lower()
                  
     print(ObjectName1)         
     print(ObjectName2)
@@ -83,7 +84,7 @@ for f in files:
     
     if rep == 'y':
         fits.setval(f, 'OBJNAME', value = ObjectName1,comment = 'corrected by asdb, if necessary')
-        fits.setval(f, 'OBJNAME1', value = t2,comment = 'Original OBJNAME in the header')
+        fits.setval(f, 'OBJNAME1', value = "",comment = 'none')
         fits.setval(f, 'OBJNAME2', value=ObjectName2,comment = 'GCVS name added by asdb' )
         fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
         ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
