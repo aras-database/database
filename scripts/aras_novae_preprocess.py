@@ -57,7 +57,9 @@ for f in files:
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
  
-    n=2
+    n=1
+    
+    
     
     if n == 1:
     
