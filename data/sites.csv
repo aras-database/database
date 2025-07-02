@@ -288,7 +288,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Aitp-alsace;W96-CL;;Chile;CL;-68.1796;-22.931
 0;Baden;BAD-FR;;France;FR;-2.93493;47.6163
 0;OAPA Osservatorio Piero Angela;OAPA-IT;;Italia;IT;;
-0;Embourie;EMB-FR;Emborie;FR;0.04123;46.0422;
+0;Embourie;EMB-FR;Embourie;FR;0.04123;46.0422;
 0;Erbenheim;ERB-DE;Erbenheim;DE;8.3;50.1;
 0;StarQuest;SQ-US;;US;-84.93;41.08;
 0;Oaks&Stars;OAK-US;;US;-98.50794;31.31753;
@@ -297,3 +297,4 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Tinyblue Observatory;TBO-US;;US;-122.6;48.0818;
 0;Promiod;PRO-IT;;IT;7.607;45.786;
 0;Pises;PIS-FR;;FR;3.503;44.039;
+0;La Spezia;SPE-IT;;IT;9.809324;44.11124;
