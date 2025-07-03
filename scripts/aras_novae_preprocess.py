@@ -56,10 +56,7 @@ for f in files:
     timesp = '{:03d}'.format(timesp)
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
- 
     n=2
-    
-    
     
     if n == 1:
     
@@ -72,7 +69,6 @@ for f in files:
         ObjectName1 = "PNV Vel 2025"
         ObjectName2 = "V0572 Vel"
         ObjectName3 = "'PNV J10251200-5331109'"
-    
 
     t2=ObjectName1.replace(" ","")
     t2=t2.lower()
