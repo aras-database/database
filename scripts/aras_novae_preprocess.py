@@ -10,7 +10,7 @@ from specutils import Spectrum1D
 from shutil import copyfile
 from astropy.io import ascii
 
-os.chdir(r'C:\Users\franc\Documents\GitHub\database\new_spectra\novae') 
+os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\new_spectra\novae') 
 cwd = os.getcwd() 
 path= cwd
 
@@ -91,7 +91,7 @@ for f in files:
     
         fitfile.close()
         os.rename(f,ArasFileName)
-        copyfile(ArasFileName,r'C:\Users\franc\Documents\GitHub\database\new_spectra/' + ArasFileName)
+        copyfile(ArasFileName,r'C:\Users\franc\OneDrive\Documents\GitHub\database\new_spectra/' + ArasFileName)
         
         os.remove(ArasFileName)
         print(ArasFileName) 
