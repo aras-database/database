@@ -21,7 +21,7 @@ print("Writing entries to table.")
 import aras_update_tables
 
 print("Updating zip archives.")
-#import aras_update_archives
+import aras_update_archives
 
 comments_anw = 2
 while comments_anw == 2:
