@@ -70,11 +70,7 @@ for f in files:
         ObjectName2 = "V0572 Vel"
         ObjectName3 = "'PNV J10251200-5331109'"
         
-    if n==3:
-        
-        ObjectName1 = "Nova Sgr 2025b"
-        ObjectName2 = "V7992Sgr"
-        ObjectName3 = "TCP J17590439-3601111"
+
         
         
         
