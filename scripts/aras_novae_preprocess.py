@@ -35,7 +35,6 @@ for f in files:
     hdr = fitfile[0].header
     spec = Spectrum1D.read(f, format='wcs1d-fits')
 
-    
     # #########read header
     
     t1 = fitfile[0].header['DATE-OBS']
