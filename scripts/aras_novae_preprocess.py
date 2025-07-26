@@ -8,7 +8,7 @@ import os
 from astropy.io import fits
 from specutils import Spectrum1D
 from shutil import copyfile
-from astropy.io import ascii
+import glob as glob
 
 os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\new_spectra\novae') 
 cwd = os.getcwd() 
@@ -17,18 +17,18 @@ path= cwd
 files = []
 n = 0
 
-data = ascii.read("names.csv", header_start=0, data_start=1, delimiter=';',format='csv')
+#data = ascii.read("names.csv", header_start=0, data_start=1, delimiter=';',format='csv')
 
 
-for r, d, f in os.walk(path):
-    for file in f:
-        if '.fit' in file:
-            files.append(os.path.join(r, file))    
+files=glob.glob("*.fit*")  
+
+
+print(files)
             
 for f in files:
     n = n+1
     print('************************************************************************************')
-    print(n)
+    
     print(f)
 
     fitfile = fits.open(f)
@@ -56,6 +56,8 @@ for f in files:
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
     n=3
+    n=input("Lup=1, Vel=2, Ser=3 : ")
+    n=float(n)
     
     if n == 1:
     
@@ -82,8 +84,7 @@ for f in files:
     t2=t2.lower()
                  
     print(ObjectName1)         
-    print(ObjectName2)
-    print(ObjectName3)
+    print("")
     
     
     rep = input("Correct OBJNAME y/n : ")
