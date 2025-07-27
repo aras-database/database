@@ -11,8 +11,7 @@
       <h5 class="card-title">Nova Ser 2025</h5>
       <p class="card-text">RA (2000): 18 38 58.47</p>
   <p class="card-text">DEC (2000):  -03 51 49.4</p>
-  <p class="card-text">V (mag): MagnitudeV</p>
-  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/Nom1/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
+  <p class="card-text">V (mag): 12.5udeV</p>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=Nom2&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>
   </div>
