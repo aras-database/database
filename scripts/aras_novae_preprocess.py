@@ -55,9 +55,10 @@ for f in files:
     timesp = '{:03d}'.format(timesp)
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
-    n=3
-    n=input("Lup=1, Vel=2, Ser=3 : ")
-    n=float(n)
+    n=1
+    
+    # n=input("Lup=1, Vel=2, Ser=3 : ")
+    # n=float(n)
     
     if n == 1:
     
