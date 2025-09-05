@@ -9,13 +9,13 @@ import os
 
 
 #data
-ObjName = 'Nova Ser 2025'
+ObjName = 'T CrB RN2025'
 Program = "ARAS Novae Program"
 File0 = 'novae.csv'
-Coord1 = "18 38 58.47"
-Coord2 = "-03 51 49.4"
-GCSVName =  'V0XXX Ser'
-DiscoveryName ='TCP J18385851-0351482'
+Coord1 = "15 59 30.162"
+Coord2 = "+25 55 12.608"
+GCSVName =  'T CrB'
+DiscoveryName =''
 
 
 
@@ -30,7 +30,7 @@ NameCatalog = NameCatalog.lower()
 
 # Main
 
-os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\website_source') 
+os.chdir(r'C:\Users\franc\Documents\GitHub\database\website_source') 
 print()
 print("New Object: ", ObjName)
 print()
@@ -59,7 +59,7 @@ f = open(file_out,'w')
 f.write(filedata)
 f.close()
            
-os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\data')  
+os.chdir(r'C:\Users\franc\Documents\GitHub\database\data')  
 
 sep = ";"
 f = open(File0,"a")
