@@ -55,7 +55,7 @@ for f in files:
     timesp = '{:03d}'.format(timesp)
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
-    n=1
+    n=4
     
     # n=input("Lup=1, Vel=2, Ser=3 : ")
     # n=float(n)
@@ -79,6 +79,12 @@ for f in files:
         
         
         
+    if n==4:
+          ObjectName1 = 'Nova Oph 2025'
+          ObjectName2 =  'V4371 Oph'
+          ObjectName3 ='TCP J17301230-2753488'  
+        
+        
         
 
     t2=ObjectName1.replace(" ","")
@@ -93,8 +99,8 @@ for f in files:
     if rep == 'y':
         fits.setval(f, 'OBJNAME', value = ObjectName1,comment = 'corrected by asdb, if necessary')
         fits.setval(f, 'OBJNAME1', value = "",comment = 'none')
-        #fits.setval(f, 'OBJNAME2', value=ObjectName2,comment = 'GCVS name added by asdb' )
-        #fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
+        fits.setval(f, 'OBJNAME2', value=ObjectName2,comment = 'GCVS name added by asdb' )
+        fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
         ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
         print("ok")
         #Copy Files

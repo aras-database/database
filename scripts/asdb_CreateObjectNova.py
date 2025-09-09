@@ -9,13 +9,13 @@ import os
 
 
 #data
-ObjName = 'T CrB RN2025'
+ObjName = 'Nova Oph 2025'
 Program = "ARAS Novae Program"
 File0 = 'novae.csv'
-Coord1 = "15 59 30.162"
-Coord2 = "+25 55 12.608"
-GCSVName =  'T CrB'
-DiscoveryName =''
+Coord1 = "17 30 12.30"
+Coord2 = "-27 53 48.88"
+GCSVName =  'V4371 OPh'
+DiscoveryName ='TCP J17301230-2753488'
 
 
 
