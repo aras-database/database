@@ -55,7 +55,7 @@ for f in files:
     timesp = '{:03d}'.format(timesp)
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
-    n=4
+    n=1
     
     # n=input("Lup=1, Vel=2, Ser=3 : ")
     # n=float(n)
@@ -94,8 +94,8 @@ for f in files:
     print("")
     
     
-    rep = input("Correct OBJNAME y/n : ")
-    
+    #rep = input("Correct OBJNAME y/n : ")
+    rep="y"
     if rep == 'y':
         fits.setval(f, 'OBJNAME', value = ObjectName1,comment = 'corrected by asdb, if necessary')
         fits.setval(f, 'OBJNAME1', value = "",comment = 'none')
