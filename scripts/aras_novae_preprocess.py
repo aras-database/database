@@ -57,7 +57,7 @@ for f in files:
     
     n=1
     
-    n=input("Lup=1, Vel=2, Ser=3, Sgrd=4, Cen=5: ")
+    n=input("Lup=1, Vel=2, Ser=3, Oph=4,Sgrd=5, Cen=6: ")
     n=float(n)
     
     if n == 1:
@@ -87,7 +87,7 @@ for f in files:
         ObjectName2 =  'V7994 Sgr'
         ObjectName3 ='TCP J18035290-3127298'  
         
-    if n==5:
+    if n==6:
         ObjectName1 = 'Nova Cen 2025'
         ObjectName2 =  'V1935 Cen'
         ObjectName3 ='PNV J14372177-58474008'  
