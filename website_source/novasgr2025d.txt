@@ -8,7 +8,7 @@
 <div class="col-sm-6">
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title">Nova sgr 2025d</h5>
+      <h5 class="card-title">Nova Sgr 2025d</h5>
       <p class="card-text">RA (2000): 18 03 52.75</p>
   <p class="card-text">DEC (2000):  -31 27 24.7</p>
   <p class="card-text">V (mag): MagnitudeV</p>
