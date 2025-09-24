@@ -7,15 +7,14 @@ import os
 # add ligne in objects.csv
 
 
-
 #data
-ObjName = 'Nova Oph 2025'
+ObjName = 'Nova sgr 2025d'
 Program = "ARAS Novae Program"
 File0 = 'novae.csv'
-Coord1 = "17 30 12.30"
-Coord2 = "-27 53 48.88"
-GCSVName =  'V4371 OPh'
-DiscoveryName ='TCP J17301230-2753488'
+Coord1 = "18 03 52.75"
+Coord2 = "-31 27 24.7"
+GCSVName =  'V7994 Sgr'
+DiscoveryName ='TCP J18035290-3127298'
 
 
 

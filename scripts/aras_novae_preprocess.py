@@ -40,10 +40,10 @@ for f in files:
     t1 = fitfile[0].header['DATE-OBS']
     d = t1[0:10]
     h = t1[11:19]
-    t2 = fitfile[0].header['OBJNAME']
-    print("objname.header",t2)
+    Obj = fitfile[0].header['OBJNAME']
+    print("objname.header",Obj)
 
-    t2 = t2.lower()
+    t2 = Obj.lower()
     t2=t2.replace(' ','')
     t2=t2.replace('_','')
     
@@ -57,8 +57,8 @@ for f in files:
     
     n=1
     
-    # n=input("Lup=1, Vel=2, Ser=3 : ")
-    # n=float(n)
+    n=input("Lup=1, Vel=2, Ser=3, Sgrd=4, Cen=5: ")
+    n=float(n)
     
     if n == 1:
     
@@ -77,14 +77,20 @@ for f in files:
         ObjectName2 =  'V0XXX Ser'
         ObjectName3 ='TCP J18385851-0351482'
         
-        
-        
     if n==4:
           ObjectName1 = 'Nova Oph 2025'
           ObjectName2 =  'V4371 Oph'
           ObjectName3 ='TCP J17301230-2753488'  
         
+    if n==5:
+        ObjectName1 = 'Nova Sgr 2025d'
+        ObjectName2 =  'V7994 Sgr'
+        ObjectName3 ='TCP J18035290-3127298'  
         
+    if n==5:
+        ObjectName1 = 'Nova Cen 2025'
+        ObjectName2 =  'V1935 Cen'
+        ObjectName3 ='PNV J14372177-58474008'  
         
 
     t2=ObjectName1.replace(" ","")
@@ -98,7 +104,7 @@ for f in files:
     rep="y"
     if rep == 'y':
         fits.setval(f, 'OBJNAME', value = ObjectName1,comment = 'corrected by asdb, if necessary')
-        fits.setval(f, 'OBJNAME1', value = "",comment = 'none')
+        fits.setval(f, 'OBJNAME1', value = Obj,comment = 'original name in the header')
         fits.setval(f, 'OBJNAME2', value=ObjectName2,comment = 'GCVS name added by asdb' )
         fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
         ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
