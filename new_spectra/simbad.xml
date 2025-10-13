@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.2 http://www.ivoa.net/xml/VOTable/v1.2" version="1.2">
+<DEFINITIONS>
+<COOSYS ID="COOSYS" equinox="2000" epoch="J2000" system="ICRS"/>
+</DEFINITIONS>
+<RESOURCE name="Simbad query" type="results">
+<TABLE ID="SimbadScript" name="vot1"><DESCRIPTION>Simbad script executed on 2025.10.12CEST17:55:27</DESCRIPTION>
+<FIELD ID="RA" name="RA" datatype="char" precision="8" width="13" ucd="pos.eq.ra;meta.main" arraysize="13" unit="&quot;h:m:s&quot;">
+<DESCRIPTION>Right ascension</DESCRIPTION>
+</FIELD>
+<FIELD ID="DEC" name="DEC" datatype="char" precision="8" width="13" ucd="pos.eq.dec;meta.main" arraysize="13" unit="&quot;d:m:s&quot;">
+<DESCRIPTION>Declination</DESCRIPTION>
+</FIELD>
+<FIELD ID="SP_TYPE" name="SP_TYPE" datatype="char" width="6" ucd="src.spType" arraysize="*">
+<DESCRIPTION>MK spectral type</DESCRIPTION>
+</FIELD>
+<FIELD ID="FLUX_V" name="FLUX_V" datatype="float" ucd="phot.mag;em.opt.V" unit="mag">
+<DESCRIPTION>Magnitude V</DESCRIPTION>
+</FIELD>
+<FIELD ID="SCRIPT_NUMBER_ID" name="SCRIPT_NUMBER_ID" datatype="int" precision="1" width="2" ucd="meta.number"/>
+<DATA>
+<TABLEDATA>
+<TR><TD>16 01 41.0120557968</TD><TD>+66 48 10.135056672</TD><TD>K3IIIep</TD><TD>9.74</TD><TD>1</TD></TR>
+
+</TABLEDATA>
+
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>
+
