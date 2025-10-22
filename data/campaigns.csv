@@ -1,5 +1,5 @@
 dumb;star_name_string;campaign_type;campaign_text
-0;agdra;Ongoing campaign;Orbital variations in low state upon the request of Jaroslav Merc & Rudolf Gális.
+0;agdra;Outburst;Orbital variations in low state upon the request of Jaroslav Merc & Rudolf Gális.
 0;chcyg;Ongoing campaign;H alpha line at R > 10.000 upon the request of Dr A. Skopal.
 0;raqr;Eclipse of the hot component (ending/ended);Ongoing campaign
 0;tcrb;Monitoring before the nova outburst;One spectrum/day until the next nova outburst
@@ -9,5 +9,4 @@ dumb;star_name_string;campaign_type;campaign_text
 0;axper;Ongoing survey;
 0;cncha;Symbiotic nova outburst;
 0;pnvvel2025;peculiar nova - https://www.astronomerstelegram.org/?read=17256
-0;v1413 Aql;Outburst
-0;novalup2015;Nova Outburst
+0;v1413 Aql;Outburst & Eclipse

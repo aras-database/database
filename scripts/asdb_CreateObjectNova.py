@@ -8,13 +8,14 @@ import os
 
 
 #data
-ObjName = 'Nova Cen 2025'
+ObjName = 'Nova Sgr 2025b'
 Program = "ARAS Novae Program"
 File0 = 'novae.csv'
-Coord1 = "14 37 21.77"
-Coord2 = "-58 47 40.0"
-GCSVName =  'V1935 Cen'
-DiscoveryName ='PNV J14372177-5847400'
+File1 = 'objects.csv'
+Coord1 = "17 59 04.46"
+Coord2 = "-36 01 07.7"
+GCSVName =  'V7992 Sgr'
+DiscoveryName ='TCP J17590439-3601111'
 
 # Mise en forme
 FileName = ObjName.replace(" ", "") + '.txt'
@@ -52,6 +53,7 @@ filedata = filedata.replace('GCSVName',GCSVName)
 filedata = filedata.replace('DiscoveryName',DiscoveryName )
 
 
+
 f = open(file_out,'w')
 f.write(filedata)
 f.close()
@@ -60,17 +62,18 @@ os.chdir(r'C:\Users\franc\Documents\GitHub\database\data')
 
 sep = ";"
 f = open(File0,"a")
-
 NewLine = "0"+sep + objname + sep + ObjName + sep + Coord1 +sep +Coord2+sep  + GCSVName + sep+ DiscoveryName + '\n'
 print()
 print(NewLine)
-
-
-
-
 f.write(NewLine)
 f.close() 
 
-
+sep = ";"
+f = open(File1,"a")
+NewLine = "0"+sep + ObjName + sep + ObjName + '\n'
+print()
+print(NewLine)
+f.write(NewLine)
+f.close() 
     
  
