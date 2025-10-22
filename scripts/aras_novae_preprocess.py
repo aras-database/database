@@ -91,7 +91,15 @@ for f in files:
         ObjectName1 = 'Nova Cen 2025'
         ObjectName2 =  'V1935 Cen'
         ObjectName3 ='PNV J14372177-58474008'  
+    if n==7:
+        ObjectName1 = 'Nova Sgr 2025b'
+        ObjectName2 = 'V7992 Sgr'
+        ObjectName3 ='TCP J17590439-3601111'  
         
+
+
+
+
 
     t2=ObjectName1.replace(" ","")
     t2=t2.lower()
