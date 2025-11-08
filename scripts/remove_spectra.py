@@ -7,7 +7,7 @@ Created on Thu Oct 23 18:57:12 2025
 
 import os
 import pandas as pd
-x='asdb_tcrb_20250729_133.fit'
+x='asdb_tcrb_20250608_997.fit'
 x1=x[0:len(x)-4] + 'png'
 path=os.path.join(r'C:\Users\franc\Documents\GitHub\database\data',x)
 df=pd.read_csv(r'C:\Users\franc\Documents\GitHub\database\data\all_spectra.csv',sep=";")
