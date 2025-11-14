@@ -1,15 +1,16 @@
 from astropy.coordinates import SkyCoord
 from astroquery.simbad import Simbad
+import numpy as np
 #from astropy.io import ascii
 import os
 
 #data
-ObjName = "WRAY 15-157" 
-Program = "ARAS Symbiotics Program"
-File0 = 'symbiotic_stars.csv'
-hr = "1" # Priority HR
-lr = "1" # Priority LR
-cadency = 30
+ObjName = "AM Her" 
+Program = "ARAS Dwarf Novae"
+File0 = 'Dwarf Novae.csv'
+hr = "-" # Priority HR
+lr = "-" # Priority LR
+cadency = 0
 
 # Mise en forme
 FileName = ObjName.replace(" ", "") + '.txt'
@@ -22,7 +23,7 @@ NameCatalog = NameCatalog.lower()
 
 # Main
 
-os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\website_source') 
+os.chdir(r'C:\Users\franc\Documents\GitHub\database\website_source') 
 print()
 print("New Object: ", ObjName)
 print()
@@ -31,17 +32,14 @@ ObjectCoordinates = SkyCoord.from_name(ObjName)
 
 
 simbad = Simbad()
-simbad.add_votable_fields('sptype')
-simbad.add_votable_fields('rv_value')
-simbad.add_votable_fields('flux(V)')
+simbad.add_votable_fields('sp_type')
+simbad.add_votable_fields('V')
 result_table = simbad.query_object(ObjName)
 result_table.pprint(show_unit=True)
 
-Coord1 = result_table['RA'][0]
-Coord1 = Coord1[0:11]
-Coord2 = result_table['DEC'][0]
-Coord2 = Coord2[0:12]
-MagV = result_table['FLUX_V'][0]
+Coord1 = np.round(result_table['ra'],3)
+Coord2 = np.round(result_table['dec'],3)
+MagV = result_table['V'][0]
 
 file_in = "maquette.txt"
 file_out = FileName
@@ -50,7 +48,7 @@ f = open(file_in,'r')
 filedata = f.read()
 f.close()
 
-filedata = filedata.replace('ProgramTitle',Program)
+filedata = filedata.replace('ProgramTitle',"ARAS Dwarf Novae")
 filedata = filedata.replace('Name', ObjName)
 filedata = filedata.replace('C1', Coord1)
 filedata = filedata.replace('C2', Coord2)
@@ -62,7 +60,7 @@ f = open(file_out,'w')
 f.write(filedata)
 f.close()
            
-os.chdir(r'C:\Users\franc\OneDrive\Documents\GitHub\database\data')  
+os.chdir(r'C:\Users\franc\Documents\GitHub\database\data')  
 
 sep = ";"
 # f = open("symbiotic_stars.csv","a")
@@ -75,6 +73,13 @@ print(NewLine)
 f.write(NewLine)
 f.close() 
 
+f = open("objects.csv","a")
 
+NewLine = "0"   +sep + ObjName + sep + ObjName +'\n'
+print()
+print(NewLine)
+
+f.write(NewLine)
+f.close() 
     
  
