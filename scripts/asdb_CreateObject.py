@@ -7,7 +7,7 @@ import os
 #data
 ObjName = "AM Her" 
 Program = "ARAS Dwarf Novae"
-File0 = 'Dwarf Novae.csv'
+File0 = 'DwarfNovae.csv'
 hr = "-" # Priority HR
 lr = "-" # Priority LR
 cadency = 0
@@ -63,7 +63,6 @@ f.close()
 os.chdir(r'C:\Users\franc\Documents\GitHub\database\data')  
 
 sep = ";"
-# f = open("symbiotic_stars.csv","a")
 f = open(File0,"a")
 
 NewLine = "0"   +sep + objname + sep + ObjName + sep + Coord1 +sep +Coord2+sep+ str(cadency) + sep + str(hr) + sep+ str(lr) +'\n'
