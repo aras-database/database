@@ -7,14 +7,14 @@ Created on Fri Nov 14 14:59:46 2025
 
 from astropy.coordinates import SkyCoord
 from astroquery.simbad import Simbad
-import numpy as np
+
 import os
 
 # -----------------------------------------
 # CONFIGURATION
 # -----------------------------------------
 
-ObjName = "RU Peg"
+ObjName = "AE Aur"
 Program = "ARAS Dwarf Novae"
 File0 = 'dwarf_novae.csv'
 hr = "-"  # Priority HR
