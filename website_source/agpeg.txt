@@ -12,8 +12,24 @@
       <p class="card-text">RA (2000): 21 51 01.973</p>
   <p class="card-text">DEC (2000): +12 37 32.124</p>
   <p class="card-text">V (mag): 6.0 - 9.4</p>
-  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/ag-peg/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
-      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=AG+Pegasi&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+  <!--  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/ag-peg/" class="btn btn-primary">New Online Database of Symbiotic Variables</a> -->
+  <!--  <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=AG+Pegasi&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a> -->
+
+<a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/ag-peg/" 
+   class="btn btn-primary d-block w-50 mx-auto mb-2">
+   New Online Database of Symbiotic Variables
+</a>
+
+<a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..240...21A/abstract" 
+   class="btn btn-primary d-block w-50 mx-auto mb-2">
+   Symbiotic stars with 2MASS, WISE & Gaia
+</a>
+
+<a href="http://simbad.harvard.edu/simbad/sim-id?Ident=AG+Pegasi&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" 
+   class="btn btn-secondary w-50 mx-auto mb-2">
+   SIMBAD
+</a>
+
 
   </div>
   </div>
