@@ -7,13 +7,29 @@
   <div class="row">
 <div class="col-sm-6">
   <div class="card">
+    
     <div class="card-body">
       <h5 class="card-title">V417 CMa</h5>
       <p class="card-text">RA (2000): 06 59 11.30</p>
-  <p class="card-text">DEC (2000):  -29 02 05.15</p>
-  <p class="card-text">V (mag): 10.7</p>
-  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/v417-cma/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
-      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=V417+CMa&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
-  </div>
+      <p class="card-text">DEC (2000):  -29 02 05.15</p>
+      <p class="card-text">V (mag): 10.7</p>
+
+<a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/v417-cma/" 
+   class="btn btn-primary d-block w-60 mx-auto mb-2">
+   New Online Database of Symbiotic Variables
+</a>
+
+<a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..240...21A/abstract" 
+   class="btn btn-primary d-block w-60 mx-auto mb-2">
+   Symbiotic stars with 2MASS, WISE & Gaia
+</a>
+
+<a href="http://simbad.harvard.edu/simbad/sim-id?Ident=V417+CMa&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" 
+   class="btn btn-secondary w-60 mx-auto mb-2">
+   SIMBAD
+</a>
+
+    </div>
+
   </div>
 </div>
