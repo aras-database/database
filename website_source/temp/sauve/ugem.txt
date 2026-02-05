@@ -1,0 +1,18 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Dwarf Novae</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">U Gem</h5>
+      <p class="card-text">RA (2000):  07 55 05.23</p>
+  <p class="card-text">DEC (2000): +22 00 05.05</p>
+  <p class="card-text">V (mag): 9 - 15</p>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=U+Gem&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+  </div>
+  </div>
+</div>

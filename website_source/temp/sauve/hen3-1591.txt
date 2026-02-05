@@ -1,0 +1,19 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Symbiotics Program</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Hen 3-1591</h5>
+      <p class="card-text">RA (2000): 18 07 32.01</p>
+  <p class="card-text">DEC (2000):  -25 53 43.32</p>
+  <p class="card-text">V (mag): 12.0</p>
+  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/hen-3-1591/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=Hen+3-1591&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+  </div>
+  </div>
+</div>

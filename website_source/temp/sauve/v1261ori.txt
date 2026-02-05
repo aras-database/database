@@ -1,0 +1,20 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Symbiotics Program</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">V1261 Orionis</h5>
+      <p class="card-text">RA (2000): 05 22 18.647</p>
+  <p class="card-text">DEC (2000): -08 39 58.053</p>
+  <p class="card-text">V (mag): 6.7 - 7.1</p>
+  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/v1261-ori/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=V1261+Ori&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+
+  </div>
+  </div>
+</div>
