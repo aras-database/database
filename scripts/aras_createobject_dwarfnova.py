@@ -14,7 +14,7 @@ import os
 # CONFIGURATION
 # -----------------------------------------
 
-ObjName = "V555 Per"
+ObjName = "SU Aur"
 Program = "ARAS Dwarf Novae"
 File0 = 'dwarf_novae.csv'
 hr = "-"  # Priority HR

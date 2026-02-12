@@ -1,0 +1,18 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">ARAS Dwarf Novae</h1>
+<br>
+  <div class="row">
+<div class="col-sm-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">FY Per</h5>
+      <p class="card-text">RA (2000): 70.486</p>
+  <p class="card-text">DEC (2000):  50.710</p>
+  <p class="card-text">V (mag): 12.244999885559082</p>
+      <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=FY+Per&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
+  </div>
+  </div>
+</div>
