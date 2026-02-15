@@ -14,7 +14,7 @@
       <p class="card-text">DEC (2000):  +28 31 46.44</p>
       <p class="card-text">V (mag): 6.347</p>
 
-<a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/dt-psc/" 
+<a href="https://sirrah.troja.mff.cuni.cz/~merc/nodsv/stars/dt_psc.html" 
    class="btn btn-primary d-block w-60 mx-auto mb-2">
    New Online Database of Symbiotic Variables
 </a>

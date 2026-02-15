@@ -14,7 +14,7 @@
       <p class="card-text">DEC (2000):  -30 37 18.26</p>
       <p class="card-text">V (mag): 11.98</p>
 
-<a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/cl-sco/" 
+<a href="https://sirrah.troja.mff.cuni.cz/~merc/nodsv/stars/cl_sco.html" 
    class="btn btn-primary d-block w-60 mx-auto mb-2">
    New Online Database of Symbiotic Variables
 </a>

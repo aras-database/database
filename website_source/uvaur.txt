@@ -14,7 +14,7 @@
       <p class="card-text">DEC (2000): +32 30 40.177</p>
       <p class="card-text">V (mag): 7.3 - 11.1</p>
 
-<a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/uv-aur/" 
+<a href="https://sirrah.troja.mff.cuni.cz/~merc/nodsv/stars/uv_aur.html" 
    class="btn btn-primary d-block w-60 mx-auto mb-2">
    New Online Database of Symbiotic Variables
 </a>

@@ -14,7 +14,7 @@
       <p class="card-text">DEC (2000):  -28 38 34.63</p>
       <p class="card-text">V (mag): 15.3</p>
 
-<a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/pn-th-3-18/" 
+<a href="https://sirrah.troja.mff.cuni.cz/~merc/nodsv/stars/pn_th_3_18.html" 
    class="btn btn-primary d-block w-60 mx-auto mb-2">
    New Online Database of Symbiotic Variables
 </a>

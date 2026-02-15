@@ -12,7 +12,7 @@
       <p class="card-text">RA (2000): 19 05 47.97</p>
   <p class="card-text">DEC (2000):  -06 05 51.61</p>
   <p class="card-text">V (mag): --</p>
-  <a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/gsc-05140-03255/" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
+  <a href="https://sirrah.troja.mff.cuni.cz/~merc/nodsv/stars/gsc_05140_03255.html" class="btn btn-primary">New Online Database of Symbiotic Variables</a>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=GSC+05140-03255&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>
   </div>

@@ -14,7 +14,7 @@
       <p class="card-text">DEC (2000):  -15 24 26.13</p>
       <p class="card-text">V (mag): --</p>
 
-<a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/uu-ser/" 
+<a href="https://sirrah.troja.mff.cuni.cz/~merc/nodsv/stars/uu_ser.html" 
    class="btn btn-primary d-block w-60 mx-auto mb-2">
    New Online Database of Symbiotic Variables
 </a>

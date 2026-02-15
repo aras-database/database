@@ -14,7 +14,7 @@
       <p class="card-text">DEC (2000): +29 40 29.173</p>
       <p class="card-text">V (mag): 9.1 - 13.5</p>
 
-<a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/bf-cyg/" 
+<a href="https://sirrah.troja.mff.cuni.cz/~merc/nodsv/stars/bf_cyg.html" 
    class="btn btn-primary d-block w-60 mx-auto mb-2">
    New Online Database of Symbiotic Variables
 </a>

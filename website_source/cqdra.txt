@@ -14,7 +14,7 @@
       <p class="card-text">DEC (2000): +69 12 03.990</p>
       <p class="card-text">V (mag): 4.9 - 5.1</p>
 
-<a href="http://astronomy.science.upjs.sk/symbiotics/galactic-symbiotic-stars/confirmed-galactic-symbiotic-stars/cq-dra/" 
+<a href="https://sirrah.troja.mff.cuni.cz/~merc/nodsv/stars/cq_dra.html" 
    class="btn btn-primary d-block w-60 mx-auto mb-2">
    New Online Database of Symbiotic Variables
 </a>
