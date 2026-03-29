@@ -14,7 +14,7 @@ import os
 # CONFIGURATION
 # -----------------------------------------
 
-ObjName = "V420 Hya"
+ObjName = "Hen 4-204"
 Program = "ARAS Symbiotic Stars"
 File0 = 'symbiotic_stars.csv'
 hr = "-"  # Priority HR
