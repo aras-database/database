@@ -62,7 +62,8 @@ for f in files:
     
     if n == 1:
     
-        ObjectName1 = "Nova LMC 2026"
+        ObjectName = "Nova LMC 2026b"
+        ObjectName1 = "AT_2026hnf"
         ObjectName2 = ""
         ObjectName3 = "ASASSN-26bl"
     
