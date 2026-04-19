@@ -14,7 +14,7 @@ import os
 # CONFIGURATION
 # -----------------------------------------
 
-ObjName = "SW Sex"
+ObjName = "RW Sex"
 Program = "ARAS Dwarf Novae"
 File0 = 'dwarf_novae.csv'
 hr = "-"  # Priority HR
