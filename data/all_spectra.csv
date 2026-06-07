@@ -16658,3 +16658,4 @@ dumb;star_name_string;date;time;jd;observer;site;resolution;lambda_min;lambda_ma
 0;zzcmi;2026-03-15;05:40;61114.737;FAS;DCO-US;9000;3925;9100;asdb_zzcmi_20260315_236.fit;asdb_zzcmi_20260315_236.png;1773773245;
 0;zzcmi;2026-04-06;22:27;61137.436;CDZ;DSH-SP;1105;4800;6859;asdb_zzcmi_20260406_935.fit;asdb_zzcmi_20260406_935.png;1775741928;
 0;zzcmi;2026-04-13;11:32;61143.981;CEL;MAR-AU;10000;4001;7152;asdb_zzcmi_20260413_481.fit;asdb_zzcmi_20260413_481.png;1776181364;
+0;tcrb;2026-06-07;01:10;61198.549;FTE;SMM-SP;9000;3850;7500;asdb_tcrb_20260607_049.fit;asdb_tcrb_20260607_049.png;1780863961; 
