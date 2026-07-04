@@ -16725,3 +16725,4 @@ dumb;star_name_string;date;time;jd;observer;site;resolution;lambda_min;lambda_ma
 0;novaaql2026;2026-07-02;22:56;61224.456;DBO;WCO-UK;1164;3900;7381;asdb_novaaql2026_20260702_957.fit;asdb_novaaql2026_20260702_957.png;1783110784;
 0;tcrb;2026-05-25;01:41;61185.57;IBR;HVR-FR;839;3234;6086;asdb_tcrb_20260525_070.fit;asdb_tcrb_20260525_070.png;1783152864;
 0;tcrb;2026-07-04;00:16;61225.512;IBR;HVR-FR;780;3232;6084;asdb_tcrb_20260704_011.fit;asdb_tcrb_20260704_011.png;1783152864;
+0;novaaql2026;2026-07-03;21:12;61225.384;VLE;ORL-FR;500;3776;7202;asdb_novaaql2026_20260703_883.fit;asdb_novaaql2026_20260703_883.png;1783179251; 
