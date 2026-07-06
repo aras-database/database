@@ -6,7 +6,6 @@ Created on Mon Apr 20 17:22:50 2020
 
 import os
 from astropy.io import fits
-from specutils import Spectrum1D
 from shutil import copyfile
 import glob as glob
 
@@ -33,7 +32,7 @@ for f in files:
 
     fitfile = fits.open(f)
     hdr = fitfile[0].header
-    spec = Spectrum1D.read(f, format='wcs1d-fits')
+    
 
     # #########read header
     
@@ -71,7 +70,7 @@ for f in files:
     if n==3:
             ObjectName = "Nova Aql 2026"
             ObjectName1 = "Nova Aql 2026"
-            ObjectName2 = ""
+            ObjectName2 = "V2104 Aql"
             ObjectName3 = "AT 2016rdg"
 
   
@@ -82,30 +81,33 @@ for f in files:
                  
     print(ObjectName1)         
     print("")
+    fitfile.close()
     
+    with fits.open(f, mode="update") as fitfile:
     
-    #rep = input("Correct OBJNAME y/n : ")
-    rep="y"
-    if rep == 'y':
-        fits.setval(f, 'OBJNAME', value = ObjectName1,comment = 'corrected by asdb, if necessary')
-        fits.setval(f, 'OBJNAME1', value = Obj,comment = 'original name in the header')
-        fits.setval(f, 'OBJNAME2', value=ObjectName2,comment = 'GCVS name added by asdb' )
-        fits.setval(f, 'OBJNAME3', value=ObjectName3,comment = 'Discovery name added by asdb' )
-        ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
-        print("ok")
-        #Copy Files
+        hdr = fitfile[0].header
     
+        t1 = hdr["DATE-OBS"]
+        Obj = hdr["OBJNAME"]
+    
+
+    
+        hdr["OBJNAME"]  = (ObjectName1, "corrected by asdb")
+        hdr["OBJECT"]  = (ObjectName1, "corrected by asdb")
+        hdr["OBJNAME1"] = (Obj, "original name")
+        hdr["OBJNAME2"] = (ObjectName2, "GCVS name")
+        hdr["OBJNAME3"] = (ObjectName3, "Discovery name")
+    #Copy Files
+
         fitfile.close()
-        os.rename(f,ArasFileName)
-        copyfile(ArasFileName,r'C:\Users\franc\Documents\GitHub\database\new_spectra/' + ArasFileName)
-        
-        os.remove(ArasFileName)
-        print(ArasFileName) 
-        print('************************************************************************************')
+    os.rename(f,ArasFileName)
+    copyfile(ArasFileName,r'C:\Users\franc\Documents\GitHub\database\new_spectra/' + ArasFileName)
+    
+    os.remove(ArasFileName)
+    print(ArasFileName) 
+    print('************************************************************************************')
     
     
-    else:
-        print('OBJNAME not found')
 
 
 
