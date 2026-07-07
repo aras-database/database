@@ -88,7 +88,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Observatoire de Mars;OMA-FR;Observatoire de Mars;;FR;4.34;45.01
 0;Osservatorio Monte Baldo;OMB-IT;Osservatorio Monte Baldo;;IT;45.42;10.51
 0;Observatoire du Pilat;OPI-FR;Observatoire du Pilat;;FR;0.0;0.0
-0;Orlienas;ORL-FR;;Orlienas;FR;4.73;45.66
+0;ORL-FR;ORL-FR;;Orlienas;FR;4.73;45.66
 0;Rouen;ORS-FR;Observatoire Rouen Sud;Rouen;FR;1.08;49.42
 0;Rouen (France);ORS-FR;Observatoire Rouen Sud;Rouen;FR;1.08;49.42
 0;Rouen-FR;ORS-FR;Observatoire Rouen Sud;Rouen;FR;1.08;49.42
@@ -305,4 +305,4 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Tucson, AZ MVO;TUC-US;Tucson;US;-110.8;32.1;
 0;Paul Baumann Sternwarte PBS;PBS-DE;DE;8.22;49.93;200;
 0;Observatoire du HOURQUARROUY;HQY-FR;;FR;43.079;0.234;505.0
-0;La Gouade;GOU-FR;;FR;0.7672;42.8741;1000
+0;La Gouade;GOU-FR;;FR;0.7672;42.8741;1000.0
