@@ -18,7 +18,7 @@ ObjName = "V4074 Sgr"
 Program = "ARAS Symbiotic Stars"
 File0 = 'symbiotic_stars.csv'
 hr = "-"  # Priority HR
-lr = "-"  # Priority LR
+lr = "2"  # Priority LR
 cadency = 0
 
 # Mise en forme des noms
@@ -99,7 +99,6 @@ f.close()
 os.chdir(r'C:\Users\franc\Documents\GitHub\database\data')  
 
 sep = ";"
-# f = open("symbiotic_stars.csv","a")
 f = open(File0,"a")
 
 NewLine = "0"   +sep + objname + sep + ObjName + sep + Coord1 +sep +Coord2+sep+ str(cadency) + sep + str(hr) + sep+ str(lr) +'\n'

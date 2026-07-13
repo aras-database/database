@@ -22,7 +22,7 @@ import aras_update_tables
 
 print("Updating zip archives.")
 import aras_update_archives
-
+print("ok")
 comments_anw = 2
 while comments_anw == 2:
     #confirmation = input(str("Would you like to add comments to newly added spectra?  (Y/N)   "))
