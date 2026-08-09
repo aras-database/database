@@ -14,11 +14,11 @@ import os
 # CONFIGURATION
 # -----------------------------------------
 
-ObjName = "RW Sex"
-Program = "ARAS Dwarf Novae"
+ObjName = "LS V +44 17"
+Program = "ARAS LMBX"
 File0 = 'dwarf_novae.csv'
-hr = "-"  # Priority HR
-lr = "-"  # Priority LR
+hr = "0"  # Priority HR
+lr = "0"  # Priority LR
 cadency = 0
 
 # Mise en forme des noms
