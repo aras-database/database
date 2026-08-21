@@ -54,7 +54,7 @@ for f in files:
     timesp = '{:03d}'.format(timesp)
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
-    n=4
+    n=5
     # n=input("Lup=1, Vel=2, Ser=3, Oph=4,Sgrd=5, Cen=6: ")
     # n=float(n)
     
@@ -81,6 +81,11 @@ for f in files:
             ObjectName1 = "Nova Tau 2026"
             ObjectName2 = ""
             ObjectName3 = "TCP J05210763+2338194"
+    if n==5:
+            ObjectName = "Nova Sgr 2026c"
+            ObjectName1 = "Nova Sgr 2026c"
+            ObjectName2 = ""
+            ObjectName3 = "TCP J18251276-2225293"
 
 
   

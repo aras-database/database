@@ -5,17 +5,17 @@ import os
 # todo
 # saut de ligne
 # add ligne in objects.csv
-
+ 
 
 #data
-ObjName = 'Nova Tau 2026'
+ObjName = 'Nova Sgr 2026c'
 Program = "ARAS Novae Program"
 File0 = 'novae.csv'
 File1 = 'objects.csv'
-Coord1 = "05 21 07.63"
-Coord2 = " +23 38 19.4"
+Coord1 = "18 25 12.76"
+Coord2 = "-22 25 29.3"
 GCSVName =  ''
-DiscoveryName ='TCP J05210763+2338194'
+DiscoveryName ='TCP J18251276-2225293'
  
 # Mise en forme
 FileName = ObjName.replace(" ", "") + '.txt'
