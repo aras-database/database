@@ -14,7 +14,7 @@ cwd = os.getcwd()
 path= cwd
 
 
-n = 0
+
 
 #data = ascii.read("names.csv", header_start=0, data_start=1, delimiter=';',format='csv')
 
@@ -25,7 +25,7 @@ files=glob.glob("*.fit*")
 print(files)
             
 for f in files:
-    n = n+1
+    
     print('************************************************************************************')
     
     print(f)
@@ -54,7 +54,7 @@ for f in files:
     timesp = '{:03d}'.format(timesp)
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
-    n=6
+    n=5
     # n=input("Lup=1, Vel=2, Ser=3, Oph=4,Sgrd=5, Cen=6: ")
     # n=float(n)
     
