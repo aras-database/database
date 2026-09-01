@@ -54,11 +54,11 @@ for f in files:
     timesp = '{:03d}'.format(timesp)
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
-    n=6
+    n=5
     # n=input("Lup=1, Vel=2, Ser=3, Oph=4,Sgrd=5, Cen=6: ")
     # n=float(n)
     
-    if n==1:
+    if n==4:
         ObjectName = "Nova SMC 2026"
         ObjectName1 = "Nova SMC 2026"
         ObjectName2 = ""
