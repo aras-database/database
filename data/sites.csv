@@ -242,7 +242,7 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Rutherford St Observatory;RSO-NZ;un;un;NZ;173.284;-41.2706
 0;RUTHERFORD STREET;RSO-NZ;un;un;NZ;173.284;-41.2706
 0;Wells, Somerset UK;no;un;un;un;0.0;0.0
-0;orlienas;ORL-FR;un;un;un;0.0;0.0
+0;Orlienas;ORL-FR;un;un;un;0.0;0.0
 0;-;;un;un;un;0.0;0.0
 0;OMSJ;OSJ-CA;Observatoire du Mont Saint Joseph;;CA;-71.0;45.0
 0;UNM-US;DD Las Cruces-New Mexico;un;US;-106.56;32.28;
@@ -309,5 +309,5 @@ dumb;Keyword;Site;Name;City;Country;Longitude;Latitude
 0;Girond;GIR-FR;;FR;4.33;44.88;800.0
 0;EY_CA;EY-CA;;CA;-79.383;43.65;130.0
 0;Nords Wharf;NW-AU;;AU;151.603507;-33.132937;1.0
-0;Nirvana Observatory, La Mesa, CA;NO-US;La Mesa;US;-117.08;32.784;0
-0;Fremont CA USA;FRE-US;Fremont;US;121.956;37.56;30
+0;Nirvana Observatory, La Mesa, CA;NO-US;La Mesa;US;-117.08;32.784;0.0
+0;Fremont CA USA;FRE-US;Fremont;US;121.956;37.56;30.0
