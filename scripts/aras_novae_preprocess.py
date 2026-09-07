@@ -55,41 +55,28 @@ for f in files:
     ArasFileName = 'asdb_' + t2 +'_' + datesp + '_' + str(timesp) +'.fit'#nom fichier ARAS
     
     n=5
-    # n=input("Lup=1, Vel=2, Ser=3, Oph=4,Sgrd=5, Cen=6: ")
-    # n=float(n)
     
-    if n==4:
-        ObjectName = "Nova SMC 2026"
-        ObjectName1 = "Nova SMC 2026"
-        ObjectName2 = ""
-        ObjectName3 = "AT 2016oyp"
-        
+    
+    n=input("Tau=1, Sgr3=2, Sge=3 : ")
+    n=float(n)
+    
+
    
-    if n == 2:
-        ObjectName = "Nova Mus 2026"
-        ObjectName1 = "Nova Mus 2026"
-        ObjectName2 = "V419 Mus"
-        ObjectName3 = "AT 2016noc"
-    
-    if n==3:
-            ObjectName = "Nova Aql 2026"
-            ObjectName1 = "Nova Aql 2026"
-            ObjectName2 = "V2104 Aql"
-            ObjectName3 = "AT 2016rdg"
-    if n==4:
+
+    if n==1:
             ObjectName = "Nova Tau 2026"
             ObjectName1 = "Nova Tau 2026"
-            ObjectName2 = ""
+            ObjectName2 = "V1452 Tau"
             ObjectName3 = "TCP J05210763+2338194"
-    if n==5:
+    if n==2:
             ObjectName = "Nova Sgr 2026c"
             ObjectName1 = "Nova Sgr 2026c"
-            ObjectName2 = ""
+            ObjectName2 = "V8055 Sgr"
             ObjectName3 = "TCP J18251276-2225293"
-    if n==6:
+    if n==3:
             ObjectName = "Nova Sge 2026"
             ObjectName1 = "Nova Sge 2026"
-            ObjectName2 = ""
+            ObjectName2 = "V488 Sge"
             ObjectName3 = "PNV J19450648+1822422"
         
 

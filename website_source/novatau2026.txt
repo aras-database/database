@@ -9,6 +9,8 @@
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Nova Tau 2026</h5>
+	<h5 class="card-title">V1452 Tau</h5>
+
       <p class="card-text">RA (2000): 05 21 07.63</p>
   <p class="card-text">DEC (2000):   +23 38 19.4</p>
   <p class="card-text">V (mag): MagnitudeV</p>

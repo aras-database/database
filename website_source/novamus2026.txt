@@ -9,9 +9,11 @@
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Nova Mus 2026</h5>
+	<h5 class="card-title">V419 Mus</h5>
+
       <p class="card-text">RA (2000): 11 44 33.1</p>
   <p class="card-text">DEC (2000):  -68 48 32.9</p>
-  <p class="card-text">V (mag): MagnitudeV</p>
+  <p class="card-text">V max: 7.9</p>
       <a href="http://simbad.harvard.edu/simbad/sim-id?Ident=Nom2&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id" class="btn btn-secondary">SIMBAD</a>
   </div>
   </div>

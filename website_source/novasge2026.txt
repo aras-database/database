@@ -9,6 +9,7 @@
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Nova Sge 2026</h5>
+	<h5 class="card-title">V488 Sge</h5>
       <p class="card-text">RA (2000): 19 45 06.48</p>
   <p class="card-text">DEC (2000):  +18 22 42.2</p>
   <p class="card-text">V (mag): MagnitudeV</p>
