@@ -78,8 +78,8 @@ for f in files:
             ObjectName1 = "Nova Sge 2026"
             ObjectName2 = "V488 Sge"
             ObjectName3 = "PNV J19450648+1822422"
-        
-
+   
+  
 
   
 

@@ -8,14 +8,14 @@ import os
  
 
 #data
-ObjName = 'Nova Del 2026'
+ObjName = 'AT2026 aabo'
 Program = "ARAS Novae Program"
 File0 = 'novae.csv'
 File1 = 'objects.csv'
-Coord1 = "19 45 06.48"
-Coord2 = "+18 22 42.2"
+Coord1 = "00 44 54.26"
+Coord2 = "+41 33 10.53"
 GCSVName =  ''
-DiscoveryName ='PNV J19450648+1822422'
+DiscoveryName ='ZTF26abramlb'
  
 # Mise en forme
 FileName = ObjName.replace(" ", "") + '.txt'
