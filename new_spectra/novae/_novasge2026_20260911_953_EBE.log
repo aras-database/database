@@ -1,0 +1,64 @@
+-----------------
+Version : ISIS V6.1.1
+Date du traitement : 12/09/2026  01:43:16
+-----------------
+Nom de l'objet traité : Nova Sge 2026
+Nom complet du fichier de l'objet traité : _novasge2026_20260911_953_EBE.fits
+Chemin de sauvegarde : c:\atik414ex_alpy600\b_etoiles\2026.09.11\
+-----------------
+Nom générique des spectres 2D bruts : c:\atik414ex_alpy600\b_etoiles\2026.09.11\NovaSge2026_300s-
+Nombre de spectres bruts : 6
+Offset : c:\atik414ex_alpy600\b_etoiles\2026.09.11\offset
+Dark : c:\atik414ex_alpy600\b_etoiles\2026.09.11\dark1200s
+Coefficient du dark : 0.2500
+Flat : c:\atik414ex_alpy600\b_etoiles\2026.09.11\flat37s
+Etalonnage : mode standard
+Spectre lampe étalon : c:\atik414ex_alpy600\b_etoiles\2026.09.11\argon_nova
+Position Y de référence : 272
+Taille pixel : 6.258
+Registration verticale : oui
+Soustraction du fond de ciel : oui
+Recentrage des spectres en longueur d'onde : non
+Angle de slant : 352
+Angle de tilt : 0.36
+Retrait des rayons cosmiques : oui
+Limite X1 : 480
+Limite X2 : 718
+Fichier cosmétique : c:\atik414ex_alpy600\b_etoiles\2026.09.11\cosme1200s
+Filtre gaussien : 0
+Fichier de réponse spectrale : reponse_HD
+Fichier de transmission atmosphérique : 
+Décalage spectral : 0
+Correction vitesse radiale : 0
+Facteur de binning en sortie : 1
+Indicatif du mode d'étalonnage : 2
+Longueur d'onde de référence : 5852.49
+Position X de référence : 678
+Instrument : RC12-f2432-Alpy600-f23um-Atik414
+Résolution : 510
+Site : St Sordelin
+Observateur : EBE
+Delta heure : 0
+Ciel Y1 : 65
+Ciel Y2 : 30
+Ciel Y3 : 30
+Ciel Y4 : 65
+Largeur de la zone de binning : 22
+Binning optimisé : oui
+Coefficient de rejection des cosmiques pour le binning : 50
+Zone de normalisation [Lambda 1 - Lambda 2] : [ 6630  -  6645 ]
+Sommation standard des profils individuels
+Interpollation : bilinéaire
+A4 : 7.64374E-11
+A3 : -3.382454E-07
+A2 : 0.0002669236
+A1 : 3.4103507
+A0 : 3509.074
+-----------------
+Date de prive de vue : 11/09/2026 22:52:11
+Durée de prise de vue : 1815.0
+Durée de prise de vue décomposée : 6 x 300 s
+Date de milieu de prise de vue : 11.963/09/2026
+Jour Julien géocentrique du milieu de prise de vue : 2461295.4634
+Pouvoir de résolution : 509.9
+RMS de l'étalonnage spectral : 0.00000
