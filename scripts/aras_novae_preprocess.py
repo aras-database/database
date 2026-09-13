@@ -60,7 +60,11 @@ for f in files:
     n=input("Tau=1, Sgr3=2, Sge=3 : ")
     n=float(n)
     
-
+    if n==0:
+            ObjectName = "AT2026 aabo"
+            ObjectName1 = "AT2026 aabo"
+            ObjectName2 = ""
+            ObjectName3 = "ZTF26abramlb"
    
 
     if n==1:
