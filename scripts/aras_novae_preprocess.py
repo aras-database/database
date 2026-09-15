@@ -57,7 +57,7 @@ for f in files:
     n=5
     
     
-    n=input("Tau=1, Sgr3=2, Sge=3 : ")
+    n=input("Tau=1, Sgr3=2, Sge=3 ,Sgrd=4: ")
     n=float(n)
     
     if n==0:
@@ -82,6 +82,11 @@ for f in files:
             ObjectName1 = "Nova Sge 2026"
             ObjectName2 = "V488 Sge"
             ObjectName3 = "PNV J19450648+1822422"
+    if n==4:
+            ObjectName = "Nova Sgr 2026d"
+            ObjectName1 = "Nova Sgr 2026d"
+            ObjectName2 = "e"
+            ObjectName3 = "ASASSN-26fc"
    
   
 
