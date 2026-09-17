@@ -117,3 +117,4 @@ for fi in (files):
         move(fi, '../spectra/'+fi[len(dir):])
     
 ascii.write(all_spectra, '../data/all_spectra.csv', format="csv", delimiter = ";",overwrite=True)
+print("ok update allspectra")
