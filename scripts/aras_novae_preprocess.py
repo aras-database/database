@@ -13,14 +13,9 @@ os.chdir(r'C:\Users\franc\Documents\GitHub\database\new_spectra\novae')
 cwd = os.getcwd() 
 path= cwd
 
-
-
-
 #data = ascii.read("names.csv", header_start=0, data_start=1, delimiter=';',format='csv')
 
-
 files=glob.glob("*.fit*")  
-
 
 print(files)
             
