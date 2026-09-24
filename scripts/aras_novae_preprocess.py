@@ -52,14 +52,14 @@ for f in files:
     n=5
     
     
-    n=input("Tau=1, Sgr3=2, Sge=3 ,Sgrd=4: ")
+    n=input("Aql=0,Tau=1, Sgr3=2, Sge=3 ,Sgrd=4: ")
     n=float(n)
     
     if n==0:
-            ObjectName = "AT2026 aabo"
-            ObjectName1 = "AT2026 aabo"
+            ObjectName = "Nova Aql 2026"
+            ObjectName1 = "Nova Aql 2026"
             ObjectName2 = ""
-            ObjectName3 = "ZTF26abramlb"
+            ObjectName3 = "AT 2016rdg"
    
 
     if n==1:
