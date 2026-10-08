@@ -30,7 +30,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary  static-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">ARAS Spectral Database</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,32 +64,472 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">ARAS Spectral Database</h1>
-        <h4>Conditions of Use</h4><br>
+        <h4>Copyright & Terms of Use</h4><br>
+        <div class="date">Last updated: 7 October 2026</div>
 
 </div>
 
-<div class="col-lg-12">
-  <p>This is an open database and in order that we can maintain this status, we expect those who make use of spectra from the database to abide by the following conditions:</p>
-  <ul>
-    <li>The ARAS Spectral Database must be acknowledged in all publications which make use of spectra from the database by reference to the following publication: <a href="https://ui.adsabs.harvard.edu/abs/2019CoSka..49..217T/abstract">https://ui.adsabs.harvard.edu/abs/2019CoSka..49..217T/abstract</a>.</li>
-    <li>Reference to the database should use the following link: <a href="https://aras-database.github.io/database/index.html">https://aras-database.github.io/database/index.html</a>.</li>
-    <li>The names of observers whose spectra are used in the analysis must be included in the Acknowledgements section of the publication.</li>
-    <li>If the publication includes, or is linked to, a table of observations, it is strongly encouraged that this should include the names of the observers.</li>
-    <li>It is the responsibility of the lead author to consider including observers as co-authors if they believe their observations have made a substantial contribution to the analysis.</li>
-    <li>Authors are strongly recommended to inform the ARAS Team via the following email address prior to any publication using spectra from the database
-to confirm the Acknowledgement is compliant with the conditions of use: francoismathieu.teyssier [at] gmail.com</li>
-</ul>
-<p>François Teyssier (FR), David Boyd (UK), Forrest Sims (US)<br>2020-12-28</p>
 
-  </div>
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ARAS Database — Copyright &amp; Terms of Use</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f3f4f6;
+        color: #333;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                     Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.65;
+    }
+
+    .header {
+        background: #343a40;
+        color: white;
+        padding: 45px 20px 40px;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin: 0 0 10px;
+        font-size: 2.2rem;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    }
+
+    .header .date {
+        color: #d6d8db;
+        font-size: 0.95rem;
+    }
+
+    .container {
+        max-width: 950px;
+        margin: 40px auto 70px;
+        padding: 0 25px;
+    }
+
+    .content {
+        background: white;
+        padding: 45px 55px;
+        border-radius: 8px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    section {
+        margin-bottom: 42px;
+    }
+
+    section:last-child {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin: 0 0 18px;
+        padding-bottom: 9px;
+        border-bottom: 2px solid #dee2e6;
+        color: #343a40;
+        font-size: 1.35rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0 0 16px;
+    }
+
+    ul {
+        margin: 10px 0 18px 25px;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 7px;
+    }
+
+    strong {
+        color: #252525;
+    }
+
+    .notice {
+        margin: 22px 0;
+        padding: 18px 22px;
+        background: #f1f3f5;
+        border-left: 4px solid #6c757d;
+        border-radius: 3px;
+    }
+
+    .important {
+        margin: 22px 0;
+        padding: 18px 22px;
+        background: #f8f9fa;
+        border-left: 4px solid #343a40;
+        border-radius: 3px;
+        font-weight: 500;
+    }
+
+    .citation {
+        margin: 22px 0;
+        padding: 20px 25px;
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        font-style: italic;
+        color: #444;
+    }
+
+    a {
+        color: #336699;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .contact {
+        margin-top: 20px;
+        padding: 22px 25px;
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+    }
+
+    .contact-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .footer {
+        text-align: center;
+        color: #777;
+        font-size: 0.85rem;
+        padding: 25px 15px 35px;
+    }
+
+    @media (max-width: 700px) {
+        .header h1 {
+            font-size: 1.7rem;
+        }
+
+        .content {
+            padding: 30px 25px;
+        }
+
+        .container {
+            margin-top: 25px;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+<div class="content">
+
+<section>
+<h2>1. Ownership and scope</h2>
+
+<p>
+The ARAS Database is maintained by the ARAS Eruptive Stars Group and
+provides access to spectroscopic observations contributed by members
+of the astronomical community.
+</p>
+
+<p>
+The database, including its compilation, selection, organization,
+verification, classification, documentation and presentation,
+constitutes a substantial scientific resource developed and maintained
+through the collective efforts of the ARAS community.
+</p>
+
+<p>
+The database compilation, its structure and its original documentation
+are protected by applicable copyright and database rights.
+</p>
+
+<div class="important">
+© 2009–2026 ARAS Group. All rights reserved.
+</div>
+
+<div class="notice">
+<strong> The present notice does not imply that ARAS
+claims ownership of the underlying astronomical observations or spectra
+contributed by individual observers.</strong>
+</div>
+</section>
+
+<section>
+<h2>2. Rights in individual observations and spectra</h2>
+
+<p>
+Individual observations and spectra remain subject to the rights
+applicable to their respective contributors.
+</p>
+
+<p>
+The name or observer code associated with an observation identifies
+the contributor responsible for the submitted observation.
+</p>
+
+<p>
+By submitting an observation to the ARAS Database, the contributor
+grants the ARAS Group a non-exclusive, worldwide
+<strong>permission</strong> to:
+</p>
+
+<ul>
+<li>archive and preserve the observation;</li>
+<li>reproduce and technically process the observation as necessary for database maintenance;</li>
+<li>verify, validate and organize the observation;</li>
+<li>make the observation available through the ARAS Database;</li>
+<li>include the observation in scientific compilations, statistics and visualizations;</li>
+<li>maintain the observation as part of the historical scientific record.</li>
+</ul>
+
+<div class="notice">
+<strong>
+This authorization does not transfer ownership of the contributor's
+original observation or spectrum to ARAS.
+</strong>
+</div>
+</section>
+
+<section>
+<h2>3. Copyright in the database compilation</h2>
+
+<p>
+The selection, arrangement, classification, normalization, verification
+and presentation of the information contained in the ARAS Database
+constitute an original intellectual creation and are protected,
+where applicable, by copyright.
+</p>
+
+<p>
+The database also benefits from the <em>sui generis</em> database right
+applicable to the producer of a database under European and national
+legislation.
+</p>
+
+<p>
+The protected database elements include, in particular, the organization
+and compilation of observations, metadata, object records, references,
+classifications and other information assembled and maintained by ARAS.
+</p>
+</section>
+
+<section>
+<h2>4. Scientific and personal use</h2>
+
+<p>
+Individual users are free to consult the ARAS Database and to use its
+contents for:
+</p>
+
+<ul>
+<li>personal astronomical research;</li>
+<li>educational activities;</li>
+<li>scientific analysis;</li>
+<li>preparation of scientific presentations;</li>
+<li>preparation of publications.</li>
+</ul>
+
+<div class="important">
+Normal scientific use does not require prior permission, provided that
+appropriate acknowledgement and citation are given.
+</div>
+
+<p>
+Users must not misrepresent ARAS data as their own observations or as
+an independently established database.
+</p>
+</section>
+
+<section>
+<h2>5. Scientific publications and presentations</h2>
+
+<p>
+Users are encouraged to use ARAS observations in scientific research
+and publications.
+</p>
+
+<p>When ARAS data are used in a publication, users should:</p>
+
+<ul>
+<li>acknowledge the ARAS Eruptive Stars Programme;</li>
+
+<li>
+cite the ARAS Database
+(<a href="https://ui.adsabs.harvard.edu/abs/2019CoSka..49..217T/abstract"
+target="_blank" rel="noopener">
+2019CoSka..49..217T
+</a>);
+</li>
+
+<li>identify the relevant observers whenever reasonably practicable;</li>
+
+<li>
+provide the database URL:
+<a href="https://aras-database.github.io/database/index.html"
+target="_blank" rel="noopener">
+ARAS Database
+</a>.
+</li>
+</ul>
+
+<p>A recommended acknowledgement is:</p>
+
+<div class="citation">
+“We acknowledge the use of spectroscopic observations from the ARAS
+Eruptive Stars Programme and the ARAS Database
+(<a href="https://ui.adsabs.harvard.edu/abs/2019CoSka..49..217T/abstract"
+target="_blank" rel="noopener">
+2019CoSka..49..217T
+</a>).
+We thank the observers who contributed these observations to the
+programme (Names).”
+</div>
+
+<p>
+When individual observations make a substantial contribution to a
+publication, the corresponding observers should be appropriately
+acknowledged or included as co-authors where consistent with the
+authorship policies of the relevant journal and the scientific
+contribution involved.
+</p>
+
+<p>
+The observers should be notified that their data have been used in
+publications for which they are not co-authors once the paper is
+published.
+</p>
+</section>
+
+<section>
+<h2>6. Extraction and reuse of database contents</h2>
+
+<p>
+Users may <strong>retrieve reasonable amounts of data</strong> for
+legitimate scientific, educational or personal research purposes.
+</p>
+
+<p>
+However, without prior written permission from the ARAS Database
+administrators, users must not:
+</p>
+
+<ul>
+<li>reproduce or redistribute a substantial part of the database;</li>
+<li>incorporate a substantial part of the database into another database or catalogue;</li>
+<li>perform systematic or repeated automated extraction intended to reproduce the database.</li>
+</ul>
+</section>
+
+<section>
+<h2>7. Data quality and scientific responsibility</h2>
+
+<p>
+The ARAS Database is maintained as a collaborative scientific resource.
+Although reasonable efforts are made to preserve and verify the
+integrity of the data, ARAS does not guarantee that every observation,
+measurement, metadata field or classification is error-free or complete.
+</p>
+
+<p>
+Users are responsible for independently assessing the suitability of
+the data for their scientific purpose.
+</p>
+</section>
+
+<section>
+<h2>8. Applicable rights</h2>
+
+<p>
+Nothing in these Terms of Use is intended to limit rights that cannot
+lawfully be excluded under applicable copyright, database or other
+intellectual-property legislation.
+</p>
+
+<p>
+The protection of the database and its contents is intended to operate
+in accordance with applicable national and international law, including
+the intellectual-property legislation applicable to the ARAS Database
+and its users.
+</p>
+</section>
+
+<section>
+<h2>9. Contact</h2>
+
+<p>
+For questions concerning the use of ARAS Database contents, contact
+with observers, or other matters relating to these Terms of Use,
+please contact:
+</p>
+
+<div class="contact">
+<div class="contact-name">Francois Teyssier</div>
+<div>Administrator of the ARAS Eruptive Stars Database</div>
+<br>
+<div>67, rue Jacques Daviel</div>
+<div>76100 Rouen</div>
+<div>France</div>
+<br>
+<div>
+<a href="mailto:francoismathieu.teyssier@gmail.com">
+francoismathieu.teyssier@gmail.com
+</a>
+</div>
+</div>
+
+</section>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+    <footer>
+        <div class="col-lg-12 text-center"></div>
+       
+    </footer>
+
+</div>
+
+</body>
+</html>
+
+
 
 <!-- Footer --><br><br><br>
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 navbar-dark bg-dark fixed-bottom" style="color:white">© 2022 Copyright: ARAS Group, Design & Functionality: Jaroslav Merc
+  <div class="footer-copyright text-center py-3 navbar-dark fixed-bottom"
+     style="background-color: #495057; color:white;">
+    © 2009 - 2026 ARAS Group — All rights reserved 
+
   </div>
   <!-- Copyright -->
 
