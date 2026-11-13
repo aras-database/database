@@ -1,7 +1,9 @@
 dumb;star_name_string;campaign_type;campaign_text
 0;agdra;Outburst 2025;Next could happen late 2026
 0;chcyg;Ongoing campaign;H alpha line at R > 10.000 upon the request of Dr A. Skopal.
-0;raqr;Eclipse of the hot component (ending/ended);Ongoing campaign
+0;hmsge;Ongoing campaign;
+0;novacas2021;Continuous monitoring during the nebulat phase;a few spectra/year
+0;raqr;Eclipse of the Mira(ending/ended);2026: monitoring in support to JWST observations
 0;tcrb;Monitoring before the nova outburst;One spectrum/day until the next nova outburst
 0;cicyg;Ongoing survey;
 0;agpeg;Ongoing survey;
@@ -9,5 +11,5 @@ dumb;star_name_string;campaign_type;campaign_text
 0;axper;Ongoing survey;
 0;cncha;Symbiotic nova outburst;
 0;pnvvel2025;peculiar nova - https://www.astronomerstelegram.org/?read=17256
-0;v1413 Aql;Outburst (2025) & Eclipse
+0;v1413 Aql;Eclipses
 0;novasge2026;Note: Strong disagreements within the SED on August 25-26, 2026 for unknown reason
